@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "React.js",
+    "path": "/technologies/react.png"
+  },
+  
+  {
+    "id": 11,
+    "title": "Next.js",
+    "path": "/technologies/nextjs.png"
+  },
+    {
+    "id": 3,
+    "title": "Node.js",
+    "path": "/technologies/nodejs.png"
+  },
+  {
+    "id": 2,
+    "title": "Tailwind CSS",
+    "path": "/technologies/tailwind.png"
+  },
+
+  {
+    "id": 4,
+    "title": "Express.js",
+    "path": "/technologies/express.png"
+  },
+  {
+    "id": 5,
+    "title": "MySQL",
+    "path": "/technologies/mysql.png"
+  },
+  {
+    "id":13,
+    "title":"MongoDB",
+    "path":"/technologies/mongodb.png"
+
+  },
+  {
+    "id": 6,
+    "title": "Prisma ORM",
+    "path": "/technologies/prisma.png"
+  },
+  {
+    "id": 7,
+    "title": "GSAP",
+    "path": "/technologies/gsap.png"
+  },
+  {
+    "id": 8,
+    "title": "Shadcn UI",
+    "path": "/technologies/shadcn.png"
+  },
+  {
+    "id": 9,
+    "title": "AI Integration",
+    "path": "/technologies/ai.png"
+  },
+  {
+    "id":15,
+    "title":"Git & GitHub",
+    "path":"/technologies/gits.png"
+  }
+]

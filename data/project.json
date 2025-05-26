@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "imageUrl": "/projects/sprintboard.jpg",
+    "title": "SprintBoard",
+    "description": "Kanban-style task manager inspired by Jira. Organize sprints, track issues, and manage workflows with drag-and-drop boards.",
+    "deployedLink": "https://sprint-board-nine.vercel.app/",
+    "GithubRepo": "https://github.com/ankitsinghrajp/sprint-board",
+    "Frontend": ["React", "Tailwind CSS", "Next.js"],
+    "Backend": ["Node.js", "Next.js API Routes"],
+    "Database & ORM": ["Neon (PostgreSQL), Prisma"],
+    "Deployment": ["Vercel"],
+    "what": [
+      { "title": "What the project is?" },
+      {
+        "description": "SprintBoard is a Kanban-style task management application inspired by Jira. It allows users to create projects, manage issues, assign tasks, and track progress across different stages using an intuitive drag-and-drop board interface. Built with modern frontend and backend technologies, it supports real-time updates and a clean UI for efficient team collaboration."
+      }
+    ],
+    "why":[
+        {"title":"Why I built this?"},
+        {
+            "description":"I built SprintBoard to deepen my understanding of project management systems, drag-and-drop interfaces, and real-world use cases involving state management and dynamic UI rendering. It also helped me explore how large-scale apps like Jira structure and handle workflows in an agile environment."
+        }
+    ],
+    "problem":[
+        {"title":"What problem it solves?"},
+        {
+            "description":"SprintBoard simplifies the process of task organization, workflow visualization, and progress tracking during sprints or software development cycles. Unlike complex tools that require onboarding time, SprintBoard offers a minimal yet powerful solution that focuses on usability and clarity — making it ideal for small teams or solo developers."
+        }
+    ]
+  },
+  {
+    "id": 2,
+    "imageUrl": "/projects/carmarket.jpg",
+    "title": "AI Car Market",
+    "description": "An AI-powered platform to buy, sell, and compare cars smartly. Get personalized recommendations, price insights, and market trends in seconds.",
+    "deployedLink": "https://car-vision.vercel.app",
+    "GithubRepo": "https://github.com/ankitsinghrajp/car-vision"
+  },
+  {
+    "id": 3,
+    "imageUrl": "/projects/elevateai.jpg",
+    "title": "Elevate AI",
+    "description": "AI-driven career coach offering real-time industry insights, skill quizzes, and tailored resumes and cover letters to boost job readiness.",
+    "deployedLink": "https://elevate-ai-iota.vercel.app",
+    "GithubRepo": "https://github.com/ankitsinghrajp/elevate-ai"
+  }
+]
