@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import projects from "@/data/project.json";
 import Link from "next/link";
+import CarouselProject from "./_components/carousel-project";
 
 const Page = async ({ params }) => {
   const { id } = await params;
@@ -42,7 +43,9 @@ const Page = async ({ params }) => {
                 Github
               </Link>
             </div>
-            <div className="flex md:flex-row flex-col md:justify-between mt-10 w-full">
+
+
+            <div className="flex md:flex-row  flex-col md:justify-between mt-10 w-full">
               <div className="w-[40%]  mr-10 hidden md:block px-2">
 
                 <Card className="dark:bg-[#09090b] h-full w-full bg-[#EEEEFF]">
@@ -155,6 +158,42 @@ const Page = async ({ params }) => {
                 </Card>
               </div>
             </div>
+
+            <div className="md:my-20 my-10 border-2 dark:border-gray-900 border-gray-300 py-10 px-5 rounded-md">
+              <div className="my-5">
+                <h2 className="text-xl font-semibold dark:text-gray-300">{project.what[0].title}</h2>
+                <p className="my-2 dark:text-gray-400">{project.what[1].description}</p>
+              </div>
+              <div className="my-5">
+                <h2 className="text-xl font-semibold dark:text-gray-300">{project.why[0].title}</h2>
+                <p className="my-2 dark:text-gray-400">{project.why[1].description}</p>
+              </div>
+              <div className="my-5">
+                <h2 className="text-xl font-semibold dark:text-gray-300">{project.problem[0].title}</h2>
+                <p className="my-2 dark:text-gray-400">{project.problem[1].description}</p>
+              </div>
+            </div>
+             <div className="w-full flex flex-col md:flex-row md:justify-between md:items-center">
+            <div className="border-2 md:w-[25%] rounded-md  dark:border-gray-900 border-gray-300 p-5">
+              <h2 className="text-3xl font-bold mb-5 dark:text-gray-300">Key Features</h2>
+              {project.features.map((feature,index)=>{
+                return <li className="text-sm py-2" key={index}>
+                     {feature}
+                </li>
+              })}
+            </div>
+            <CarouselProject project={project}/>
+            </div>
+
+            <div className="md:mt-20 md:mb-10">
+              <h2 className="text-2xl font-bold dark:text-gray-200 text-gray-800">{project.reflection.title}</h2>
+              <div>
+                <p className="dark:text-gray-400 text-gray-600 my-2">
+                  {project.reflection.description}
+                </p>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

@@ -189,10 +189,10 @@
 
 .paragraph-text {
   text-align: justify;
-  /* text-justify: inter-word;  */
-  line-height: 1.7;         /* Better line spacing for readability */
-  /* word-spacing: 0.05em;     Optional: adds a bit of spacing between words */
-  /* letter-spacing: 0.2px;    Optional: improves legibility */
+  text-justify: inter-word; 
+  line-height: 1.7;       
+   word-spacing: 0.05em; 
+  letter-spacing: 0.2px;    
 }
 
 

@@ -15,13 +15,13 @@ const Header = () => {
                 <Home className='h-4 w-4'/>
                 Home
                 </Link>
-                <Link href='/' className='flex justify-center items-center gap-1 '>
+                <Link href='/blog' className='flex justify-center items-center gap-1 '>
                 <FileText className='h-4 w-4'/>
                   Blog
                 </Link>
 
                
-                   <Link href='/' className='flex justify-center items-center gap-1 '>
+                   <Link href='/contact' className='flex justify-center items-center gap-1 '>
                 <Mail className='h-4 w-4'/>
                   Contact
                 </Link>
