@@ -19,11 +19,15 @@ import services from "@/data/services.json";
 import {
   BadgeCheck,
   Brain,
+  Briefcase,
   CircleDot,
   Database,
   GraduationCap,
   Layers,
+  Mail,
+  MapPin,
   Network,
+  Phone,
   School,
   Shapes,
   ShieldCheck,
@@ -32,6 +36,7 @@ import { useState } from "react";
 import CarouselSection from "@/components/CarouselSection";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Link from "next/link";
+import MessageForm from "@/components/message-form";
 export default function HOME() {
   const iconMap = {
     ShieldCheck,
@@ -49,14 +54,16 @@ export default function HOME() {
     setSelectedService(service);
     setOpen(true);
   };
+
+  const handleHireMe = () =>{
+     window.open('mailto:ankitcreativeworks@gmail.com?subject=Hiring Inquiry&body=Hi, I\'m interested in hiring you for a project...', '_blank');
+  }
+  
   return (
     <>
       {/* Hero Section */}
       <div className="dotted-background pt-20 border-dotted  border-b border-gray-600 dark:border-gray-600">
-        {/* <div className="">
-            Ankit Singh Chouhan
-        
-           </div> */}
+      
         <div className="container mx-auto">
           <div className="flex md:flex-row flex-col w-full">
             <div className="md:w-[25%] md:hidden ">
@@ -140,7 +147,7 @@ export default function HOME() {
       </div>
 
       {/* Skills section */}
-      <div className="border-dotted py-10 border-b border-gray-600">
+      <div id="skills" className="border-dotted py-10 border-b border-gray-600">
         <div className="container mx-auto">
           <h2 className="text-3xl pt-5 text-center md:text-5xl pb-5 font-extrabold bg-gradient-to-br from-gray-900 via-slate-600 to-gray-900 dark:from-blue-500 dark:via-blue-100 dark:to-blue-400 bg-clip-text tracking-tighter text-transparent  pr-2">
             Skills
@@ -150,10 +157,10 @@ export default function HOME() {
       </div>
 
       {/* Education & Programming languages section */}
-      <div className="border-dotted py-10 border-b border-gray-600">
+      <div id="about" className="border-dotted py-10 border-b border-gray-600">
         <div className="container mx-auto">
           <h2 className="text-3xl pt-5 text-center md:text-5xl pb-5 font-extrabold bg-gradient-to-br from-gray-900 via-slate-600 to-gray-900 dark:from-blue-500 dark:via-blue-100 dark:to-blue-400 bg-clip-text tracking-tighter text-transparent  pr-2">
-            Education & Programming Languages
+            About me
           </h2>
 
           <Tabs defaultValue="education" className="px-4 py-10">
@@ -260,7 +267,7 @@ export default function HOME() {
       {/* My services section */}
       <div className="border-dotted py-5 border-b border-gray-600">
         <div className="container mx-auto">
-          <h2 className="text-3xl pt-5 text-center md:text-5xl pb-5 font-extrabold bg-gradient-to-br from-gray-900 via-slate-600 to-gray-900 dark:from-blue-500 dark:via-blue-100 dark:to-blue-400 bg-clip-text tracking-tighter text-transparent  pr-2">
+          <h2 className="text-4xl pt-5 text-center md:text-5xl pb-5 font-extrabold bg-gradient-to-br from-gray-900 via-slate-600 to-gray-900 dark:from-blue-500 dark:via-blue-100 dark:to-blue-400 bg-clip-text tracking-tighter text-transparent  pr-2">
             My Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 mt-5">
@@ -296,7 +303,7 @@ export default function HOME() {
       {/* Projects */}
       <div id="projects" className="border-dotted py-5 border-b border-gray-600">
         <div className="container mx-auto">
-          <h2 className="text-3xl pt-5 text-center md:text-5xl pb-5 font-extrabold bg-gradient-to-br from-gray-900 via-slate-600 to-gray-900 dark:from-blue-500 dark:via-blue-100 dark:to-blue-400 bg-clip-text tracking-tighter text-transparent  pr-2">
+          <h2 className="text-4xl pt-5 text-center md:text-5xl pb-5 font-extrabold bg-gradient-to-br from-gray-900 via-slate-600 to-gray-900 dark:from-blue-500 dark:via-blue-100 dark:to-blue-400 bg-clip-text tracking-tighter text-transparent  pr-2">
             My Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-7 my-8 mx-5">
@@ -325,6 +332,76 @@ export default function HOME() {
           </div>
         </div>
       </div>
+
+      {/* Contact Section */}
+      <div id="contact" className=" py-10 ">
+        <div className="container mx-auto">
+  
+        <h2 className="text-4xl text-center md:text-5xl pb-5 font-extrabold bg-gradient-to-br from-gray-900 via-slate-600 to-gray-900 dark:from-blue-500 dark:via-blue-100 dark:to-blue-400 bg-clip-text tracking-tighter text-transparent">Contact Me</h2>
+          <ul className="flex flex-col gap-2">
+            <li className="flex items-center gap-4 p-4 mx-5 border rounded-md dark:bg-[#0f0f13] bg-gray-100 border-gray-300 dark:border-gray-800 m-2">
+               
+               <span className="flex items-center text-blue-600 bg-blue-100 dark:text-blue-400 dark:bg-blue-500/20 p-3 rounded-md w-fit">
+                  <Mail className="h-6 w-6"/>
+               </span>
+                <div>
+                    <h2 className="font-bold dark:text-gray-200 text-gray-800 text-lg">Email</h2>
+                    <p className="dark:text-gray-300 text-gray-700">ankitcreativeworks@gmail.com</p>
+                </div>
+              
+            </li>
+
+            <li className="flex items-center gap-4 p-4 mx-5 border rounded-md dark:bg-[#0f0f13] bg-gray-100 border-gray-300 dark:border-gray-800 m-2">
+               
+               <span className="flex items-center text-green-600 bg-green-100 dark:text-green-400 dark:bg-green-500/20 p-3 rounded-md w-fit">
+                  <Phone className="h-6 w-6"/>
+               </span>
+                <div>
+                    <h2 className="font-bold dark:text-gray-200 text-gray-800 text-lg">Phone</h2>
+                    <p className="dark:text-gray-300 text-gray-700">+91 78287 36686</p>
+                </div>
+              
+            </li>
+
+            <li className="flex items-center gap-4 p-4 mx-5 border rounded-md dark:bg-[#0f0f13] bg-gray-100 border-gray-300 dark:border-gray-800 m-2">
+               
+               <span className="flex items-center text-purple-600 bg-purple-100 dark:text-purple-400 dark:bg-purple-500/20 p-3 rounded-md w-fit">
+                  <MapPin className="h-6 w-6"/>
+               </span>
+                <div>
+                    <h2 className="font-bold dark:text-gray-200 text-gray-800 text-lg">Location</h2>
+                    <p className="dark:text-gray-300 text-gray-700">Ujjain, Madhya Pradesh, India</p>
+                </div>
+              
+            </li>
+          
+          </ul>
+       
+             
+      </div>
+       </div>
+
+      <div className="border-dotted pb-10 border-b border-gray-600">
+        <div className="container mx-auto">
+        <h2 className="mx-7 mb-5 font-bold text-2xl dark:text-gray-200 text-gray-800">Have A Question?</h2>
+        <MessageForm/>
+      </div>
+       </div>
+
+      {/* Hire Me Section */}
+        <div className=" py-10 ">
+        <div className="container mx-auto">
+      <div className="m-1 flex flex-col items-center justify-center">
+          <h2 className="text-4xl pt-5 text-center md:text-5xl pb-5 font-extrabold bg-gradient-to-br from-gray-900 via-slate-600 to-gray-900 dark:from-blue-500 dark:via-blue-100 dark:to-blue-400 bg-clip-text tracking-tighter text-transparent  pr-2">Let&apos;s Work Together</h2>
+          <p className="text-xl dark:text-gray-200 text-gray-700 text-center">Ready to bring your ideas to life? I&apos;d love to hear about your project and discuss how we can make it happen.</p>
+          <Button onClick={handleHireMe} className= {`mt-8 inline-flex animate-bounce items-center px-8 py-6 text-lg font-semibold rounded-full transition-all transform hover:scale-105 shadow-lg hover:shadow-xl bg-gradient-to-r dark:from-blue-500 dark:to-purple-600 text-white dark:hover:from-blue-600 dark:hover:to-purple-700 from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700`}>
+            <Briefcase className="h-5 w-5 "/>
+            Hire Me Now
+            </Button>
+          </div>
+          </div>
+          </div>
+         
 
       {selectedService && (
         <div className="">

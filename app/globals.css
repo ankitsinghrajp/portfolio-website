@@ -209,3 +209,11 @@
 .hero-image.scrolled{
   transform: rotateX(1deg) scale(1) translateY(40px);
 }
+
+.research-paragraph {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}

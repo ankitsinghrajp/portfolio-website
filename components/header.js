@@ -2,7 +2,9 @@ import React from 'react'
 
 import Link from 'next/link'
 import { ThemeToggle } from './theme-toggle'
-import { Briefcase, FileText, Home, Mail } from 'lucide-react'
+import { FileText, Home, Mail } from 'lucide-react'
+import { Button } from './ui/button'
+import Image from 'next/image'
 
 const Header = () => {
   return (
@@ -21,13 +23,21 @@ const Header = () => {
                 </Link>
 
                
-                   <Link href='/contact' className='flex justify-center items-center gap-1 '>
+                   <Link href='#contact' className='flex justify-center items-center gap-1 '>
                 <Mail className='h-4 w-4'/>
                   Contact
                 </Link>
       
            </div>
-           <ThemeToggle/>
+           <div className='flex flex-row items-center gap-2'>
+        
+           <Link href={'https://github.com/ankitsinghrajp'} target='_blank'>
+           <Button size="icon" variant='outline' >
+               <Image src={'/github.png'} alt='github' height={24} width={24}/>
+           </Button>
+           </Link>
+              <ThemeToggle/>
+           </div>
            </div>
            </div>
          
