@@ -9,16 +9,16 @@ const Footer = () => {
     
     {/* About / Brand Section */}
     <div>
-      <h3 className="text-xl font-semibold mb-2">Ankit Singh Chouhan</h3>
-      <p className="text-sm text-gray-400">
+      <h3 className="text-2xl dark:text-gray-300 text-gray-700 font-bold mb-2">Ankit Singh Chouhan</h3>
+      <p className="text-sm text-gray-700 dark:text-gray-400">
         Full Stack Developer | Passionate about building scalable web applications with Node.js, Next.js & modern technologies.
       </p>
     </div>
 
     {/* Important Links */}
     <div>
-      <h4 className="text-lg font-semibold mb-2">Quick Links</h4>
-      <ul className="space-y-1 text-gray-300 text-sm">
+      <h4 className="text-lg dark:text-gray-300 text-gray-700 font-bold mb-2">Quick Links</h4>
+      <ul className="space-y-1 dark:text-gray-400 text-gray-600 font-semibold ml-2 text-sm">
         <li><a href="#about" className="hover:underline">About Me</a></li>
         <li><a href="#projects" className="hover:underline">Projects</a></li>
         <li><a href="#skills" className="hover:underline">Skills</a></li>
@@ -28,8 +28,8 @@ const Footer = () => {
 
     {/* Contact and Socials */}
     <div>
-      <h4 className="text-lg font-semibold mb-2">Let's Connect</h4>
-      <p className="text-sm text-gray-400 mb-2">ankitcreativeworks@gmail.com</p>
+      <h4 className="text-lg dark:text-gray-300 text-gray-700 font-bold mb-2">Let's Connect</h4>
+      <p className="font-semibold text-gray-600 dark:text-gray-400 mb-2">ankitcreativeworks@gmail.com</p>
       <div className="flex space-x-4">
          <div className="flex items-center ml-5 px-5 gap-3 py-3">
 
