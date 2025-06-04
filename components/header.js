@@ -1,12 +1,14 @@
-import React from 'react'
-
+"use client"
 import Link from 'next/link'
 import { ThemeToggle } from './theme-toggle'
-import { FileText, Home, Mail } from 'lucide-react'
+import { FileText, Home } from 'lucide-react'
 import { Button } from './ui/button'
 import Image from 'next/image'
+import { ContactLink } from './contact-link'
 
 const Header = () => {
+ 
+
   return (
     <div className='w-full py-5 border-dotted fixed top-0 z-50 dark:bg-[#09090b]/90 bg-[#EEEEFF]/90 border-b border-gray-600 dark:border-gray-600'>
      <div className='container mx-auto'>
@@ -22,11 +24,8 @@ const Header = () => {
                   Blog
                 </Link>
 
-               
-                   <Link href='#contact' className='flex justify-center items-center gap-1 '>
-                <Mail className='h-4 w-4'/>
-                  Contact
-                </Link>
+                 <ContactLink/>
+                 
       
            </div>
            <div className='flex flex-row items-center gap-2'>

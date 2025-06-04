@@ -33,9 +33,6 @@ export default function RootLayout({ children }) {
                  {children}
         </main>
    
-        <footer className="">
-           <Footer/>
-        </footer>
         </ThemeProvider>
       </body>
     </html>

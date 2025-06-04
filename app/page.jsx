@@ -38,6 +38,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Link from "next/link";
 import MessageForm from "@/components/message-form";
 import { Badge } from "@/components/ui/badge";
+import Footer from "@/components/fotter";
 export default function HOME() {
   const iconMap = {
     ShieldCheck,
@@ -408,6 +409,9 @@ export default function HOME() {
             </Button>
           </div>
           </div>
+             <footer className="">
+                     <Footer/>
+                  </footer>
           </div>
          
 
