@@ -114,32 +114,42 @@ const Page = async ({ params }) => {
                   <CardContent className="flex gap-5 flex-col">
                    {project.frontend && <div className="flex gap-2">
                     <h2 className="dark:text-gray-200 font-bold">Frontend:</h2>
+                    <div className="flex flex-wrap gap-2 gap-y-2">
+
                     {project.frontend.map((item,index)=>{
                        return <Badge className={'px-2 '} variant={'outline'} key={index}>{item}</Badge>
                     })}
+                      </div>
                     </div>}
 
 
                    {project.backend && <div className="flex gap-2">
                     <h2 className="dark:text-gray-200 font-bold">Backend:</h2>
+                    <div className="flex flex-wrap gap-2 gap-y-2">
                     {project.backend.map((item,index)=>{
                        return <Badge className={'px-2 '} variant={'outline'} key={index}>{item}</Badge>
                     })}
+                    </div>
                     </div>}
 
 
                    {project.database && <div className="flex gap-2">
                     <h2 className="dark:text-gray-200 font-bold">Database:</h2>
+                    <div className="flex flex-wrap gap-y-2 gap-2">
+        
                     {project.database.map((item,index)=>{
                        return <Badge className={'px-2 '} variant={'outline'} key={index}>{item}</Badge>
                     })}
+                    </div>
                     </div>}
 
                    {project.orm && <div className="flex gap-2">
                     <h2 className="dark:text-gray-200 font-bold">ORM:</h2>
+                    <div className="flex flex-wrap gap-y-2 gap-2">
                     {project.orm.map((item,index)=>{
                        return <Badge className={'px-2 '} variant={'outline'} key={index}>{item}</Badge>
                     })}
+                    </div>
                     </div>}
 
                    {project.tools && <div className="flex gap-2">
@@ -153,9 +163,11 @@ const Page = async ({ params }) => {
 
                    {project.deployment && <div className="flex gap-1">
                     <h2 className="dark:text-gray-200 font-bold">Deployment:</h2>
+                    <div className="flex flex-wrap gap-y-2 gap-2">
                     {project.deployment.map((item,index)=>{
                        return <Badge className={'px-2 '} variant={'outline'} key={index}>{item}</Badge>
                     })}
+                    </div>
                     </div>}
                     
     
