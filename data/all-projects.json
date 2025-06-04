@@ -379,6 +379,63 @@
     "/authapp/19.png",
     "/authapp/20.png"
   ]
+},
+{
+  "id": 6,
+  "imageUrl": "/projects/tracknode.jpg",
+  "title": "TrackNode - Music Player",
+  "tagline": "Sleek and Minimal Music Player using HTML, Tailwind CSS, and Vanilla JavaScript.",
+  "description": "TrackNode is a lightweight and responsive music player built entirely with HTML, Tailwind CSS, and plain JavaScript. It supports essential features like play/pause, next/prev, seek, volume control, and displays song metadata dynamically.",
+  "deployedLink": "",
+  "GithubRepo": "https://github.com/ankitsinghrajp/Best-Music-Player",
+  "frontend": ["HTML", "Tailwind CSS", "JavaScript"],
+  "backend": [],
+  "database": [],
+  "orm": [],
+  "tools": ["Git", "GitHub", "VSCode"],
+  "deployment": ["GitHub Pages"],
+  "what": [
+    { "title": "What the project is?" },
+    {
+      "description": "TrackNode is a custom music player UI with functional audio controls. It showcases dynamic rendering of song details, playlist looping, progress tracking, and responsive design—all without any external frameworks."
+    }
+  ],
+  "reflection": {
+    "title": "What I Learned / Challenges",
+    "description": "Improved my understanding of the HTML5 <audio> API, dynamic DOM manipulation, and responsive layouts with Tailwind CSS. Faced challenges in syncing UI updates with audio events like timeupdate and handling edge cases like song end and autoplay."
+  },
+  "why": [
+    { "title": "Why I built this?" },
+    {
+      "description": "I wanted to build a full UI-driven interactive project using only vanilla technologies to strengthen my JavaScript fundamentals, without depending on React or frameworks. It was a good way to focus purely on DOM, events, and CSS."
+    }
+  ],
+  "problem": [
+    { "title": "What problem it solves?" },
+    {
+      "description": "TrackNode demonstrates that rich and interactive user interfaces can be built without complex stacks. It’s perfect for learning how media elements work and how to control them entirely with JavaScript."
+    }
+  ],
+  "features": [
+    "Custom play, pause, next, previous controls",
+    "Responsive UI using Tailwind CSS",
+    "Dynamic song metadata (title, artist, cover)",
+    "Progress bar with seek functionality",
+    "Auto-play next song in playlist",
+    "Highlighting current playing song",
+    "Built without any frameworks or libraries",
+    "Fully client-side and lightweight",
+    "Deployed using GitHub Pages"
+  ],
+  "screenshots": [
+    "/musicplayer/1.png",
+    "/musicplayer/2.png",
+    "/musicplayer/3.png",
+    "/musicplayer/4.png",
+    "/musicplayer/5.png",
+    "/musicplayer/6.png"
+  ]
 }
+
 
 ]
