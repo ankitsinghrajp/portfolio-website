@@ -19,7 +19,10 @@ const ProjectsPage = () => {
                     <CardDescription className="mx-2">
                       <h1 className="text-xl my-2 font-bold dark:text-gray-200">{project.title}</h1>
                       <p className="dark:text-gray-200 font-semibold">Deployed App Link: {" "}
-                        <Link className="text-blue-600 underline" target="_blank" href={project.deployedLink}>Live Preview</Link>
+                        {project.deployedLink? 
+                         <Link className="text-blue-600 underline" target="_blank" href={project.deployedLink}>Live Preview</Link>:<span className='text-sm text-red-500'>No preview Available</span>
+                        }
+                       
                       </p>
                       <p className="my-2">{project.description}</p>
                       <Link href={`/projects/project/${project.id}`}>

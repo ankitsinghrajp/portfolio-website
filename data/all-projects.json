@@ -308,5 +308,77 @@
     "/aifinance/40.png",
     "/aifinance/41.png"
   ]
+    },
+{
+  "id": 5,
+  "imageUrl": "/projects/authApp.jpg",
+  "title": "SecureAuth",
+  "tagline": "Robust Authentication with JWT, Passport.js & Secure Email Flows.",
+  "description": "A production-ready authentication app built with Express.js and Next.js. It includes user registration, login, email verification, password reset, and secure access using JWT and Passport.js.",
+  "deployedLink": "",
+  "GithubRepo": "https://github.com/ankitsinghrajp/Complete-Authentication-Nextjs",
+  "frontend": ["Next.js", "Tailwind CSS", "React"],
+  "backend": ["Node.js", "Express.js"],
+  "database": ["MongoDB"],
+  "orm": ["Mongoose"],
+  "tools": ["Postman", "Git", "GitHub", "Nodemailer", "Bcrypt", "JWT", "Passport.js"],
+  "deployment": ["Vercel"],
+  "what": [
+    { "title": "What the project is?" },
+    {
+      "description": "SecureAuth is a modern authentication system supporting features like email/password login, email verification, password reset, and JWT-based session handling. It uses Passport.js for strategy-based authentication and JWT for token management."
+    }
+  ],
+  "reflection": {
+    "title": "What I Learned / Challenges",
+    "description": "Learned how to integrate Passport.js with Express and JWT, and handle custom strategies. Managed secure storage of refresh tokens, handled edge cases like token expiration, and created a seamless client-server auth experience."
+  },
+  "why": [
+    { "title": "Why I built this?" },
+    {
+      "description": "I built SecureAuth to deepen my understanding of Passport.js, JWT, and secure email-based flows. It also served as a base project to implement real-world authentication logic and improve backend/frontend auth syncing."
+    }
+  ],
+  "problem": [
+    { "title": "What problem it solves?" },
+    {
+      "description": "SecureAuth provides a clean, secure, and ready-to-use authentication system. It removes the need to repeatedly build boilerplate auth logic and ensures a scalable structure with JWT and Passport.js for access control."
+    }
+  ],
+  "features": [
+    "User registration and login",
+    "JWT-based access and refresh tokens",
+    "Email verification with token",
+    "Forgot and reset password flow",
+    "Passport.js for strategy-based auth",
+    "Bcrypt for password hashing",
+    "Token expiration & refresh handling",
+    "Secure session persistence",
+    "Responsive UI built with Tailwind CSS",
+    "API tested using Postman"
+  ],
+  "screenshots": [
+    "/authapp/1.png",
+    "/authapp/2.png",
+    "/authapp/3.png",
+    "/authapp/4.png",
+    "/authapp/5.png",
+    "/authapp/6.png",
+    "/authapp/7.png",
+    "/authapp/8.png",
+    "/authapp/9.png",
+    "/authapp/10.png",
+    "/authapp/11.png",
+    "/authapp/12.png",
+    "/authapp/13.png",
+    "/authapp/14.png",
+    "/authapp/15.png",
+    "/authapp/16.png",
+    "/authapp/17.png",
+    "/authapp/18.png",
+    "/authapp/19.png",
+    "/authapp/20.png"
+  ]
 }
+
 ]

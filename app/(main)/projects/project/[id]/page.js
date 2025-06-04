@@ -27,13 +27,14 @@ const Page = async ({ params }) => {
               {project.description}
             </p>
             <div className="flex gap-1 font-bold italic text-gray-600 text-sm my-2">
+              {project.deployedLink?
               <Link
                 href={project.deployedLink}
                 className="dark:text-blue-500 underline text-blue-700"
                 target="_blank"
               >
                 View Live
-              </Link>{" "}
+              </Link>:<span className="text-sm font-semibold text-red-500">No Preview Available</span>}{" "}
               |{" "}
               <Link
                 href={project.GithubRepo}
@@ -83,11 +84,13 @@ const Page = async ({ params }) => {
                     })}
                     </div>}
 
-                   {project.tools && <div className="flex gap-1">
+                   {project.tools && <div className="flex  gap-1">
                     <h2 className="dark:text-gray-200 font-bold">Tools:</h2>
+                    <div className="">
                     {project.tools.map((item,index)=>{
-                       return <Badge className={'px-2 '} variant={'outline'} key={index}>{item}</Badge>
+                       return <Badge className={'px-2'} variant={'outline'} key={index}>{item}</Badge>
                     })}
+                    </div>
                     </div>}
 
                    {project.deployment && <div className="flex gap-1">
@@ -109,7 +112,7 @@ const Page = async ({ params }) => {
                     <CardTitle className="text-3xl dark:text-gray-300 font-extrabold">Tech Stack</CardTitle>
                   </CardHeader>
                   <CardContent className="flex gap-5 flex-col">
-                   {project.frontend && <div className="flex gap-1">
+                   {project.frontend && <div className="flex gap-2">
                     <h2 className="dark:text-gray-200 font-bold">Frontend:</h2>
                     {project.frontend.map((item,index)=>{
                        return <Badge className={'px-2 '} variant={'outline'} key={index}>{item}</Badge>
@@ -117,7 +120,7 @@ const Page = async ({ params }) => {
                     </div>}
 
 
-                   {project.backend && <div className="flex gap-1">
+                   {project.backend && <div className="flex gap-2">
                     <h2 className="dark:text-gray-200 font-bold">Backend:</h2>
                     {project.backend.map((item,index)=>{
                        return <Badge className={'px-2 '} variant={'outline'} key={index}>{item}</Badge>
@@ -125,25 +128,27 @@ const Page = async ({ params }) => {
                     </div>}
 
 
-                   {project.database && <div className="flex gap-1">
+                   {project.database && <div className="flex gap-2">
                     <h2 className="dark:text-gray-200 font-bold">Database:</h2>
                     {project.database.map((item,index)=>{
                        return <Badge className={'px-2 '} variant={'outline'} key={index}>{item}</Badge>
                     })}
                     </div>}
 
-                   {project.orm && <div className="flex gap-1">
+                   {project.orm && <div className="flex gap-2">
                     <h2 className="dark:text-gray-200 font-bold">ORM:</h2>
                     {project.orm.map((item,index)=>{
                        return <Badge className={'px-2 '} variant={'outline'} key={index}>{item}</Badge>
                     })}
                     </div>}
 
-                   {project.tools && <div className="flex gap-1">
+                   {project.tools && <div className="flex gap-2">
                     <h2 className="dark:text-gray-200 font-bold">Tools:</h2>
+                    <div className="flex flex-wrap gap-y-2 gap-2">
                     {project.tools.map((item,index)=>{
                        return <Badge className={'px-2 '} variant={'outline'} key={index}>{item}</Badge>
                     })}
+                    </div>
                     </div>}
 
                    {project.deployment && <div className="flex gap-1">
