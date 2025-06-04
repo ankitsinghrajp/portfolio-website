@@ -435,7 +435,238 @@
     "/musicplayer/5.png",
     "/musicplayer/6.png"
   ]
+},
+{
+  "id": 7,
+  "imageUrl": "/projects/weatherapp.jpg",
+  "title": "SkyCast - Weather App",
+  "tagline": "Real-Time Weather Forecast using HTML, CSS, and Vanilla JavaScript.",
+  "description": "SkyCast is a simple and fast weather app built with HTML, CSS, and plain JavaScript. It fetches real-time weather data using the OpenWeatherMap API and displays temperature, conditions, and more in a clean UI.",
+  "deployedLink": "",
+  "GithubRepo": "https://github.com/ankitsinghrajp/Weather-App",
+  "frontend": ["HTML", "CSS", "JavaScript"],
+  "backend": [],
+  "database": [],
+  "orm": [],
+  "tools": ["Git", "GitHub", "VSCode", "OpenWeatherMap API"],
+  "deployment": ["GitHub Pages"],
+  "what": [
+    { "title": "What the project is?" },
+    {
+      "description": "SkyCast is a lightweight weather application that interacts with a public API to fetch weather data for any city entered by the user. It updates the UI dynamically with icons, temperature, and other stats."
+    }
+  ],
+  "reflection": {
+    "title": "What I Learned / Challenges",
+    "description": "Learned how to work with third-party APIs, handle JSON responses, and implement asynchronous operations using Fetch API. Faced challenges with API error handling and smooth UI updates."
+  },
+  "why": [
+    { "title": "Why I built this?" },
+    {
+      "description": "I wanted to practice API integration and build a functional UI from scratch to improve my JavaScript and DOM manipulation skills."
+    }
+  ],
+  "problem": [
+    { "title": "What problem it solves?" },
+    {
+      "description": "SkyCast provides a quick and easy way to check the weather, demonstrating how client-side apps can fetch and display external data without frameworks."
+    }
+  ],
+  "features": [
+    "Search weather by city name",
+    "Real-time temperature and weather condition",
+    "Displays humidity, wind speed, and weather icons",
+    "Handles invalid city names with error messages",
+    "Uses OpenWeatherMap API for accurate data",
+    "Async API handling with Fetch",
+    "Built without any frameworks or libraries",
+    "Fully client-side and deployable via GitHub Pages"
+  ],
+  "screenshots": [
+    "/weatherapp/1.png",
+    "/weatherapp/2.png",
+    "/weatherapp/3.png",
+    "/weatherapp/4.png",
+    "/weatherapp/5.png",
+    "/weatherapp/6.png",
+    "/weatherapp/7.png",
+    "/weatherapp/8.png",
+    "/weatherapp/9.png",
+    "/weatherapp/10.png",
+    "/weatherapp/11.png"
+  ]
+},
+{
+  "id": 8,
+  "imageUrl": "/projects/passwordmanager.jpg",
+  "title": "CipherVault - Password Manager",
+  "tagline": "Beginner-level Password Manager built using React and localStorage.",
+  "description": "CipherVault is a basic password manager made with React that stores website credentials locally using browser localStorage. Users can add, edit, and delete saved passwords with a simple interface.",
+  "deployedLink": "",
+  "GithubRepo": "https://github.com/ankitsinghrajp/Beginner-level-projects/tree/main/Ankits-Password-Manager/Ankit's-Password-Manager",
+  "frontend": ["React", "JavaScript", "CSS"],
+  "backend": [],
+  "database": [],
+  "orm": [],
+  "tools": ["Git", "GitHub", "VSCode", "localStorage"],
+  "deployment": [],
+  "what": [
+    { "title": "What the project is?" },
+    {
+      "description": "CipherVault is a React-based password manager where users can securely store login credentials for different websites. It operates entirely on the client side with data persisted in the browser's localStorage."
+    }
+  ],
+  "reflection": {
+    "title": "What I Learned / Challenges",
+    "description": "Learned how to manage local state and localStorage in React, handle form inputs, and implement CRUD operations. Faced challenges in maintaining proper state synchronization during edit and delete actions."
+  },
+  "why": [
+    { "title": "Why I built this?" },
+    {
+      "description": "I wanted to learn how to use localStorage in React and practice creating a real-world CRUD application without a backend server."
+    }
+  ],
+  "problem": [
+    { "title": "What problem it solves?" },
+    {
+      "description": "It helps users store their login information in one place on their local machine without any backend storage, useful for quick access and practicing data persistence in frontend apps."
+    }
+  ],
+  "features": [
+    "Add new website credentials (URL, username, password)",
+    "Edit saved credentials",
+    "Delete saved entries",
+    "Persistent storage using localStorage",
+    "Basic form validation",
+    "Minimal and responsive UI",
+    "Client-side only, no backend required"
+  ],
+  "screenshots": [
+    "/passwordmanager/1.png",
+    "/passwordmanager/2.png",
+    "/passwordmanager/3.png",
+    "/passwordmanager/4.png",
+    "/passwordmanager/5.png"
+  ]
+},
+{
+  "id": 9,
+  "imageUrl": "/projects/itlanding.jpg",
+  "title": "TechNova - IT Company Landing Page",
+  "tagline": "Modern IT company landing page built using HTML and Tailwind CSS.",
+  "description": "echNova is a professional IT company landing page built with HTML and Tailwind CSS, featuring sections like hero, services, about, and contact to showcase a complete business layout.",
+  "deployedLink": "",
+  "GithubRepo": "https://github.com/ankitsinghrajp/Beginner-level-projects/tree/main/IT%20Company%20UI",
+  "frontend": ["HTML", "Tailwind CSS"],
+  "backend": [],
+  "database": [],
+  "orm": [],
+  "tools": ["Git", "GitHub", "VSCode", "Tailwind CSS CDN"],
+  "deployment": [],
+  "what": [
+    { "title": "What the project is?" },
+    {
+      "description": "TechNova is a static landing page template designed for IT service companies. It was developed using HTML and Tailwind CSS, following a modern, utility-first design approach to create a visually appealing layout."
+    }
+  ],
+  "reflection": {
+    "title": "What I Learned / Challenges",
+    "description": "Improved my skills in layout structuring using Tailwind's utility classes. Learned how to implement consistent spacing, text hierarchy, and responsive-ready design patterns, even if responsiveness wasn't added yet."
+  },
+  "why": [
+    { "title": "Why I built this?" },
+    {
+      "description": "To practice building business-style UIs and explore Tailwind CSS for rapid and clean front-end development without writing custom CSS."
+    }
+  ],
+  "problem": [
+    { "title": "What problem it solves?" },
+    {
+      "description": "It serves as a presentational website for IT businesses, showcasing their services and contact details. It's also a great learning project to master Tailwind’s layout utilities and page structure design."
+    }
+  ],
+  "features": [
+    "Hero section with CTA and branding",
+    "About Us and Services layout",
+    "Contact section with form UI",
+    "Footer with company information",
+    "Modern styling using Tailwind CSS",
+    "Fast development with utility classes",
+    "Fully static with clean HTML semantics"
+  ],
+  "screenshots": [
+    "/itlanding/1.png",
+    "/itlanding/2.png",
+    "/itlanding/3.png",
+    "/itlanding/4.png",
+    "/itlanding/5.png",
+    "/itlanding/6.png",
+    "/itlanding/7.png",
+    "/itlanding/8.png",
+    "/itlanding/9.png",
+    "/itlanding/10.png",
+    "/itlanding/11.png"
+  ]
+},
+{
+  "id": 10,
+  "imageUrl": "/projects/x.jpg",
+  "title": "TweetStart - Twitter UI Clone",
+  "tagline": "Static Twitter first-page UI clone built using HTML and Tailwind CSS.",
+  "description": "TweetStart is a non-responsive clone of Twitter's first-page interface built with HTML and Tailwind CSS. It focuses on replicating the visual structure, layout, and design without interactivity or backend.",
+  "deployedLink": "",
+  "GithubRepo": "https://github.com/ankitsinghrajp/Twitter-UI-Clone",
+  "frontend": ["HTML", "Tailwind CSS"],
+  "backend": [],
+  "database": [],
+  "orm": [],
+  "tools": ["Git", "GitHub", "VSCode", "Tailwind CSS CDN"],
+  "deployment": [],
+  "what": [
+    { "title": "What the project is?" },
+    {
+      "description": "TweetStart is a static clone of Twitter’s main UI built using HTML and Tailwind CSS. It includes the sidebar, feed, and trends panel mimicking Twitter's layout, aimed at learning UI structuring."
+    }
+  ],
+  "reflection": {
+    "title": "What I Learned / Challenges",
+    "description": "Practiced layout building using Tailwind’s utility-first approach. Learned to replicate real-world designs and faced challenges with aligning elements without responsiveness."
+  },
+  "why": [
+    { "title": "Why I built this?" },
+    {
+      "description": "To improve my HTML and Tailwind CSS skills by recreating a real-world social media layout and understanding how large-scale UIs are structured."
+    }
+  ],
+  "problem": [
+    { "title": "What problem it solves?" },
+    {
+      "description": "It doesn’t solve a functional problem but serves as a great practice project for mastering layout design using Tailwind CSS and static HTML."
+    }
+  ],
+  "features": [
+    "Static layout of Twitter homepage",
+    "Left navigation bar with icons",
+    "Middle feed section with tweet cards",
+    "Right sidebar with trends",
+    "Tailwind-based utility styling",
+    "Non-responsive fixed layout",
+    "Ideal for UI structure practice"
+  ],
+  "screenshots": [
+    "/x/1.png",
+    "/x/2.png",
+    "/x/3.png",
+    "/x/4.png",
+    "/x/5.png",
+    "/x/6.png",
+    "/x/7.png"
+  ]
 }
+
+
+
+
 
 
 ]
