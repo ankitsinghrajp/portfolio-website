@@ -1,0 +1,221 @@
+[
+  {
+    "id": 1,
+    "imageUrl": "/projects/sprintboard.jpg",
+    "title": "SprintBoard",
+    "tagline": "Organize tasks. Track progress. Sprint smarter.",
+    "description": "Kanban-style task manager inspired by Jira. Organize sprints, track issues, and manage workflows with drag-and-drop boards.",
+    "deployedLink": "https://sprint-board-nine.vercel.app/",
+    "GithubRepo": "https://github.com/ankitsinghrajp/sprint-board",
+    "frontend": ["React", "Tailwind CSS", "Next.js"],
+    "backend": ["Node.js", "Next.js API Routes"],
+    "database": ["Neon (PostgreSQL)"],
+    "orm": ["Prisma"],
+    "tools": ["Git", "Github", "Postman"],
+    "deployment": ["Vercel"],
+    "what": [
+      { "title": "What the project is?" },
+      {
+        "description": "SprintBoard is a Kanban-style task management application inspired by Jira. It allows users to create projects, manage issues, assign tasks, and track progress across different stages using an intuitive drag-and-drop board interface. Built with modern frontend and backend technologies, it supports real-time updates and a clean UI for efficient team collaboration."
+      }
+    ],
+    "reflection": {
+      "title": "What I Learned / Challenges",
+      "description": "Gained hands-on experience with dynamic UI rendering and drag-and-drop interfaces . Learned how to structure scalable project boards similar to Jira. Faced challenges in maintaining consistent state across multiple boards and ensuring seamless user experience during real-time updates."
+    },
+    "why": [
+      { "title": "Why I built this?" },
+      {
+        "description": "I built SprintBoard to deepen my understanding of project management systems, drag-and-drop interfaces, and real-world use cases involving state management and dynamic UI rendering. It also helped me explore how large-scale apps like Jira structure and handle workflows in an agile environment."
+      }
+    ],
+    "problem": [
+      { "title": "What problem it solves?" },
+      {
+        "description": "SprintBoard simplifies the process of task organization, workflow visualization, and progress tracking during sprints or software development cycles. Unlike complex tools that require onboarding time, SprintBoard offers a minimal yet powerful solution that focuses on usability and clarity — making it ideal for small teams or solo developers."
+      }
+    ],
+    "features": [
+      "Drag-and-drop task management",
+      "Real-time updates across clients",
+      "User authentication and role-based access",
+      "Sprint and project creation",
+      "Issue tracking with priority levels",
+      "Comments and activity logs on tasks",
+      "Clean and responsive UI",
+      "Progress tracking with visual indicators",
+      "Task filtering by status or assignee",
+      "AI-powered career suggestions"
+    ],
+    "screenshots": [
+      "/sprintboard/1.png",
+      "/sprintboard/2.png",
+      "/sprintboard/3.png",
+      "/sprintboard/4.png",
+      "/sprintboard/5.png",
+      "/sprintboard/6.png",
+      "/sprintboard/7.png",
+      "/sprintboard/8.png",
+      "/sprintboard/9.png",
+      "/sprintboard/10.png",
+      "/sprintboard/11.png",
+      "/sprintboard/12.png"
+    ]
+  },
+  {
+    "id": 2,
+    "imageUrl": "/projects/carmarket.jpg",
+    "title": "AI Car Market",
+    "tagline": "Buy cars smartly with AI insights.",
+    "description": "An AI-powered platform to buy, sell, and compare cars smartly. Get personalized recommendations, price insights, and market trends in seconds.",
+    "deployedLink": "https://car-vision.vercel.app",
+    "GithubRepo": "https://github.com/ankitsinghrajp/car-vision",
+    "frontend": ["React", "Tailwind CSS", "Next.js"],
+    "backend": ["Node.js", "Next.js API Routes"],
+    "database": ["Neon (PostgreSQL)"],
+    "orm": ["Prisma"],
+    "tools": ["Git", "Github", "Postman"],
+    "deployment": ["Vercel"],
+    "what": [
+      { "title": "What the project is?" },
+      {
+        "description": "AI Car Market is a modern car marketplace that uses AI to provide personalized car buying and selling experiences. It enables users to view, compare, and evaluate vehicles with intelligent suggestions and pricing insights powered by data analysis."
+      }
+    ],
+    "why": [
+      { "title": "Why I built this?" },
+      {
+        "description": "I built AI Car Market to explore the application of AI in consumer decision-making and to practice building dynamic recommendation systems. It was also a great opportunity to apply UI/UX principles in a real-world product platform."
+      }
+    ],
+    "problem": [
+      { "title": "What problem it solves?" },
+      {
+        "description": "AI Car Market reduces the confusion around car buying by providing intelligent suggestions, price predictions, and market trend analysis. It helps users make informed decisions quickly without having to browse countless listings manually."
+      }
+    ],
+    "reflection": {
+  "title": "What I Learned / Challenges",
+  "description": "Improved skills in integrating AI-based recommendation engines and designing intuitive filters for car listings. Learned how to work with real-time price estimation models. Faced challenges in presenting complex data in a clean, digestible UI and ensuring consistent performance across devices."
+},
+    "features": [
+      "AI-powered car recommendations",
+      "Real-time price insights",
+      "Smart filtering and search",
+      "Responsive mobile-first UI",
+      "Quick comparison tool",
+      "Sell car with instant price estimate",
+      "Car detail pages with specs and history",
+      "Market trend analytics",
+      "User authentication system",
+      "Personalized recommendation engine"
+    ],
+    "screenshots": [
+      "/carmarket/1.png",
+      "/carmarket/2.png",
+      "/carmarket/3.png",
+      "/carmarket/4.png",
+      "/carmarket/5.png",
+      "/carmarket/6.png",
+      "/carmarket/7.png",
+      "/carmarket/8.png",
+      "/carmarket/9.png",
+      "/carmarket/10.png",
+      "/carmarket/11.png",
+      "/carmarket/12.png",
+      "/carmarket/13.png",
+      "/carmarket/14.png",
+      "/carmarket/15.png",
+      "/carmarket/16.png",
+      "/carmarket/17.png",
+      "/carmarket/18.png",
+      "/carmarket/19.png",
+      "/carmarket/20.png",
+      "/carmarket/21.png",
+      "/carmarket/22.png",
+      "/carmarket/23.png",
+      "/carmarket/24.png"
+    ]
+  },
+  {
+    "id": 3,
+    "imageUrl": "/projects/elevateai.jpg",
+    "title": "Elevate AI",
+    "tagline": "Your AI-powered career coach for job success.",
+    "description": "AI-driven career coach offering real-time industry insights, skill quizzes, and tailored resumes and cover letters to boost job readiness.",
+    "deployedLink": "https://elevate-ai-iota.vercel.app",
+    "GithubRepo": "https://github.com/ankitsinghrajp/elevate-ai",
+    "frontend": ["React", "Tailwind CSS", "Next.js"],
+    "backend": ["Node.js", "Next.js API Routes"],
+    "database": ["Neon (PostgreSQL)"],
+    "orm": ["Prisma"],
+    "tools": ["Git", "Github", "Postman"],
+    "deployment": ["Vercel"],
+    "what": [
+      { "title": "What the project is?" },
+      {
+        "description": "Elevate AI is a smart career assistant that analyzes user skills, interests, and goals to generate personalized guidance. It offers AI-generated resumes, industry trend analysis, and interactive skill assessments to improve job readiness."
+      }
+    ],
+    "why": [
+      { "title": "Why I built this?" },
+      {
+        "description": "I created Elevate AI to solve the problem of unclear career paths for students and job seekers. I wanted to build a tool that could act like a mentor, using AI to deliver real-time, personalized career growth advice."
+      }
+    ],
+    "problem": [
+      { "title": "What problem it solves?" },
+      {
+        "description": "Elevate AI helps users identify gaps in their skills and prepares them for the job market with customized resume building and industry analysis. It eliminates the need for expensive coaching or generic career advice platforms."
+      }
+    ],
+    "reflection": {
+  "title": "What I Learned / Challenges",
+  "description": "Learned how to integrate AI APIs for resume and cover letter generation. Deepened understanding of dynamic form generation and stateful components. Faced challenges in generating clean, professional PDF outputs and aligning AI-generated content with user input consistently."
+},
+    "features": [
+      "AI Resume Builder",
+      "AI-powered cover letter generator",
+      "Skill gap analysis",
+      "Tailored career suggestions",
+      "Industry trends dashboard",
+      "Interactive skill assessments",
+      "User authentication and secure profiles",
+      "Job role matching based on skills",
+      "Responsive and modern UI",
+      "Quiz-based learning modules"
+    ],
+    "screenshots": [
+      "/elevateai/1.png",
+      "/elevateai/2.png",
+      "/elevateai/3.png",
+      "/elevateai/4.png",
+      "/elevateai/5.png",
+      "/elevateai/6.png",
+      "/elevateai/7.png",
+      "/elevateai/8.png",
+      "/elevateai/9.png",
+      "/elevateai/10.png",
+      "/elevateai/11.png",
+      "/elevateai/12.png",
+      "/elevateai/13.png",
+      "/elevateai/14.png",
+      "/elevateai/15.png",
+      "/elevateai/16.png",
+      "/elevateai/17.png",
+      "/elevateai/18.png",
+      "/elevateai/19.png",
+      "/elevateai/20.png",
+      "/elevateai/21.png",
+      "/elevateai/22.png",
+      "/elevateai/23.png",
+      "/elevateai/24.png",
+      "/elevateai/25.png",
+      "/elevateai/26.png",
+      "/elevateai/27.png",
+      "/elevateai/28.png",
+      "/elevateai/29.png",
+      "/elevateai/30.png"
+    ]
+  }
+]

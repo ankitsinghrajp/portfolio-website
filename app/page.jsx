@@ -14,7 +14,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 
-import projects from "@/data/project.json";
+import projects from "@/data/top-projects.json";
 import services from "@/data/services.json";
 import {
   BadgeCheck,
@@ -37,6 +37,7 @@ import CarouselSection from "@/components/CarouselSection";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Link from "next/link";
 import MessageForm from "@/components/message-form";
+import { Badge } from "@/components/ui/badge";
 export default function HOME() {
   const iconMap = {
     ShieldCheck,
@@ -301,11 +302,18 @@ export default function HOME() {
       </div>
 
       {/* Projects */}
-      <div id="projects" className="border-dotted py-5 border-b border-gray-600">
+      <div id="projects" className="border-dotted  py-5 border-b border-gray-600">
         <div className="container mx-auto">
           <h2 className="text-4xl pt-5 text-center md:text-5xl pb-5 font-extrabold bg-gradient-to-br from-gray-900 via-slate-600 to-gray-900 dark:from-blue-500 dark:via-blue-100 dark:to-blue-400 bg-clip-text tracking-tighter text-transparent  pr-2">
             My Projects
           </h2>
+          <div className="relative mb-1">
+          <Link className="absolute top-0 right-5" href="/projects">
+          <Badge className={'py-1 dark:text-gray-300 text-gray-700  px-4'} variant={'outline'}>
+              View All
+          </Badge>
+          </Link>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-7 my-8 mx-5">
             {projects.map((project) => {
               return (
@@ -320,7 +328,7 @@ export default function HOME() {
                         <Link className="text-blue-600 underline" target="_blank" href={project.deployedLink}>Live Preview</Link>
                       </p>
                       <p className="my-2">{project.description}</p>
-                      <Link href={`/project/${project.id}`}>
+                      <Link href={`/projects/project/${project.id}`}>
                       <Button className="w-full font-bold">View Project</Button>
                       </Link>
                     </CardDescription>
