@@ -72,7 +72,7 @@ export default function HOME() {
               <div className="flex justify-center items-center">
                 <Image
                   className="rounded-full h-56 w-56"
-                  src={"/myprofile.png"}
+                  src={"/myprofile.jpeg"}
                   height={80}
                   width={80}
                   alt="profile"
