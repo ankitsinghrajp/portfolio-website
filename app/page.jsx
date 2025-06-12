@@ -71,7 +71,7 @@ export default function HOME() {
             <div className="md:w-[25%] md:hidden ">
               <div className="flex justify-center items-center">
                 <Image
-                  className="rounded-full h-60 w-60"
+                  className="rounded-full shadow-md shadow-purple-600/20 h-60 w-60"
                   src={"/myprofile.jpeg"}
                   height={800}
                   width={800}
@@ -136,7 +136,7 @@ export default function HOME() {
             <div className="md:w-[25%] md:block hidden ">
               <div className="flex items-center justify-center h-[400px]">
                 <Image
-                  className="rounded-full h-60 w-60"
+                  className="rounded-full shadow-md shadow-purple-600/20 h-60 w-60"
                   src={"/myprofile.jpeg"}
                   height={800}
                   width={800}

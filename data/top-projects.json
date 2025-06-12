@@ -62,81 +62,88 @@
       "/sprintboard/12.png"
     ]
   },
-  {
-    "id": 2,
-    "imageUrl": "/projects/carmarket.jpg",
-    "title": "AI Car Market",
-    "tagline": "Buy cars smartly with AI insights.",
-    "description": "An AI-powered platform to buy, sell, and compare cars smartly. Get personalized recommendations, price insights, and market trends in seconds.",
-    "deployedLink": "https://car-vision.vercel.app",
-    "GithubRepo": "https://github.com/ankitsinghrajp/car-vision",
-    "frontend": ["React", "Tailwind CSS", "Next.js"],
-    "backend": ["Node.js", "Next.js API Routes"],
-    "database": ["Neon (PostgreSQL)"],
-    "orm": ["Prisma"],
-    "tools": ["Git", "Github", "Postman"],
-    "deployment": ["Vercel"],
-    "what": [
-      { "title": "What the project is?" },
-      {
-        "description": "AI Car Market is a modern car marketplace that uses AI to provide personalized car buying and selling experiences. It enables users to view, compare, and evaluate vehicles with intelligent suggestions and pricing insights powered by data analysis."
-      }
-    ],
-    "why": [
-      { "title": "Why I built this?" },
-      {
-        "description": "I built AI Car Market to explore the application of AI in consumer decision-making and to practice building dynamic recommendation systems. It was also a great opportunity to apply UI/UX principles in a real-world product platform."
-      }
-    ],
-    "problem": [
-      { "title": "What problem it solves?" },
-      {
-        "description": "AI Car Market reduces the confusion around car buying by providing intelligent suggestions, price predictions, and market trend analysis. It helps users make informed decisions quickly without having to browse countless listings manually."
-      }
-    ],
-    "reflection": {
-  "title": "What I Learned / Challenges",
-  "description": "Improved skills in integrating AI-based recommendation engines and designing intuitive filters for car listings. Learned how to work with real-time price estimation models. Faced challenges in presenting complex data in a clean, digestible UI and ensuring consistent performance across devices."
-},
-    "features": [
-      "AI-powered car recommendations",
-      "Real-time price insights",
-      "Smart filtering and search",
-      "Responsive mobile-first UI",
-      "Quick comparison tool",
-      "Sell car with instant price estimate",
-      "Car detail pages with specs and history",
-      "Market trend analytics",
-      "User authentication system",
-      "Personalized recommendation engine"
-    ],
-    "screenshots": [
-      "/carmarket/1.png",
-      "/carmarket/2.png",
-      "/carmarket/3.png",
-      "/carmarket/4.png",
-      "/carmarket/5.png",
-      "/carmarket/6.png",
-      "/carmarket/7.png",
-      "/carmarket/8.png",
-      "/carmarket/9.png",
-      "/carmarket/10.png",
-      "/carmarket/11.png",
-      "/carmarket/12.png",
-      "/carmarket/13.png",
-      "/carmarket/14.png",
-      "/carmarket/15.png",
-      "/carmarket/16.png",
-      "/carmarket/17.png",
-      "/carmarket/18.png",
-      "/carmarket/19.png",
-      "/carmarket/20.png",
-      "/carmarket/21.png",
-      "/carmarket/22.png",
-      "/carmarket/23.png",
-      "/carmarket/24.png"
-    ]
+{
+  "id": 2,
+  "imageUrl": "/projects/arogya.jpg",
+  "title": "Arogya - Doctor Appointment",
+  "tagline": "Consult doctors online, anytime.",
+  "description": "Arogya is a telemedicine app for booking appointments and consulting doctors via secure video calls, with role-based access.",
+  "deployedLink": "https://arogya-doctors-appointment.vercel.app/",
+  "GithubRepo": "https://github.com/ankitsinghrajp/arogya",
+  "frontend": ["Next.js", "Tailwind CSS", "React"],
+  "backend": ["Node.js", "Next.js API Routes"],
+  "database": ["PostgreSQL (Neon)"],
+  "orm": ["Prisma"],
+  "tools": ["Git", "GitHub", "Postman", "OpenTok (for video calls)"],
+  "deployment": ["Vercel"],
+  "what": [
+    { "title": "What the project is?" },
+    {
+      "description": "Arogya is a doctor consultation app with appointment booking, video calls, and role-based access for admins, doctors, and patients."
+    }
+  ],
+  "why": [
+    { "title": "Why I built this?" },
+    {
+      "description": "To create a remote healthcare platform that’s easy to use, scalable, and improves doctor-patient access across regions."
+    }
+  ],
+  "problem": [
+    { "title": "What problem it solves?" },
+    {
+      "description": "It makes healthcare accessible from anywhere, saving time and effort for both doctors and patients."
+    }
+  ],
+  "reflection": {
+    "title": "What I Learned / Challenges",
+    "description": "Learned video API integration, secure auth, credit systems, and building responsive, role-based platforms."
   },
+  "features": [
+    "Role-based access (Admin, Doctor, Patient)",
+    "Video consultation via WebRTC (OpenTok)",
+    "Freemium model with credit usage",
+    "Doctor scheduling",
+    "Patient appointment booking",
+    "Admin dashboard",
+    "Email/in-app notifications",
+    "JWT authentication",
+    "Health history tracking",
+    "Responsive mobile-friendly UI"
+  ],
+  "screenshots": [
+    "/arogya/1.png",
+    "/arogya/2.png",
+    "/arogya/3.png",
+    "/arogya/4.png",
+    "/arogya/5.png",
+    "/arogya/6.png",
+    "/arogya/7.png",
+    "/arogya/8.png"
+  ],
+  "roles": {
+    "admin": ["Manage users", "View analytics", "Handle plans"],
+    "doctor": ["Set availability", "Consult via video", "View patient history"],
+    "patient": ["Book appointments", "Join calls", "View consultation records"]
+  },
+  "freemiumModel": {
+    "freeCredits": 2,
+    "plans": [
+      {
+        "name": "Basic Plan",
+        "price": "₹199/month",
+        "credits": 5,
+        "features": ["5 consultations", "Priority booking"]
+      },
+      {
+        "name": "Pro Plan",
+        "price": "₹499/month",
+        "credits": 15,
+        "features": ["15 consultations", "Extended access", "Support"]
+      }
+    ]
+  }
+},
+
   {
     "id": 3,
     "imageUrl": "/projects/elevateai.jpg",
