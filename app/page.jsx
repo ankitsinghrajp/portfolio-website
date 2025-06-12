@@ -71,10 +71,10 @@ export default function HOME() {
             <div className="md:w-[25%] md:hidden ">
               <div className="flex justify-center items-center">
                 <Image
-                  className="rounded-full h-56 w-56"
+                  className="rounded-full h-60 w-60"
                   src={"/myprofile.jpeg"}
-                  height={80}
-                  width={80}
+                  height={800}
+                  width={800}
                   alt="profile"
                 />
               </div>
@@ -136,10 +136,10 @@ export default function HOME() {
             <div className="md:w-[25%] md:block hidden ">
               <div className="flex items-center justify-center h-[400px]">
                 <Image
-                  className="rounded-full h-56 w-56"
+                  className="rounded-full h-60 w-60"
                   src={"/myprofile.jpeg"}
-                  height={100}
-                  width={100}
+                  height={800}
+                  width={800}
                   alt="profile"
                 />
               </div>
