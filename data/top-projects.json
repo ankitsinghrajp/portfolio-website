@@ -1,67 +1,77 @@
 [
-  {
-    "id": 1,
-    "imageUrl": "/projects/sprintboard.jpg",
-    "title": "SprintBoard",
-    "tagline": "Organize tasks. Track progress. Sprint smarter.",
-    "description": "Kanban-style task manager inspired by Jira. Organize sprints, track issues, and manage workflows with drag-and-drop boards.",
-    "deployedLink": "https://sprint-board-nine.vercel.app/",
-    "GithubRepo": "https://github.com/ankitsinghrajp/sprint-board",
-    "frontend": ["React", "Tailwind CSS", "Next.js"],
-    "backend": ["Node.js", "Next.js API Routes"],
-    "database": ["Neon (PostgreSQL)"],
-    "orm": ["Prisma"],
-    "tools": ["Git", "Github", "Postman"],
-    "deployment": ["Vercel"],
-    "what": [
-      { "title": "What the project is?" },
-      {
-        "description": "SprintBoard is a Kanban-style task management application inspired by Jira. It allows users to create projects, manage issues, assign tasks, and track progress across different stages using an intuitive drag-and-drop board interface. Built with modern frontend and backend technologies, it supports real-time updates and a clean UI for efficient team collaboration."
-      }
-    ],
-    "reflection": {
-      "title": "What I Learned / Challenges",
-      "description": "Gained hands-on experience with dynamic UI rendering and drag-and-drop interfaces . Learned how to structure scalable project boards similar to Jira. Faced challenges in maintaining consistent state across multiple boards and ensuring seamless user experience during real-time updates."
-    },
-    "why": [
-      { "title": "Why I built this?" },
-      {
-        "description": "I built SprintBoard to deepen my understanding of project management systems, drag-and-drop interfaces, and real-world use cases involving state management and dynamic UI rendering. It also helped me explore how large-scale apps like Jira structure and handle workflows in an agile environment."
-      }
-    ],
-    "problem": [
-      { "title": "What problem it solves?" },
-      {
-        "description": "SprintBoard simplifies the process of task organization, workflow visualization, and progress tracking during sprints or software development cycles. Unlike complex tools that require onboarding time, SprintBoard offers a minimal yet powerful solution that focuses on usability and clarity — making it ideal for small teams or solo developers."
-      }
-    ],
-    "features": [
-      "Drag-and-drop task management",
-      "Real-time updates across clients",
-      "User authentication and role-based access",
-      "Sprint and project creation",
-      "Issue tracking with priority levels",
-      "Comments and activity logs on tasks",
-      "Clean and responsive UI",
-      "Progress tracking with visual indicators",
-      "Task filtering by status or assignee",
-      "AI-powered career suggestions"
-    ],
-    "screenshots": [
-      "/sprintboard/1.png",
-      "/sprintboard/2.png",
-      "/sprintboard/3.png",
-      "/sprintboard/4.png",
-      "/sprintboard/5.png",
-      "/sprintboard/6.png",
-      "/sprintboard/7.png",
-      "/sprintboard/8.png",
-      "/sprintboard/9.png",
-      "/sprintboard/10.png",
-      "/sprintboard/11.png",
-      "/sprintboard/12.png"
-    ]
+   {
+  "id": 20,
+  "imageUrl": "/projects/talksphere.jpg",
+  "title": "TalkSphere - The Chat App",
+  "tagline": "Real-time conversations. Smarter connections.",
+  "description": "Real-time full-stack chat app with messaging, groups, media sharing, and friend requests — built for speed and scalability.",
+  "deployedLink": "https://chat-app-client-orpin-delta.vercel.app/",
+  "GithubRepo": "https://github.com/ankitsinghrajp/talksphere",
+  "frontend": ["React", "Redux Toolkit", "RTK Query", "Tailwind CSS", "ShadCN UI"],
+  "backend": ["Node.js", "Express.js", "Socket.io", "Multer"],
+  "database": ["MongoDB"],
+  "orm": ["Prisma"],
+  "tools": ["Git", "GitHub", "Postman", "Docker", "Render", "Cloudinary"],
+  "deployment": ["Vercel (Frontend)", "Render (Backend)"],
+  "what": [
+    { "title": "What the project is?" },
+    {
+      "description": "TalkSphere is a full-stack, production-grade chat application that enables real-time conversations with file sharing, group management, and friend request systems. It leverages WebSockets for instant updates, role-based access for group control, and efficient backend design for performance and scalability."
+    }
+  ],
+  "reflection": {
+    "title": "What I Learned / Challenges",
+    "description": "Built expertise in implementing bi-directional communication with Socket.io, managing large-scale state with Redux Toolkit, and optimizing MongoDB queries for real-time performance. Learned to design scalable backend architecture and handle complex group features like member addition/removal and admin control without breaking synchronization."
   },
+  "why": [
+    { "title": "Why I built this?" },
+    {
+      "description": "I developed TalkSphere to master real-time application architecture, WebSocket communication, and system design for chat-based platforms. It allowed me to explore efficient data flow, event-driven updates, and how production apps handle concurrency and scalability at scale."
+    }
+  ],
+  "problem": [
+    { "title": "What problem it solves?" },
+    {
+      "description": "TalkSphere simplifies modern communication by offering real-time one-on-one and group chat functionalities, complete with media sharing, role management, and instant notifications. It eliminates delays and synchronization issues common in traditional chat systems, providing a fast, interactive user experience."
+    }
+  ],
+  "features": [
+    "User authentication with JWT and secure sessions",
+    "Real-time messaging using Socket.io",
+    "Group creation, editing, and deletion with admin privileges",
+    "Add or remove group members dynamically",
+    "Send and receive images, videos, documents, and audio files",
+    "Friend request system with accept/reject workflow",
+    "Real-time dashboard with active users and message stats",
+    "Cloud storage integration via Cloudinary",
+    "Optimized backend using Prisma ORM and MongoDB",
+    "Responsive UI with Tailwind CSS and ShadCN components",
+    "Fully deployed on Render (backend) and Vercel (frontend)"
+  ],
+  "screenshots": [
+    "/talksphere/1.png",
+    "/talksphere/2.png",
+    "/talksphere/3.png",
+    "/talksphere/4.png",
+    "/talksphere/5.png",
+    "/talksphere/6.png",
+    "/talksphere/7.png",
+    "/talksphere/8.png",
+    "/talksphere/9.png",
+    "/talksphere/10.png",
+    "/talksphere/11.png",
+    "/talksphere/12.png",
+    "/talksphere/13.png",
+    "/talksphere/14.png",
+    "/talksphere/15.png",
+    "/talksphere/16.png",
+    "/talksphere/17.png",
+    "/talksphere/18.png",
+    "/talksphere/19.png",
+    "/talksphere/20.png",
+    "/talksphere/21.png"
+  ]
+},
 {
   "id": 2,
   "imageUrl": "/projects/arogya.jpg",

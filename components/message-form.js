@@ -19,7 +19,7 @@ const MessageForm = () => {
 const onsubmit = (data) => {
   const { name, email, subject, description } = data;
 
-  const mailtoLink = `mailto:ankitcreativeworks@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+  const mailtoLink = `mailto:ankitsinghchouhan682@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
     `Hi, my name is ${name} (${email}).\n\n${description}\n\nLooking forward to your response.`
   )}`;
 

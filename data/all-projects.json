@@ -1,5 +1,84 @@
 [
   {
+    "id": 20,
+    "imageUrl": "/projects/talksphere.png",
+    "title": "TalkSphere - The Chat App",
+    "tagline": "Real-time conversations. Smarter connections.",
+    "description": "Real-time full-stack chat app with messaging, groups, media sharing, and friend requests — built for speed and scalability.",
+    "deployedLink": "https://chat-app-client-orpin-delta.vercel.app/",
+    "GithubRepo": "https://github.com/ankitsinghrajp/talksphere",
+    "frontend": [
+      "React",
+      "Redux Toolkit",
+      "RTK Query",
+      "Tailwind CSS",
+      "ShadCN UI"
+    ],
+    "backend": ["Node.js", "Express.js", "Socket.io", "Multer"],
+    "database": ["MongoDB"],
+    "orm": ["Prisma"],
+    "tools": ["Git", "GitHub", "Postman", "Docker", "Render", "Cloudinary"],
+    "deployment": ["Vercel (Frontend)", "Render (Backend)"],
+    "what": [
+      { "title": "What the project is?" },
+      {
+        "description": "TalkSphere is a full-stack, production-grade chat application that enables real-time conversations with file sharing, group management, and friend request systems. It leverages WebSockets for instant updates, role-based access for group control, and efficient backend design for performance and scalability."
+      }
+    ],
+    "reflection": {
+      "title": "What I Learned / Challenges",
+      "description": "Built expertise in implementing bi-directional communication with Socket.io, managing large-scale state with Redux Toolkit, and optimizing MongoDB queries for real-time performance. Learned to design scalable backend architecture and handle complex group features like member addition/removal and admin control without breaking synchronization."
+    },
+    "why": [
+      { "title": "Why I built this?" },
+      {
+        "description": "I developed TalkSphere to master real-time application architecture, WebSocket communication, and system design for chat-based platforms. It allowed me to explore efficient data flow, event-driven updates, and how production apps handle concurrency and scalability at scale."
+      }
+    ],
+    "problem": [
+      { "title": "What problem it solves?" },
+      {
+        "description": "TalkSphere simplifies modern communication by offering real-time one-on-one and group chat functionalities, complete with media sharing, role management, and instant notifications. It eliminates delays and synchronization issues common in traditional chat systems, providing a fast, interactive user experience."
+      }
+    ],
+    "features": [
+      "User authentication with JWT and secure sessions",
+      "Real-time messaging using Socket.io",
+      "Group creation, editing, and deletion with admin privileges",
+      "Add or remove group members dynamically",
+      "Send and receive images, videos, documents, and audio files",
+      "Friend request system with accept/reject workflow",
+      "Real-time dashboard with active users and message stats",
+      "Cloud storage integration via Cloudinary",
+      "Optimized backend using Prisma ORM and MongoDB",
+      "Responsive UI with Tailwind CSS and ShadCN components",
+      "Fully deployed on Render (backend) and Vercel (frontend)"
+    ],
+    "screenshots": [
+      "/talksphere/1.png",
+      "/talksphere/2.png",
+      "/talksphere/3.png",
+      "/talksphere/4.png",
+      "/talksphere/5.png",
+      "/talksphere/6.png",
+      "/talksphere/7.png",
+      "/talksphere/8.png",
+      "/talksphere/9.png",
+      "/talksphere/10.png",
+      "/talksphere/11.png",
+      "/talksphere/12.png",
+      "/talksphere/13.png",
+      "/talksphere/14.png",
+      "/talksphere/15.png",
+      "/talksphere/16.png",
+      "/talksphere/17.png",
+      "/talksphere/18.png",
+      "/talksphere/19.png",
+      "/talksphere/20.png",
+      "/talksphere/21.png"
+    ]
+  },
+  {
     "id": 1,
     "imageUrl": "/projects/sprintboard.jpg",
     "title": "SprintBoard",
@@ -63,103 +142,111 @@
     ]
   },
   {
-  "id": 2,
-  "imageUrl": "/projects/arogya.jpg",
-  "title": "Arogya - Doctor Appointment",
-  "tagline": "Consult doctors online, anytime.",
-  "description": "Arogya is a telemedicine app for booking appointments and consulting doctors via secure video calls, with role-based access.",
-  "deployedLink": "https://arogya-doctors-appointment.vercel.app/",
-  "GithubRepo": "https://github.com/ankitsinghrajp/arogya-doctors-appointment",
-  "frontend": ["Next.js", "Tailwind CSS", "React"],
-  "backend": ["Node.js", "Next.js API Routes"],
-  "database": ["PostgreSQL (Neon)"],
-  "orm": ["Prisma"],
-  "tools": ["Git", "GitHub", "Postman", "Vonage (for video calls)"],
-  "deployment": ["Vercel"],
-  "what": [
-    { "title": "What the project is?" },
-    {
-      "description": "Arogya is a doctor consultation app with appointment booking, video calls, and role-based access for admins, doctors, and patients."
-    }
-  ],
-  "why": [
-    { "title": "Why I built this?" },
-    {
-      "description": "To create a remote healthcare platform that’s easy to use, scalable, and improves doctor-patient access across regions."
-    }
-  ],
-  "problem": [
-    { "title": "What problem it solves?" },
-    {
-      "description": "It makes healthcare accessible from anywhere, saving time and effort for both doctors and patients."
-    }
-  ],
-  "reflection": {
-    "title": "What I Learned / Challenges",
-    "description": "Learned video API integration, secure auth, credit systems, and building responsive, role-based platforms."
-  },
-  "features": [
-    "Role-based access (Admin, Doctor, Patient)",
-    "Video consultation via Vonage",
-    "Freemium model with credit usage",
-    "Doctor scheduling",
-    "Patient appointment booking",
-    "Admin dashboard",
-
-    "Responsive mobile-friendly UI"
-  ],
-  "screenshots": [
-    "/arogya/1.png",
-    "/arogya/2.png",
-    "/arogya/3.png",
-    "/arogya/4.png",
-    "/arogya/5.png",
-    "/arogya/6.png",
-    "/arogya/7.png",
-    "/arogya/8.png",
-    "/arogya/9.png",
-    "/arogya/10.png",
-    "/arogya/11.png",
-    "/arogya/12.png",
-    "/arogya/13.png",
-    "/arogya/14.png",
-    "/arogya/15.png",
-    "/arogya/16.png",
-    "/arogya/17.png",
-    "/arogya/18.png",
-    "/arogya/19.png",
-    "/arogya/20.png",
-    "/arogya/21.png",
-    "/arogya/22.png",
-    "/arogya/23.png",
-    "/arogya/24.png",
-    "/arogya/25.png",
-    "/arogya/26.png"
-  ],
-  "roles": {
-    "admin": ["Manage users", "View analytics", "Handle plans"],
-    "doctor": ["Set availability", "Consult via video", "View patient history"],
-    "patient": ["Book appointments", "Join calls", "View consultation records"]
-  },
-  "freemiumModel": {
-    "freeCredits": 2,
-    "plans": [
+    "id": 2,
+    "imageUrl": "/projects/arogya.jpg",
+    "title": "Arogya - Doctor Appointment",
+    "tagline": "Consult doctors online, anytime.",
+    "description": "Arogya is a telemedicine app for booking appointments and consulting doctors via secure video calls, with role-based access.",
+    "deployedLink": "https://arogya-doctors-appointment.vercel.app/",
+    "GithubRepo": "https://github.com/ankitsinghrajp/arogya-doctors-appointment",
+    "frontend": ["Next.js", "Tailwind CSS", "React"],
+    "backend": ["Node.js", "Next.js API Routes"],
+    "database": ["PostgreSQL (Neon)"],
+    "orm": ["Prisma"],
+    "tools": ["Git", "GitHub", "Postman", "Vonage (for video calls)"],
+    "deployment": ["Vercel"],
+    "what": [
+      { "title": "What the project is?" },
       {
-        "name": "Basic Plan",
-        "price": "$50/month",
-        "credits": 10,
-        "features": ["5 consultations", "Priority booking"]
-      },
-      {
-        "name": "Pro Plan",
-        "price": "$100/month",
-        "credits": 24,
-        "features": ["12 consultations", "Extended access", "Support"]
+        "description": "Arogya is a doctor consultation app with appointment booking, video calls, and role-based access for admins, doctors, and patients."
       }
-    ]
-  }
-},
- {
+    ],
+    "why": [
+      { "title": "Why I built this?" },
+      {
+        "description": "To create a remote healthcare platform that’s easy to use, scalable, and improves doctor-patient access across regions."
+      }
+    ],
+    "problem": [
+      { "title": "What problem it solves?" },
+      {
+        "description": "It makes healthcare accessible from anywhere, saving time and effort for both doctors and patients."
+      }
+    ],
+    "reflection": {
+      "title": "What I Learned / Challenges",
+      "description": "Learned video API integration, secure auth, credit systems, and building responsive, role-based platforms."
+    },
+    "features": [
+      "Role-based access (Admin, Doctor, Patient)",
+      "Video consultation via Vonage",
+      "Freemium model with credit usage",
+      "Doctor scheduling",
+      "Patient appointment booking",
+      "Admin dashboard",
+
+      "Responsive mobile-friendly UI"
+    ],
+    "screenshots": [
+      "/arogya/1.png",
+      "/arogya/2.png",
+      "/arogya/3.png",
+      "/arogya/4.png",
+      "/arogya/5.png",
+      "/arogya/6.png",
+      "/arogya/7.png",
+      "/arogya/8.png",
+      "/arogya/9.png",
+      "/arogya/10.png",
+      "/arogya/11.png",
+      "/arogya/12.png",
+      "/arogya/13.png",
+      "/arogya/14.png",
+      "/arogya/15.png",
+      "/arogya/16.png",
+      "/arogya/17.png",
+      "/arogya/18.png",
+      "/arogya/19.png",
+      "/arogya/20.png",
+      "/arogya/21.png",
+      "/arogya/22.png",
+      "/arogya/23.png",
+      "/arogya/24.png",
+      "/arogya/25.png",
+      "/arogya/26.png"
+    ],
+    "roles": {
+      "admin": ["Manage users", "View analytics", "Handle plans"],
+      "doctor": [
+        "Set availability",
+        "Consult via video",
+        "View patient history"
+      ],
+      "patient": [
+        "Book appointments",
+        "Join calls",
+        "View consultation records"
+      ]
+    },
+    "freemiumModel": {
+      "freeCredits": 2,
+      "plans": [
+        {
+          "name": "Basic Plan",
+          "price": "$50/month",
+          "credits": 10,
+          "features": ["5 consultations", "Priority booking"]
+        },
+        {
+          "name": "Pro Plan",
+          "price": "$100/month",
+          "credits": 24,
+          "features": ["12 consultations", "Extended access", "Support"]
+        }
+      ]
+    }
+  },
+  {
     "id": 3,
     "imageUrl": "/projects/elevateai.jpg",
     "title": "Elevate AI",
@@ -192,9 +279,9 @@
       }
     ],
     "reflection": {
-  "title": "What I Learned / Challenges",
-  "description": "Learned how to integrate AI APIs for resume and cover letter generation. Deepened understanding of dynamic form generation and stateful components. Faced challenges in generating clean, professional PDF outputs and aligning AI-generated content with user input consistently."
-},
+      "title": "What I Learned / Challenges",
+      "description": "Learned how to integrate AI APIs for resume and cover letter generation. Deepened understanding of dynamic form generation and stateful components. Faced challenges in generating clean, professional PDF outputs and aligning AI-generated content with user input consistently."
+    },
     "features": [
       "AI Resume Builder",
       "AI-powered cover letter generator",
@@ -241,6 +328,479 @@
     ]
   },
   {
+    "id": 21,
+    "imageUrl": "/projects/clickstaracademy.png",
+    "title": "Click Star International",
+    "tagline": "Client project: React-based animated website for a makeup academy.",
+    "description": "Built during internship for Click Star International Makeup Academy with responsive design, smooth animations, and course listings.",
+    "deployedLink": "https://clickstarinternational.com/",
+    "GithubRepo": "https://github.com/ankitsinghrajp/clickStartAcademy",
+    "frontend": ["React", "Framer Motion", "CSS3", "JavaScript"],
+    "backend": ["Static Frontend (No Dedicated Backend)"],
+    "database": ["None"],
+    "orm": ["None"],
+    "tools": ["Git", "GitHub", "VS Code", "Figma"],
+    "deployment": ["cPanel"],
+    "what": [
+      { "title": "What the project is?" },
+      {
+        "description": "Click Star International is a React-based, fully responsive website created for a professional makeup academy. It highlights course offerings, trainer portfolios, student galleries, and contact details using an engaging design and fluid animations."
+      }
+    ],
+    "why": [
+      { "title": "Why I built this?" },
+      {
+        "description": "Developed as part of my internship to deliver a production-grade web solution for a client. The goal was to design a modern, visually appealing website to improve online reach and lead generation for the academy."
+      }
+    ],
+    "problem": [
+      { "title": "What problem it solves?" },
+      {
+        "description": "Before this website, the client lacked a digital platform to attract new students and showcase their work. The new site improved visibility, streamlined course inquiries, and built credibility through a modern, interactive UI."
+      }
+    ],
+    "reflection": {
+      "title": "What I Learned / Challenges",
+      "description": "Gained hands-on experience working with real clients during my internship. Learned project requirement gathering, responsive UI design, and performance optimization for animation-heavy websites. Understood deployment workflows via cPanel for React apps."
+    },
+    "features": [
+      "Developed as part of internship for a real client",
+      "React single-page architecture",
+      "Framer Motion-powered animations and transitions",
+      "Responsive design for mobile and desktop users",
+      "Course catalog and trainer profiles",
+      "Contact and enquiry integration",
+      "SEO-friendly structure with meta optimization",
+      "Deployed on client’s cPanel hosting"
+    ],
+    "screenshots": [
+      "/clickstar/1.png",
+      "/clickstar/2.png",
+      "/clickstar/3.png",
+      "/clickstar/4.png",
+      "/clickstar/5.png",
+      "/clickstar/6.png",
+      "/clickstar/7.png",
+      "/clickstar/8.png",
+      "/clickstar/9.png",
+      "/clickstar/10.png",
+      "/clickstar/11.png",
+      "/clickstar/12.png",
+      "/clickstar/13.png",
+      "/clickstar/14.png",
+      "/clickstar/15.png",
+      "/clickstar/16.png",
+      "/clickstar/17.png",
+      "/clickstar/18.png"
+    ]
+  },
+
+  {
+    "id": 22,
+    "imageUrl": "/projects/pacificdental.png",
+    "title": "Pacific Dental",
+    "tagline": "Client project: Dynamic website for dental equipment sales.",
+    "description": "A dynamic React & PHP website built during internship for Pacific Dental, featuring product catalog, admin-managed inventory, responsive design, and smooth UX for equipment sales.",
+    "deployedLink": "https://thepacificdental.com",
+    "GithubRepo": "https://github.com/ankitsinghrajp/Dental-Website",
+    "frontend": ["React", "CSS3", "JavaScript"],
+    "backend": ["PHP"],
+    "database": ["MySQL (phpMyAdmin)"],
+    "orm": ["None"],
+    "tools": ["Git", "GitHub", "VS Code", "Figma"],
+    "deployment": ["cPanel"],
+    "what": [
+      { "title": "What the project is?" },
+      {
+        "description": "Pacific Dental is a fully dynamic website for a dental equipment supplier. It allows admin to manage inventory, update products, and handle sales information, while customers can browse products, view details, and contact the company for orders."
+      }
+    ],
+    "why": [
+      { "title": "Why I built this?" },
+      {
+        "description": "Developed as part of internship to deliver a client-ready, scalable website that allows dynamic product management and provides a seamless shopping experience for dental equipment buyers."
+      }
+    ],
+    "problem": [
+      { "title": "What problem it solves?" },
+      {
+        "description": "Before this website, the client had no digital platform for sales and product management. This solution provides a centralized system to showcase products, manage inventory, and handle customer inquiries efficiently."
+      }
+    ],
+    "reflection": {
+      "title": "What I Learned / Challenges",
+      "description": "Learned to integrate React frontend with PHP backend and MySQL database. Gained experience in building admin dashboards for dynamic content management. Faced challenges in ensuring seamless data synchronization and responsive design across devices."
+    },
+    "features": [
+      "Dynamic product catalog with admin control",
+      "Inventory management through PHP backend",
+      "React frontend for responsive user experience",
+      "Product details and contact forms",
+      "Admin dashboard for managing products and orders",
+      "Fully responsive across devices",
+      "SEO-friendly structure",
+      "Deployed on cPanel"
+    ],
+    "screenshots": [
+      "/pacificdental/1.png",
+      "/pacificdental/2.png",
+      "/pacificdental/3.png",
+      "/pacificdental/4.png",
+      "/pacificdental/5.png",
+      "/pacificdental/6.png",
+      "/pacificdental/7.png",
+      "/pacificdental/8.png",
+      "/pacificdental/9.png",
+      "/pacificdental/10.png",
+      "/pacificdental/11.png",
+      "/pacificdental/12.png",
+      "/pacificdental/13.png",
+      "/pacificdental/14.png",
+      "/pacificdental/15.png",
+      "/pacificdental/16.png",
+      "/pacificdental/17.png",
+      "/pacificdental/18.png",
+      "/pacificdental/19.png",
+      "/pacificdental/20.png",
+      "/pacificdental/21.png",
+      "/pacificdental/22.png",
+      "/pacificdental/23.png",
+      "/pacificdental/24.png",
+      "/pacificdental/25.png",
+      "/pacificdental/26.png",
+      "/pacificdental/27.png",
+      "/pacificdental/28.png",
+      "/pacificdental/29.png"
+    ]
+  },
+
+  {
+  "id": 23,
+  "imageUrl": "/projects/painterbabu.png",
+  "title": "Painter Babu",
+  "tagline": "Client project: Static website for professional painting services.",
+  "description": "Built during internship: React static website for Painter Babu showcasing multi-city painting services, EMI options, and WhatsApp ordering.",
+  "deployedLink": "https://painterbabu.co.in",
+  "GithubRepo": "https://github.com/ankitsinghrajp/Painter-Babu",
+  "frontend": ["React", "CSS3", "JavaScript"],
+  "backend": ["Static Frontend (No Backend)"],
+  "database": ["None"],
+  "orm": ["None"],
+  "tools": ["Git", "GitHub", "VS Code", "Figma"],
+  "deployment": ["cPanel"],
+  "what": [
+    { "title": "What the project is?" },
+    {
+      "description": "Painter Babu is a professional painting services website that allows users to view services, explore city-wise offerings, learn about EMI options, and contact the company directly via WhatsApp for inquiries or bookings."
+    }
+  ],
+  "why": [
+    { "title": "Why I built this?" },
+    {
+      "description": "Developed as part of my internship to provide the client with a professional digital presence, helping them showcase services, attract new customers, and simplify bookings and consultations."
+    }
+  ],
+  "problem": [
+    { "title": "What problem it solves?" },
+    {
+      "description": "Before this website, the client lacked an organized online presence to showcase city-wise services and connect with customers. This site centralizes service info, EMI details, and allows instant communication via WhatsApp."
+    }
+  ],
+  "reflection": {
+    "title": "What I Learned / Challenges",
+    "description": "Learned to create responsive static websites for multiple service locations, integrate WhatsApp communication links, and deploy production-ready React websites via cPanel. Faced challenges in designing a clean UI to highlight services and cities effectively."
+  },
+  "features": [
+    "Static React website for a real client",
+    "Showcases painting services across multiple cities: Pune, Mumbai, Kolkata, Hyderabad, Vizag, Bangalore, Indore, Raipur",
+    "EMI options and service info display",
+    "WhatsApp integration for direct client communication",
+    "Responsive layout for desktop and mobile",
+    "SEO-friendly pages and fast loading",
+    "Deployed via cPanel"
+  ],
+  "screenshots": [
+    "/painterbabu/1.png",
+    "/painterbabu/2.png",
+    "/painterbabu/3.png",
+    "/painterbabu/4.png",
+    "/painterbabu/5.png",
+    "/painterbabu/6.png",
+    "/painterbabu/7.png",
+    "/painterbabu/8.png",
+    "/painterbabu/9.png",
+    "/painterbabu/10.png",
+    "/painterbabu/11.png",
+    "/painterbabu/12.png",
+    "/painterbabu/13.png",
+    "/painterbabu/14.png",
+    "/painterbabu/15.png",
+    "/painterbabu/16.png",
+    "/painterbabu/17.png",
+    "/painterbabu/18.png",
+    "/painterbabu/19.png",
+    "/painterbabu/20.png",
+    "/painterbabu/21.png",
+    "/painterbabu/22.png",
+    "/painterbabu/23.png",
+    "/painterbabu/24.png",
+    "/painterbabu/25.png",
+    "/painterbabu/26.png",
+    "/painterbabu/27.png",
+    "/painterbabu/28.png"
+
+  ]
+  },
+  {
+  "id": 24,
+  "imageUrl": "/projects/ecommerce.png",
+  "title": "Full-Stack E-Commerce Platform",
+  "tagline": "Client project: React + PHP full-stack e-commerce website with admin and user management.",
+  "description": "Built during internship: full-stack React + PHP e-commerce site with user/admin login, product management, cart, checkout, and COD.",
+  "deployedLink": "",
+  "GithubRepo": "https://github.com/ankitsinghrajp/Ecommerce-Website",
+  "frontend": ["React", "CSS3", "JavaScript"],
+  "backend": ["PHP"],
+  "database": ["MySQL (phpMyAdmin)"],
+  "orm": ["None"],
+  "tools": ["Git", "GitHub", "VS Code", "Figma"],
+  "deployment": ["cPanel"],
+  "what": [
+    { "title": "What the project is?" },
+    {
+      "description": "A full-stack e-commerce platform for a client built during internship. Users can browse products, add to cart, checkout with cash on delivery, and track orders. Admins can manage products, orders, and view product stats via a dashboard."
+    }
+  ],
+  "why": [
+    { "title": "Why I built this?" },
+    {
+      "description": "Developed to provide a client-ready, fully functional e-commerce solution, gain hands-on experience with full-stack development, and manage dynamic content and admin workflows for real-world applications."
+    }
+  ],
+  "problem": [
+    { "title": "What problem it solves?" },
+    {
+      "description": "Enables the client to sell products online efficiently, manage inventory and orders, and provide users a smooth shopping experience, while giving admins full control over products and analytics."
+    }
+  ],
+  "reflection": {
+    "title": "What I Learned / Challenges",
+    "description": "Gained experience integrating React frontend with PHP backend and MySQL database. Learned to build admin dashboards, implement secure authentication for users and admins, manage dynamic data, and handle checkout logic including cash on delivery. Overcame challenges in state management, order processing, and responsive design."
+  },
+  "features": [
+    "User login and admin login",
+    "Admin dashboard for product, category, and order management",
+    "Add, update, delete products dynamically",
+    "View product stats and order details",
+    "User product browsing and search by categories",
+    "Add to cart and checkout with cash on delivery",
+    "Responsive design across devices",
+    "Deployment via cPanel"
+  ],
+  "screenshots": [
+    "/ecommerce/1.png",
+    "/ecommerce/2.png",
+    "/ecommerce/3.png",
+    "/ecommerce/4.png",
+    "/ecommerce/5.png",
+    "/ecommerce/6.png",
+    "/ecommerce/7.png",
+    "/ecommerce/8.png",
+    "/ecommerce/9.png",
+    "/ecommerce/10.png",
+    "/ecommerce/11.png",
+    "/ecommerce/12.png",
+    "/ecommerce/13.png",
+    "/ecommerce/14.png",
+    "/ecommerce/15.png",
+    "/ecommerce/16.png",
+    "/ecommerce/17.png",
+    "/ecommerce/18.png",
+    "/ecommerce/19.png",
+    "/ecommerce/20.png",
+    "/ecommerce/21.png",
+    "/ecommerce/22.png",
+    "/ecommerce/23.png",
+    "/ecommerce/24.png",
+    "/ecommerce/25.png",
+    "/ecommerce/26.png",
+    "/ecommerce/27.png",
+    "/ecommerce/28.png",
+    "/ecommerce/29.png",
+    "/ecommerce/30.png",
+    "/ecommerce/31.png",
+    "/ecommerce/32.png",
+    "/ecommerce/33.png",
+    "/ecommerce/34.png",
+    "/ecommerce/35.png",
+    "/ecommerce/36.png",
+    "/ecommerce/37.png",
+    "/ecommerce/38.png",
+    "/ecommerce/39.png"
+  ]
+},
+{
+  "id": 25,
+  "imageUrl": "/projects/macb.png",
+  "title": "MACB International",
+  "tagline": "Client project: Multi-page React website for a makeup academy with animated UI.",
+  "description": "Built during internship: React multi-page website for MACB International with visually appealing UI and Framer Motion animations.",
+  "deployedLink": "",
+  "GithubRepo": "https://github.com/ankitsinghrajp/macb-international-website",
+  "frontend": ["React", "Framer Motion", "CSS3", "JavaScript"],
+  "backend": ["Static Frontend (No Backend)"],
+  "database": ["None"],
+  "orm": ["None"],
+  "tools": ["Git", "GitHub", "VS Code", "Figma"],
+  "deployment": ["cPanel"],
+  "what": [
+    { "title": "What the project is?" },
+    {
+      "description": "MACB International is a multi-page static React website for a makeup academy. It showcases courses, trainer profiles, student work, and contact options, with visually appealing UI and smooth Framer Motion animations for enhanced user experience."
+    }
+  ],
+  "why": [
+    { "title": "Why I built this?" },
+    {
+      "description": "Developed as part of internship to provide a visually stunning, interactive web presence for the client, demonstrating modern frontend skills and creating a user-friendly experience for prospective students."
+    }
+  ],
+  "problem": [
+    { "title": "What problem it solves?" },
+    {
+      "description": "Before this website, the client had no engaging online platform to showcase courses and student portfolios. The website improves online visibility, highlights services effectively, and allows users to navigate courses and contact the academy easily."
+    }
+  ],
+  "reflection": {
+    "title": "What I Learned / Challenges",
+    "description": "Gained experience in building multi-page React websites with Framer Motion animations. Learned to structure complex static projects, maintain consistency in UI, and optimize performance for visually intensive pages."
+  },
+  "features": [
+    "Multi-page static React website",
+    "Framer Motion animations for smooth transitions",
+    "Visually appealing, user-friendly UI",
+    "Course catalog and trainer profiles",
+    "Student portfolio showcase",
+    "Contact and inquiry forms",
+    "Responsive design for desktop and mobile",
+    "Deployed via cPanel"
+  ],
+  "screenshots": [
+    "/macbinternational/1.png",
+    "/macbinternational/2.png",
+    "/macbinternational/3.png",
+    "/macbinternational/4.png",
+    "/macbinternational/5.png",
+    "/macbinternational/6.png",
+    "/macbinternational/7.png",
+    "/macbinternational/8.png",
+    "/macbinternational/9.png",
+    "/macbinternational/10.png",
+    "/macbinternational/11.png",
+    "/macbinternational/12.png",
+    "/macbinternational/13.png",
+    "/macbinternational/14.png",
+    "/macbinternational/15.png",
+    "/macbinternational/16.png",
+    "/macbinternational/17.png",
+    "/macbinternational/18.png",
+    "/macbinternational/19.png",
+    "/macbinternational/20.png",
+    "/macbinternational/21.png",
+    "/macbinternational/22.png",
+    "/macbinternational/23.png",
+    "/macbinternational/24.png",
+    "/macbinternational/25.png",
+    "/macbinternational/26.png",
+    "/macbinternational/27.png",
+    "/macbinternational/28.png",
+    "/macbinternational/29.png",
+    "/macbinternational/30.png",
+    "/macbinternational/31.png",
+    "/macbinternational/32.png",
+    "/macbinternational/33.png"
+  ]
+},
+{
+  "id": 26,
+  "imageUrl": "/projects/unboxxit.png",
+  "title": "Unboxxit Paint Store",
+  "tagline": "Shop paints from top brands easily.",
+  "description": "Built during internship: React e-commerce site for Unboxxit, selling paints from top brands with WhatsApp checkout and a modern UI.",
+  "deployedLink": "",
+  "GithubRepo": "https://github.com/ankitsinghrajp/paint-seller-website",
+  "frontend": ["React", "Tailwind CSS", "Framer Motion"],
+  "backend": ["PHP (for integration)", "WhatsApp API"],
+  "database": ["MySQL"],
+  "tools": ["Git", "GitHub", "Figma", "Postman"],
+  "deployment": ["cPanel"],
+  "what": [
+    { "title": "What the project is?" },
+    {
+      "description": "Unboxxit is an online e-commerce platform for buying paints from major brands. Users can browse categories, view product details, select colors, and place orders directly through WhatsApp."
+    }
+  ],
+  "why": [
+    { "title": "Why I built this?" },
+    {
+      "description": "Developed during my internship for a real client to simplify paint shopping by creating a modern e-commerce experience with WhatsApp-based order management."
+    }
+  ],
+  "problem": [
+    { "title": "What problem it solves?" },
+    {
+      "description": "Unboxxit makes it easier for customers to explore paints from multiple brands in one place and order directly without complex forms or lengthy checkout processes."
+    }
+  ],
+  "reflection": {
+    "title": "What I Learned / Challenges",
+    "description": "Enhanced my skills in creating dynamic e-commerce UIs with React and Tailwind, integrating WhatsApp checkout flow, and improving multi-brand product performance optimization."
+  },
+  "features": [
+    "Multi-brand paint catalog (Asian, Berger, Nerolac, etc.)",
+    "Add to cart and WhatsApp checkout",
+    "Responsive, modern UI design",
+    "Brand and color-based product filtering",
+    "Smooth animations using Framer Motion",
+    "Dynamic catalog rendering",
+    "Internship-based real client project"
+  ],
+  "screenshots": [
+    "/unboxxit/1.png",
+    "/unboxxit/2.png",
+    "/unboxxit/3.png",
+    "/unboxxit/4.png",
+    "/unboxxit/5.png",
+    "/unboxxit/6.png",
+    "/unboxxit/7.png",
+    "/unboxxit/8.png",
+    "/unboxxit/9.png",
+    "/unboxxit/10.png",
+    "/unboxxit/11.png",
+    "/unboxxit/12.png",
+    "/unboxxit/13.png",
+    "/unboxxit/14.png",
+    "/unboxxit/15.png",
+    "/unboxxit/16.png",
+    "/unboxxit/17.png",
+    "/unboxxit/18.png",
+    "/unboxxit/19.png",
+    "/unboxxit/20.png",
+    "/unboxxit/21.png",
+    "/unboxxit/22.png",
+    "/unboxxit/23.png",
+    "/unboxxit/24.png",
+    "/unboxxit/25.png",
+    "/unboxxit/26.png",
+    "/unboxxit/27.png",
+    "/unboxxit/28.png",
+    "/unboxxit/29.png",
+    "/unboxxit/30.png",
+    "/unboxxit/31.png"
+  ]
+},
+
+  {
     "id": 4,
     "imageUrl": "/projects/carmarket.jpg",
     "title": "AI Car Market",
@@ -273,9 +833,9 @@
       }
     ],
     "reflection": {
-  "title": "What I Learned / Challenges",
-  "description": "Improved skills in integrating AI-based recommendation engines and designing intuitive filters for car listings. Learned how to work with real-time price estimation models. Faced challenges in presenting complex data in a clean, digestible UI and ensuring consistent performance across devices."
-},
+      "title": "What I Learned / Challenges",
+      "description": "Improved skills in integrating AI-based recommendation engines and designing intuitive filters for car listings. Learned how to work with real-time price estimation models. Faced challenges in presenting complex data in a clean, digestible UI and ensuring consistent performance across devices."
+    },
     "features": [
       "AI-powered car recommendations",
       "Real-time price insights",
@@ -315,450 +875,459 @@
       "/carmarket/24.png"
     ]
   },
- 
-    {
-  "id": 5,
-  "imageUrl": "/projects/aifinance.jpg",
-  "title": "AI Finance Platform",
-  "tagline": "Track smarter. Spend better. Powered by AI.",
-  "description": "An AI-powered personal finance platform that helps users manage expenses, set budgets, get automated insights, and add transactions with ease via receipt scanning.",
-  "deployedLink": "https://ai-finance-management-seven.vercel.app/",
-  "GithubRepo": "https://github.com/ankitsinghrajp/ai-finance-management",
-  "frontend": ["React", "Tailwind CSS", "Next.js"],
-  "backend": ["Node.js", "Next.js API Routes"],
-  "database": ["PostgreSQL"],
-  "orm": ["Prisma"],
-  "tools": ["Git", "Github", "Postman", "Google Generative AI", "Inngest"],
-  "deployment": ["Vercel"],
-  "what": [
-    { "title": "What the project is?" },
-    {
-      "description": "AI Finance Platform is a modern personal finance management tool with AI features. It enables users to track expenses, add transactions, scan receipts, set recurring payments, and receive AI-generated reports with insights into their financial health. The system also alerts users every 6 hours if they are exceeding their budgets."
-    }
-  ],
-  "reflection": {
-    "title": "What I Learned / Challenges",
-    "description": "Learned how to integrate AI into financial workflows using Google Generative AI and automate tasks via Inngest cron functions. Faced challenges in handling OCR data from receipt images, generating insightful summaries, and managing recurring transaction logic effectively."
-  },
-  "why": [
-    { "title": "Why I built this?" },
-    {
-      "description": "I built this project to combine my interest in finance and artificial intelligence. It was an opportunity to explore OCR-based automation, AI insight generation, and event-driven backend logic for alerting and reporting. The project also serves as a demonstration of real-world AI utility in personal productivity apps."
-    }
-  ],
-  "problem": [
-    { "title": "What problem it solves?" },
-    {
-      "description": "It helps users maintain financial discipline by tracking all expenses, setting clear budgets, and automatically generating insights. The AI-powered receipt scanner reduces manual data entry, while the budget alerts ensure proactive financial control without needing to constantly check the app."
-    }
-  ],
-  "features": [
-    "Add income and expense transactions",
-    "Recurring transaction support",
-    "Budget setting and tracking",
-    "AI-generated monthly expense reports",
-    "Scheduled email alerts every 6 hours if budget is low",
-    "AI receipt scanner to auto-add transactions",
-    "Dashboard for insights and expense categories",
-    "Secure authentication",
-    "Responsive and user-friendly UI"
-  ],
-  "screenshots": [
-    "/aifinance/1.png",
-    "/aifinance/2.png",
-    "/aifinance/3.png",
-    "/aifinance/4.png",
-    "/aifinance/5.png",
-    "/aifinance/6.png",
-    "/aifinance/7.png",
-    "/aifinance/8.png",
-    "/aifinance/9.png",
-    "/aifinance/10.png",
-    "/aifinance/11.png",
-    "/aifinance/12.png",
-    "/aifinance/13.png",
-    "/aifinance/14.png",
-    "/aifinance/15.png",
-    "/aifinance/16.png",
-    "/aifinance/17.png",
-    "/aifinance/18.png",
-    "/aifinance/19.png",
-    "/aifinance/20.png",
-    "/aifinance/21.png",
-    "/aifinance/22.png",
-    "/aifinance/23.png",
-    "/aifinance/24.png",
-    "/aifinance/25.png",
-    "/aifinance/26.png",
-    "/aifinance/27.png",
-    "/aifinance/28.png",
-    "/aifinance/29.png",
-    "/aifinance/30.png",
-    "/aifinance/31.png",
-    "/aifinance/32.png",
-    "/aifinance/33.png",
-    "/aifinance/34.png",
-    "/aifinance/35.png",
-    "/aifinance/36.png",
-    "/aifinance/37.png",
-    "/aifinance/38.png",
-    "/aifinance/39.png",
-    "/aifinance/40.png",
-    "/aifinance/41.png"
-  ]
+
+  {
+    "id": 5,
+    "imageUrl": "/projects/aifinance.jpg",
+    "title": "AI Finance Platform",
+    "tagline": "Track smarter. Spend better. Powered by AI.",
+    "description": "An AI-powered personal finance platform that helps users manage expenses, set budgets, get automated insights, and add transactions with ease via receipt scanning.",
+    "deployedLink": "https://ai-finance-management-seven.vercel.app/",
+    "GithubRepo": "https://github.com/ankitsinghrajp/ai-finance-management",
+    "frontend": ["React", "Tailwind CSS", "Next.js"],
+    "backend": ["Node.js", "Next.js API Routes"],
+    "database": ["PostgreSQL"],
+    "orm": ["Prisma"],
+    "tools": ["Git", "Github", "Postman", "Google Generative AI", "Inngest"],
+    "deployment": ["Vercel"],
+    "what": [
+      { "title": "What the project is?" },
+      {
+        "description": "AI Finance Platform is a modern personal finance management tool with AI features. It enables users to track expenses, add transactions, scan receipts, set recurring payments, and receive AI-generated reports with insights into their financial health. The system also alerts users every 6 hours if they are exceeding their budgets."
+      }
+    ],
+    "reflection": {
+      "title": "What I Learned / Challenges",
+      "description": "Learned how to integrate AI into financial workflows using Google Generative AI and automate tasks via Inngest cron functions. Faced challenges in handling OCR data from receipt images, generating insightful summaries, and managing recurring transaction logic effectively."
     },
-{
-  "id": 6,
-  "imageUrl": "/projects/authApp.jpg",
-  "title": "SecureAuth",
-  "tagline": "Robust Authentication with JWT, Passport.js & Secure Email Flows.",
-  "description": "A production-ready authentication app built with Express.js and Next.js. It includes user registration, login, email verification, password reset, and secure access using JWT and Passport.js.",
-  "deployedLink": "",
-  "GithubRepo": "https://github.com/ankitsinghrajp/Complete-Authentication-Nextjs",
-  "frontend": ["Next.js", "Tailwind CSS", "React"],
-  "backend": ["Node.js", "Express.js"],
-  "database": ["MongoDB"],
-  "orm": ["Mongoose"],
-  "tools": ["Postman", "Git", "GitHub", "Nodemailer", "Bcrypt", "JWT", "Passport.js"],
-  "deployment": ["Vercel"],
-  "what": [
-    { "title": "What the project is?" },
-    {
-      "description": "SecureAuth is a modern authentication system supporting features like email/password login, email verification, password reset, and JWT-based session handling. It uses Passport.js for strategy-based authentication and JWT for token management."
-    }
-  ],
-  "reflection": {
-    "title": "What I Learned / Challenges",
-    "description": "Learned how to integrate Passport.js with Express and JWT, and handle custom strategies. Managed secure storage of refresh tokens, handled edge cases like token expiration, and created a seamless client-server auth experience."
+    "why": [
+      { "title": "Why I built this?" },
+      {
+        "description": "I built this project to combine my interest in finance and artificial intelligence. It was an opportunity to explore OCR-based automation, AI insight generation, and event-driven backend logic for alerting and reporting. The project also serves as a demonstration of real-world AI utility in personal productivity apps."
+      }
+    ],
+    "problem": [
+      { "title": "What problem it solves?" },
+      {
+        "description": "It helps users maintain financial discipline by tracking all expenses, setting clear budgets, and automatically generating insights. The AI-powered receipt scanner reduces manual data entry, while the budget alerts ensure proactive financial control without needing to constantly check the app."
+      }
+    ],
+    "features": [
+      "Add income and expense transactions",
+      "Recurring transaction support",
+      "Budget setting and tracking",
+      "AI-generated monthly expense reports",
+      "Scheduled email alerts every 6 hours if budget is low",
+      "AI receipt scanner to auto-add transactions",
+      "Dashboard for insights and expense categories",
+      "Secure authentication",
+      "Responsive and user-friendly UI"
+    ],
+    "screenshots": [
+      "/aifinance/1.png",
+      "/aifinance/2.png",
+      "/aifinance/3.png",
+      "/aifinance/4.png",
+      "/aifinance/5.png",
+      "/aifinance/6.png",
+      "/aifinance/7.png",
+      "/aifinance/8.png",
+      "/aifinance/9.png",
+      "/aifinance/10.png",
+      "/aifinance/11.png",
+      "/aifinance/12.png",
+      "/aifinance/13.png",
+      "/aifinance/14.png",
+      "/aifinance/15.png",
+      "/aifinance/16.png",
+      "/aifinance/17.png",
+      "/aifinance/18.png",
+      "/aifinance/19.png",
+      "/aifinance/20.png",
+      "/aifinance/21.png",
+      "/aifinance/22.png",
+      "/aifinance/23.png",
+      "/aifinance/24.png",
+      "/aifinance/25.png",
+      "/aifinance/26.png",
+      "/aifinance/27.png",
+      "/aifinance/28.png",
+      "/aifinance/29.png",
+      "/aifinance/30.png",
+      "/aifinance/31.png",
+      "/aifinance/32.png",
+      "/aifinance/33.png",
+      "/aifinance/34.png",
+      "/aifinance/35.png",
+      "/aifinance/36.png",
+      "/aifinance/37.png",
+      "/aifinance/38.png",
+      "/aifinance/39.png",
+      "/aifinance/40.png",
+      "/aifinance/41.png"
+    ]
   },
-  "why": [
-    { "title": "Why I built this?" },
-    {
-      "description": "I built SecureAuth to deepen my understanding of Passport.js, JWT, and secure email-based flows. It also served as a base project to implement real-world authentication logic and improve backend/frontend auth syncing."
-    }
-  ],
-  "problem": [
-    { "title": "What problem it solves?" },
-    {
-      "description": "SecureAuth provides a clean, secure, and ready-to-use authentication system. It removes the need to repeatedly build boilerplate auth logic and ensures a scalable structure with JWT and Passport.js for access control."
-    }
-  ],
-  "features": [
-    "User registration and login",
-    "JWT-based access and refresh tokens",
-    "Email verification with token",
-    "Forgot and reset password flow",
-    "Passport.js for strategy-based auth",
-    "Bcrypt for password hashing",
-    "Token expiration & refresh handling",
-    "Secure session persistence",
-    "Responsive UI built with Tailwind CSS",
-    "API tested using Postman"
-  ],
-  "screenshots": [
-    "/authapp/1.png",
-    "/authapp/2.png",
-    "/authapp/3.png",
-    "/authapp/4.png",
-    "/authapp/5.png",
-    "/authapp/6.png",
-    "/authapp/7.png",
-    "/authapp/8.png",
-    "/authapp/9.png",
-    "/authapp/10.png",
-    "/authapp/11.png",
-    "/authapp/12.png",
-    "/authapp/13.png",
-    "/authapp/14.png",
-    "/authapp/15.png",
-    "/authapp/16.png",
-    "/authapp/17.png",
-    "/authapp/18.png",
-    "/authapp/19.png",
-    "/authapp/20.png"
-  ]
-},
-{
-  "id": 7,
-  "imageUrl": "/projects/tracknode.jpg",
-  "title": "TrackNode - Music Player",
-  "tagline": "Sleek and Minimal Music Player using HTML, Tailwind CSS, and Vanilla JavaScript.",
-  "description": "TrackNode is a lightweight and responsive music player built entirely with HTML, Tailwind CSS, and plain JavaScript. It supports essential features like play/pause, next/prev, seek, volume control, and displays song metadata dynamically.",
-  "deployedLink": "",
-  "GithubRepo": "https://github.com/ankitsinghrajp/Best-Music-Player",
-  "frontend": ["HTML", "Tailwind CSS", "JavaScript"],
-  "backend": [],
-  "database": [],
-  "orm": [],
-  "tools": ["Git", "GitHub", "VSCode"],
-  "deployment": ["GitHub Pages"],
-  "what": [
-    { "title": "What the project is?" },
-    {
-      "description": "TrackNode is a custom music player UI with functional audio controls. It showcases dynamic rendering of song details, playlist looping, progress tracking, and responsive design—all without any external frameworks."
-    }
-  ],
-  "reflection": {
-    "title": "What I Learned / Challenges",
-    "description": "Improved my understanding of the HTML5 <audio> API, dynamic DOM manipulation, and responsive layouts with Tailwind CSS. Faced challenges in syncing UI updates with audio events like timeupdate and handling edge cases like song end and autoplay."
+
+  {
+    "id": 6,
+    "imageUrl": "/projects/authApp.jpg",
+    "title": "SecureAuth",
+    "tagline": "Robust Authentication with JWT, Passport.js & Secure Email Flows.",
+    "description": "A production-ready authentication app built with Express.js and Next.js. It includes user registration, login, email verification, password reset, and secure access using JWT and Passport.js.",
+    "deployedLink": "",
+    "GithubRepo": "https://github.com/ankitsinghrajp/Complete-Authentication-Nextjs",
+    "frontend": ["Next.js", "Tailwind CSS", "React"],
+    "backend": ["Node.js", "Express.js"],
+    "database": ["MongoDB"],
+    "orm": ["Mongoose"],
+    "tools": [
+      "Postman",
+      "Git",
+      "GitHub",
+      "Nodemailer",
+      "Bcrypt",
+      "JWT",
+      "Passport.js"
+    ],
+    "deployment": ["Vercel"],
+    "what": [
+      { "title": "What the project is?" },
+      {
+        "description": "SecureAuth is a modern authentication system supporting features like email/password login, email verification, password reset, and JWT-based session handling. It uses Passport.js for strategy-based authentication and JWT for token management."
+      }
+    ],
+    "reflection": {
+      "title": "What I Learned / Challenges",
+      "description": "Learned how to integrate Passport.js with Express and JWT, and handle custom strategies. Managed secure storage of refresh tokens, handled edge cases like token expiration, and created a seamless client-server auth experience."
+    },
+    "why": [
+      { "title": "Why I built this?" },
+      {
+        "description": "I built SecureAuth to deepen my understanding of Passport.js, JWT, and secure email-based flows. It also served as a base project to implement real-world authentication logic and improve backend/frontend auth syncing."
+      }
+    ],
+    "problem": [
+      { "title": "What problem it solves?" },
+      {
+        "description": "SecureAuth provides a clean, secure, and ready-to-use authentication system. It removes the need to repeatedly build boilerplate auth logic and ensures a scalable structure with JWT and Passport.js for access control."
+      }
+    ],
+    "features": [
+      "User registration and login",
+      "JWT-based access and refresh tokens",
+      "Email verification with token",
+      "Forgot and reset password flow",
+      "Passport.js for strategy-based auth",
+      "Bcrypt for password hashing",
+      "Token expiration & refresh handling",
+      "Secure session persistence",
+      "Responsive UI built with Tailwind CSS",
+      "API tested using Postman"
+    ],
+    "screenshots": [
+      "/authapp/1.png",
+      "/authapp/2.png",
+      "/authapp/3.png",
+      "/authapp/4.png",
+      "/authapp/5.png",
+      "/authapp/6.png",
+      "/authapp/7.png",
+      "/authapp/8.png",
+      "/authapp/9.png",
+      "/authapp/10.png",
+      "/authapp/11.png",
+      "/authapp/12.png",
+      "/authapp/13.png",
+      "/authapp/14.png",
+      "/authapp/15.png",
+      "/authapp/16.png",
+      "/authapp/17.png",
+      "/authapp/18.png",
+      "/authapp/19.png",
+      "/authapp/20.png"
+    ]
   },
-  "why": [
-    { "title": "Why I built this?" },
-    {
-      "description": "I wanted to build a full UI-driven interactive project using only vanilla technologies to strengthen my JavaScript fundamentals, without depending on React or frameworks. It was a good way to focus purely on DOM, events, and CSS."
-    }
-  ],
-  "problem": [
-    { "title": "What problem it solves?" },
-    {
-      "description": "TrackNode demonstrates that rich and interactive user interfaces can be built without complex stacks. It’s perfect for learning how media elements work and how to control them entirely with JavaScript."
-    }
-  ],
-  "features": [
-    "Custom play, pause, next, previous controls",
-    "Responsive UI using Tailwind CSS",
-    "Dynamic song metadata (title, artist, cover)",
-    "Progress bar with seek functionality",
-    "Auto-play next song in playlist",
-    "Highlighting current playing song",
-    "Built without any frameworks or libraries",
-    "Fully client-side and lightweight",
-    "Deployed using GitHub Pages"
-  ],
-  "screenshots": [
-    "/musicplayer/1.png",
-    "/musicplayer/2.png",
-    "/musicplayer/3.png",
-    "/musicplayer/4.png",
-    "/musicplayer/5.png",
-    "/musicplayer/6.png"
-  ]
-},
-{
-  "id": 8,
-  "imageUrl": "/projects/weatherapp.jpg",
-  "title": "SkyCast - Weather App",
-  "tagline": "Real-Time Weather Forecast using HTML, CSS, and Vanilla JavaScript.",
-  "description": "SkyCast is a simple and fast weather app built with HTML, CSS, and plain JavaScript. It fetches real-time weather data using the OpenWeatherMap API and displays temperature, conditions, and more in a clean UI.",
-  "deployedLink": "",
-  "GithubRepo": "https://github.com/ankitsinghrajp/Weather-App",
-  "frontend": ["HTML", "CSS", "JavaScript"],
-  "backend": [],
-  "database": [],
-  "orm": [],
-  "tools": ["Git", "GitHub", "VSCode", "OpenWeatherMap API"],
-  "deployment": ["GitHub Pages"],
-  "what": [
-    { "title": "What the project is?" },
-    {
-      "description": "SkyCast is a lightweight weather application that interacts with a public API to fetch weather data for any city entered by the user. It updates the UI dynamically with icons, temperature, and other stats."
-    }
-  ],
-  "reflection": {
-    "title": "What I Learned / Challenges",
-    "description": "Learned how to work with third-party APIs, handle JSON responses, and implement asynchronous operations using Fetch API. Faced challenges with API error handling and smooth UI updates."
+  {
+    "id": 7,
+    "imageUrl": "/projects/tracknode.jpg",
+    "title": "TrackNode - Music Player",
+    "tagline": "Sleek and Minimal Music Player using HTML, Tailwind CSS, and Vanilla JavaScript.",
+    "description": "TrackNode is a lightweight and responsive music player built entirely with HTML, Tailwind CSS, and plain JavaScript. It supports essential features like play/pause, next/prev, seek, volume control, and displays song metadata dynamically.",
+    "deployedLink": "",
+    "GithubRepo": "https://github.com/ankitsinghrajp/Best-Music-Player",
+    "frontend": ["HTML", "Tailwind CSS", "JavaScript"],
+    "backend": [],
+    "database": [],
+    "orm": [],
+    "tools": ["Git", "GitHub", "VSCode"],
+    "deployment": ["GitHub Pages"],
+    "what": [
+      { "title": "What the project is?" },
+      {
+        "description": "TrackNode is a custom music player UI with functional audio controls. It showcases dynamic rendering of song details, playlist looping, progress tracking, and responsive design—all without any external frameworks."
+      }
+    ],
+    "reflection": {
+      "title": "What I Learned / Challenges",
+      "description": "Improved my understanding of the HTML5 <audio> API, dynamic DOM manipulation, and responsive layouts with Tailwind CSS. Faced challenges in syncing UI updates with audio events like timeupdate and handling edge cases like song end and autoplay."
+    },
+    "why": [
+      { "title": "Why I built this?" },
+      {
+        "description": "I wanted to build a full UI-driven interactive project using only vanilla technologies to strengthen my JavaScript fundamentals, without depending on React or frameworks. It was a good way to focus purely on DOM, events, and CSS."
+      }
+    ],
+    "problem": [
+      { "title": "What problem it solves?" },
+      {
+        "description": "TrackNode demonstrates that rich and interactive user interfaces can be built without complex stacks. It’s perfect for learning how media elements work and how to control them entirely with JavaScript."
+      }
+    ],
+    "features": [
+      "Custom play, pause, next, previous controls",
+      "Responsive UI using Tailwind CSS",
+      "Dynamic song metadata (title, artist, cover)",
+      "Progress bar with seek functionality",
+      "Auto-play next song in playlist",
+      "Highlighting current playing song",
+      "Built without any frameworks or libraries",
+      "Fully client-side and lightweight",
+      "Deployed using GitHub Pages"
+    ],
+    "screenshots": [
+      "/musicplayer/1.png",
+      "/musicplayer/2.png",
+      "/musicplayer/3.png",
+      "/musicplayer/4.png",
+      "/musicplayer/5.png",
+      "/musicplayer/6.png"
+    ]
   },
-  "why": [
-    { "title": "Why I built this?" },
-    {
-      "description": "I wanted to practice API integration and build a functional UI from scratch to improve my JavaScript and DOM manipulation skills."
-    }
-  ],
-  "problem": [
-    { "title": "What problem it solves?" },
-    {
-      "description": "SkyCast provides a quick and easy way to check the weather, demonstrating how client-side apps can fetch and display external data without frameworks."
-    }
-  ],
-  "features": [
-    "Search weather by city name",
-    "Real-time temperature and weather condition",
-    "Displays humidity, wind speed, and weather icons",
-    "Handles invalid city names with error messages",
-    "Uses OpenWeatherMap API for accurate data",
-    "Async API handling with Fetch",
-    "Built without any frameworks or libraries",
-    "Fully client-side and deployable via GitHub Pages"
-  ],
-  "screenshots": [
-    "/weatherapp/1.png",
-    "/weatherapp/2.png",
-    "/weatherapp/3.png",
-    "/weatherapp/4.png",
-    "/weatherapp/5.png",
-    "/weatherapp/6.png",
-    "/weatherapp/7.png",
-    "/weatherapp/8.png",
-    "/weatherapp/9.png",
-    "/weatherapp/10.png",
-    "/weatherapp/11.png"
-  ]
-},
-{
-  "id": 9,
-  "imageUrl": "/projects/passwordmanager.jpg",
-  "title": "CipherVault - Password Manager",
-  "tagline": "Beginner-level Password Manager built using React and localStorage.",
-  "description": "CipherVault is a basic password manager made with React that stores website credentials locally using browser localStorage. Users can add, edit, and delete saved passwords with a simple interface.",
-  "deployedLink": "",
-  "GithubRepo": "https://github.com/ankitsinghrajp/Beginner-level-projects/tree/main/Ankits-Password-Manager/Ankit's-Password-Manager",
-  "frontend": ["React", "JavaScript", "CSS"],
-  "backend": [],
-  "database": [],
-  "orm": [],
-  "tools": ["Git", "GitHub", "VSCode", "localStorage"],
-  "deployment": [],
-  "what": [
-    { "title": "What the project is?" },
-    {
-      "description": "CipherVault is a React-based password manager where users can securely store login credentials for different websites. It operates entirely on the client side with data persisted in the browser's localStorage."
-    }
-  ],
-  "reflection": {
-    "title": "What I Learned / Challenges",
-    "description": "Learned how to manage local state and localStorage in React, handle form inputs, and implement CRUD operations. Faced challenges in maintaining proper state synchronization during edit and delete actions."
+  {
+    "id": 8,
+    "imageUrl": "/projects/weatherapp.jpg",
+    "title": "SkyCast - Weather App",
+    "tagline": "Real-Time Weather Forecast using HTML, CSS, and Vanilla JavaScript.",
+    "description": "SkyCast is a simple and fast weather app built with HTML, CSS, and plain JavaScript. It fetches real-time weather data using the OpenWeatherMap API and displays temperature, conditions, and more in a clean UI.",
+    "deployedLink": "",
+    "GithubRepo": "https://github.com/ankitsinghrajp/Weather-App",
+    "frontend": ["HTML", "CSS", "JavaScript"],
+    "backend": [],
+    "database": [],
+    "orm": [],
+    "tools": ["Git", "GitHub", "VSCode", "OpenWeatherMap API"],
+    "deployment": ["GitHub Pages"],
+    "what": [
+      { "title": "What the project is?" },
+      {
+        "description": "SkyCast is a lightweight weather application that interacts with a public API to fetch weather data for any city entered by the user. It updates the UI dynamically with icons, temperature, and other stats."
+      }
+    ],
+    "reflection": {
+      "title": "What I Learned / Challenges",
+      "description": "Learned how to work with third-party APIs, handle JSON responses, and implement asynchronous operations using Fetch API. Faced challenges with API error handling and smooth UI updates."
+    },
+    "why": [
+      { "title": "Why I built this?" },
+      {
+        "description": "I wanted to practice API integration and build a functional UI from scratch to improve my JavaScript and DOM manipulation skills."
+      }
+    ],
+    "problem": [
+      { "title": "What problem it solves?" },
+      {
+        "description": "SkyCast provides a quick and easy way to check the weather, demonstrating how client-side apps can fetch and display external data without frameworks."
+      }
+    ],
+    "features": [
+      "Search weather by city name",
+      "Real-time temperature and weather condition",
+      "Displays humidity, wind speed, and weather icons",
+      "Handles invalid city names with error messages",
+      "Uses OpenWeatherMap API for accurate data",
+      "Async API handling with Fetch",
+      "Built without any frameworks or libraries",
+      "Fully client-side and deployable via GitHub Pages"
+    ],
+    "screenshots": [
+      "/weatherapp/1.png",
+      "/weatherapp/2.png",
+      "/weatherapp/3.png",
+      "/weatherapp/4.png",
+      "/weatherapp/5.png",
+      "/weatherapp/6.png",
+      "/weatherapp/7.png",
+      "/weatherapp/8.png",
+      "/weatherapp/9.png",
+      "/weatherapp/10.png",
+      "/weatherapp/11.png"
+    ]
   },
-  "why": [
-    { "title": "Why I built this?" },
-    {
-      "description": "I wanted to learn how to use localStorage in React and practice creating a real-world CRUD application without a backend server."
-    }
-  ],
-  "problem": [
-    { "title": "What problem it solves?" },
-    {
-      "description": "It helps users store their login information in one place on their local machine without any backend storage, useful for quick access and practicing data persistence in frontend apps."
-    }
-  ],
-  "features": [
-    "Add new website credentials (URL, username, password)",
-    "Edit saved credentials",
-    "Delete saved entries",
-    "Persistent storage using localStorage",
-    "Basic form validation",
-    "Minimal and responsive UI",
-    "Client-side only, no backend required"
-  ],
-  "screenshots": [
-    "/passwordmanager/1.png",
-    "/passwordmanager/2.png",
-    "/passwordmanager/3.png",
-    "/passwordmanager/4.png",
-    "/passwordmanager/5.png"
-  ]
-},
-{
-  "id": 10,
-  "imageUrl": "/projects/itlanding.jpg",
-  "title": "TechNova - IT Company Landing Page",
-  "tagline": "Modern IT company landing page built using HTML and Tailwind CSS.",
-  "description": "echNova is a professional IT company landing page built with HTML and Tailwind CSS, featuring sections like hero, services, about, and contact to showcase a complete business layout.",
-  "deployedLink": "",
-  "GithubRepo": "https://github.com/ankitsinghrajp/Beginner-level-projects/tree/main/IT%20Company%20UI",
-  "frontend": ["HTML", "Tailwind CSS"],
-  "backend": [],
-  "database": [],
-  "orm": [],
-  "tools": ["Git", "GitHub", "VSCode", "Tailwind CSS CDN"],
-  "deployment": [],
-  "what": [
-    { "title": "What the project is?" },
-    {
-      "description": "TechNova is a static landing page template designed for IT service companies. It was developed using HTML and Tailwind CSS, following a modern, utility-first design approach to create a visually appealing layout."
-    }
-  ],
-  "reflection": {
-    "title": "What I Learned / Challenges",
-    "description": "Improved my skills in layout structuring using Tailwind's utility classes. Learned how to implement consistent spacing, text hierarchy, and responsive-ready design patterns, even if responsiveness wasn't added yet."
+  {
+    "id": 9,
+    "imageUrl": "/projects/passwordmanager.jpg",
+    "title": "CipherVault - Password Manager",
+    "tagline": "Beginner-level Password Manager built using React and localStorage.",
+    "description": "CipherVault is a basic password manager made with React that stores website credentials locally using browser localStorage. Users can add, edit, and delete saved passwords with a simple interface.",
+    "deployedLink": "",
+    "GithubRepo": "https://github.com/ankitsinghrajp/Beginner-level-projects/tree/main/Ankits-Password-Manager/Ankit's-Password-Manager",
+    "frontend": ["React", "JavaScript", "CSS"],
+    "backend": [],
+    "database": [],
+    "orm": [],
+    "tools": ["Git", "GitHub", "VSCode", "localStorage"],
+    "deployment": [],
+    "what": [
+      { "title": "What the project is?" },
+      {
+        "description": "CipherVault is a React-based password manager where users can securely store login credentials for different websites. It operates entirely on the client side with data persisted in the browser's localStorage."
+      }
+    ],
+    "reflection": {
+      "title": "What I Learned / Challenges",
+      "description": "Learned how to manage local state and localStorage in React, handle form inputs, and implement CRUD operations. Faced challenges in maintaining proper state synchronization during edit and delete actions."
+    },
+    "why": [
+      { "title": "Why I built this?" },
+      {
+        "description": "I wanted to learn how to use localStorage in React and practice creating a real-world CRUD application without a backend server."
+      }
+    ],
+    "problem": [
+      { "title": "What problem it solves?" },
+      {
+        "description": "It helps users store their login information in one place on their local machine without any backend storage, useful for quick access and practicing data persistence in frontend apps."
+      }
+    ],
+    "features": [
+      "Add new website credentials (URL, username, password)",
+      "Edit saved credentials",
+      "Delete saved entries",
+      "Persistent storage using localStorage",
+      "Basic form validation",
+      "Minimal and responsive UI",
+      "Client-side only, no backend required"
+    ],
+    "screenshots": [
+      "/passwordmanager/1.png",
+      "/passwordmanager/2.png",
+      "/passwordmanager/3.png",
+      "/passwordmanager/4.png",
+      "/passwordmanager/5.png"
+    ]
   },
-  "why": [
-    { "title": "Why I built this?" },
-    {
-      "description": "To practice building business-style UIs and explore Tailwind CSS for rapid and clean front-end development without writing custom CSS."
-    }
-  ],
-  "problem": [
-    { "title": "What problem it solves?" },
-    {
-      "description": "It serves as a presentational website for IT businesses, showcasing their services and contact details. It's also a great learning project to master Tailwind’s layout utilities and page structure design."
-    }
-  ],
-  "features": [
-    "Hero section with CTA and branding",
-    "About Us and Services layout",
-    "Contact section with form UI",
-    "Footer with company information",
-    "Modern styling using Tailwind CSS",
-    "Fast development with utility classes",
-    "Fully static with clean HTML semantics"
-  ],
-  "screenshots": [
-    "/itlanding/1.png",
-    "/itlanding/2.png",
-    "/itlanding/3.png",
-    "/itlanding/4.png",
-    "/itlanding/5.png",
-    "/itlanding/6.png",
-    "/itlanding/7.png",
-    "/itlanding/8.png",
-    "/itlanding/9.png",
-    "/itlanding/10.png",
-    "/itlanding/11.png"
-  ]
-},
-{
-  "id": 11,
-  "imageUrl": "/projects/x.jpg",
-  "title": "TweetStart - Twitter UI Clone",
-  "tagline": "Static Twitter first-page UI clone built using HTML and Tailwind CSS.",
-  "description": "TweetStart is a non-responsive clone of Twitter's first-page interface built with HTML and Tailwind CSS. It focuses on replicating the visual structure, layout, and design without interactivity or backend.",
-  "deployedLink": "",
-  "GithubRepo": "https://github.com/ankitsinghrajp/Twitter-UI-Clone",
-  "frontend": ["HTML", "Tailwind CSS"],
-  "backend": [],
-  "database": [],
-  "orm": [],
-  "tools": ["Git", "GitHub", "VSCode", "Tailwind CSS CDN"],
-  "deployment": [],
-  "what": [
-    { "title": "What the project is?" },
-    {
-      "description": "TweetStart is a static clone of Twitter’s main UI built using HTML and Tailwind CSS. It includes the sidebar, feed, and trends panel mimicking Twitter's layout, aimed at learning UI structuring."
-    }
-  ],
-  "reflection": {
-    "title": "What I Learned / Challenges",
-    "description": "Practiced layout building using Tailwind’s utility-first approach. Learned to replicate real-world designs and faced challenges with aligning elements without responsiveness."
+  {
+    "id": 10,
+    "imageUrl": "/projects/itlanding.jpg",
+    "title": "TechNova - IT Company Landing Page",
+    "tagline": "Modern IT company landing page built using HTML and Tailwind CSS.",
+    "description": "echNova is a professional IT company landing page built with HTML and Tailwind CSS, featuring sections like hero, services, about, and contact to showcase a complete business layout.",
+    "deployedLink": "",
+    "GithubRepo": "https://github.com/ankitsinghrajp/Beginner-level-projects/tree/main/IT%20Company%20UI",
+    "frontend": ["HTML", "Tailwind CSS"],
+    "backend": [],
+    "database": [],
+    "orm": [],
+    "tools": ["Git", "GitHub", "VSCode", "Tailwind CSS CDN"],
+    "deployment": [],
+    "what": [
+      { "title": "What the project is?" },
+      {
+        "description": "TechNova is a static landing page template designed for IT service companies. It was developed using HTML and Tailwind CSS, following a modern, utility-first design approach to create a visually appealing layout."
+      }
+    ],
+    "reflection": {
+      "title": "What I Learned / Challenges",
+      "description": "Improved my skills in layout structuring using Tailwind's utility classes. Learned how to implement consistent spacing, text hierarchy, and responsive-ready design patterns, even if responsiveness wasn't added yet."
+    },
+    "why": [
+      { "title": "Why I built this?" },
+      {
+        "description": "To practice building business-style UIs and explore Tailwind CSS for rapid and clean front-end development without writing custom CSS."
+      }
+    ],
+    "problem": [
+      { "title": "What problem it solves?" },
+      {
+        "description": "It serves as a presentational website for IT businesses, showcasing their services and contact details. It's also a great learning project to master Tailwind’s layout utilities and page structure design."
+      }
+    ],
+    "features": [
+      "Hero section with CTA and branding",
+      "About Us and Services layout",
+      "Contact section with form UI",
+      "Footer with company information",
+      "Modern styling using Tailwind CSS",
+      "Fast development with utility classes",
+      "Fully static with clean HTML semantics"
+    ],
+    "screenshots": [
+      "/itlanding/1.png",
+      "/itlanding/2.png",
+      "/itlanding/3.png",
+      "/itlanding/4.png",
+      "/itlanding/5.png",
+      "/itlanding/6.png",
+      "/itlanding/7.png",
+      "/itlanding/8.png",
+      "/itlanding/9.png",
+      "/itlanding/10.png",
+      "/itlanding/11.png"
+    ]
   },
-  "why": [
-    { "title": "Why I built this?" },
-    {
-      "description": "To improve my HTML and Tailwind CSS skills by recreating a real-world social media layout and understanding how large-scale UIs are structured."
-    }
-  ],
-  "problem": [
-    { "title": "What problem it solves?" },
-    {
-      "description": "It doesn’t solve a functional problem but serves as a great practice project for mastering layout design using Tailwind CSS and static HTML."
-    }
-  ],
-  "features": [
-    "Static layout of Twitter homepage",
-    "Left navigation bar with icons",
-    "Middle feed section with tweet cards",
-    "Right sidebar with trends",
-    "Tailwind-based utility styling",
-    "Non-responsive fixed layout",
-    "Ideal for UI structure practice"
-  ],
-  "screenshots": [
-    "/x/1.png",
-    "/x/2.png",
-    "/x/3.png",
-    "/x/4.png",
-    "/x/5.png",
-    "/x/6.png",
-    "/x/7.png"
-  ]
-}
+  {
+    "id": 11,
+    "imageUrl": "/projects/x.jpg",
+    "title": "TweetStart - Twitter UI Clone",
+    "tagline": "Static Twitter first-page UI clone built using HTML and Tailwind CSS.",
+    "description": "TweetStart is a non-responsive clone of Twitter's first-page interface built with HTML and Tailwind CSS. It focuses on replicating the visual structure, layout, and design without interactivity or backend.",
+    "deployedLink": "",
+    "GithubRepo": "https://github.com/ankitsinghrajp/Twitter-UI-Clone",
+    "frontend": ["HTML", "Tailwind CSS"],
+    "backend": [],
+    "database": [],
+    "orm": [],
+    "tools": ["Git", "GitHub", "VSCode", "Tailwind CSS CDN"],
+    "deployment": [],
+    "what": [
+      { "title": "What the project is?" },
+      {
+        "description": "TweetStart is a static clone of Twitter’s main UI built using HTML and Tailwind CSS. It includes the sidebar, feed, and trends panel mimicking Twitter's layout, aimed at learning UI structuring."
+      }
+    ],
+    "reflection": {
+      "title": "What I Learned / Challenges",
+      "description": "Practiced layout building using Tailwind’s utility-first approach. Learned to replicate real-world designs and faced challenges with aligning elements without responsiveness."
+    },
+    "why": [
+      { "title": "Why I built this?" },
+      {
+        "description": "To improve my HTML and Tailwind CSS skills by recreating a real-world social media layout and understanding how large-scale UIs are structured."
+      }
+    ],
+    "problem": [
+      { "title": "What problem it solves?" },
+      {
+        "description": "It doesn’t solve a functional problem but serves as a great practice project for mastering layout design using Tailwind CSS and static HTML."
+      }
+    ],
+    "features": [
+      "Static layout of Twitter homepage",
+      "Left navigation bar with icons",
+      "Middle feed section with tweet cards",
+      "Right sidebar with trends",
+      "Tailwind-based utility styling",
+      "Non-responsive fixed layout",
+      "Ideal for UI structure practice"
+    ],
+    "screenshots": [
+      "/x/1.png",
+      "/x/2.png",
+      "/x/3.png",
+      "/x/4.png",
+      "/x/5.png",
+      "/x/6.png",
+      "/x/7.png"
+    ]
+  }
 ]

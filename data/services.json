@@ -1,81 +1,80 @@
-
- [
+[
     {
-        "title": "Full Stack Web Developement",
-        "icon":"Layers",
-        "description": "Building responsive and scalable websites using modern frontend (React, Next.js) and backend (Node.js, Express) technologies.",
+        "title": "Full Stack Web Development",
+        "icon": "Layers",
+        "description": "Developing scalable, high-performance web applications with modern frontend and backend technologies.",
         "id": "1",
         "dialogTitle": "Details",
-        "dialogDescription": "I build modern, scalable, and fully responsive web applications using a MERN stack (MongoDB, Express.js, React, Node.js) and Next.js for SSR and performance optimization. From design to deployment, I ensure seamless frontend-backend integration, and mobile responsiveness.",
+        "dialogDescription": "I build robust, production-grade web applications using Next.js, React, Tailwind CSS, and ShadCN UI for dynamic UIs. On the backend, I use Node.js, Express.js, and Prisma ORM with MySQL or MongoDB. I ensure scalability, real-time communication with Socket.io, and clean API design for performance and maintainability.",
         "keyHighlights": "Highlights",
-        "highlight1": "Frontend: React, Next.js, Tailwind CSS",
-        "highlight2": "Backend: Node.js, Express.js",
-        "highlight3": "Database Management: MySQL, MongoDB, Prisma ORM",
-        "highlight4": "Deployment: Vercel, Netlify, and custom cloud hosting"
+        "highlight1": "Frontend: React, Next.js, Tailwind CSS, ShadCN UI, Redux Toolkit",
+        "highlight2": "Backend: Node.js, Express.js, Socket.io, Prisma ORM",
+        "highlight3": "Database: MongoDB, MySQL, PostgreSQL (via Prisma)",
+        "highlight4": "Deployment: Docker, Vercel, Render, Cloud Hosting"
     },
     {
         "title": "AI Integration",
-        "icon":"Brain",
-        "description": "Embedding AI features in website like chatbots, recommendation systems, and automation using tools like OpenAI.",
+        "icon": "Brain",
+        "description": "Integrating advanced AI-powered features into modern applications for automation, personalization, and enhanced UX. ",
         "id": "2",
         "dialogTitle": "Details",
-        "dialogDescription": "I integrate AI capabilities such as OpenAI-powered chatbots, recommendation systems, and content automation into websites and apps. This enhances user interaction and engagement using state-of-the-art APIs and ML models.",
+        "dialogDescription": "I integrate AI-driven features such as OpenAI-powered chatbots, smart recommendations, and content automation into web applications. My focus is on leveraging AI APIs like OpenAI, Gemini, and HuggingFace with secure backend pipelines and optimized prompt engineering to deliver intelligent, user-aware experiences.",
         "keyHighlights": "Highlights",
         "highlight1": "AI APIs: OpenAI, Gemini, HuggingFace",
-        "highlight2": "Use Cases: Recommendation Engines, Automation",
-        "highlight3": "Deployment: Secure API integration",
-        "highlight4": "Custom Training/Prompt Engineering Support"
+        "highlight2": "Features: Chatbots, Content Generation, Recommendation Systems",
+        "highlight3": "Tech Stack: Next.js + Express.js + AI APIs",
+        "highlight4": "Security: Token-based API Access, Rate Limiting"
     },
     {
         "title": "RESTful API Development",
-        "icon":"Network",
-        "description": "Designing and developing secure, high-performance APIs for web applications.",
+        "icon": "Network",
+        "description": "Designing and implementing secure, scalable RESTful and real-time APIs for seamless communication.",
         "id": "3",
         "dialogTitle": "Details",
-        "dialogDescription": "I specialize in designing scalable and secure RESTful APIs for frontend-backend communication, enabling seamless data flow and secure CRUD operations. Built with Express.js, validated with Zod, and secured with proper headers and authentication.",
+        "dialogDescription": "I design efficient RESTful APIs with Express.js and Node.js, handling authentication, validation, and performance optimization. I also build real-time APIs using Socket.io for instant data sync in chat, notifications, and collaborative apps. My focus is security, clean architecture, and developer-friendly documentation.",
         "keyHighlights": "Highlights",
-        "highlight1": "Framework: Node.js + Express.js",
-        "highlight2": "Security: JWT, OAuth2",
-        "highlight3": "Validation: Zod, Express Validators",
-        "highlight4": "Tools: Postman, Thunder Client"
+        "highlight1": "Frameworks: Node.js, Express.js, Socket.io",
+        "highlight2": "Security: JWT, OAuth2, Helmet, Rate Limiting",
+        "highlight3": "Validation: Zod, Express-Validator",
+        "highlight4": "Testing: Postman, Thunder Client, Jest"
     },
     {
         "title": "Database Management",
-        "icon":"Database",
-        "description": "Structuring and managing databases using MongoDB, MySQL, and Supabase.",
+        "icon": "Database",
+        "description": "Designing, optimizing, and managing relational and NoSQL databases with ORM integration.",
         "id": "4",
         "dialogTitle": "Details",
-        "dialogDescription": "I design, optimize, and manage structured and unstructured databases with proper indexing, schema design, and relationship handling. Using tools like Prisma ORM for efficiency and Firebase for real-time data sync.",
+        "dialogDescription": "I manage both SQL and NoSQL databases with a focus on performance, indexing, and schema design. Using Prisma ORM, I ensure seamless integration between databases and backend services. I also handle real-time data, migrations, and scaling using Dockerized database setups for production environments.",
         "keyHighlights": "Highlights",
-        "highlight1": "Relational: MySQL, PostgreSQL",
-        "highlight2": "NoSQL: MongoDB, Firebase Firestore",
-        "highlight3": "ORMs: Prisma, Mongoose",
-        "highlight4": "Data Optimization & Indexing"
+        "highlight1": "Databases: MySQL, MongoDB, PostgreSQL",
+        "highlight2": "ORM: Prisma, Mongoose",
+        "highlight3": "Features: Indexing, Query Optimization, Migrations",
+        "highlight4": "Tools: Dockerized Databases, Supabase, Firebase"
     },
     {
         "title": "UI/UX Design Implementation",
-        "icon":"Shapes",
-        "description": "Creating pixel-perfect, user-friendly interfaces based on Figma designs using Tailwind CSS and responsive frameworks.",
+        "icon": "Shapes",
+        "description": "Creating elegant, responsive, and accessible interfaces with smooth animations.",
         "id": "5",
         "dialogTitle": "Details",
-        "dialogDescription": "I bring UI/UX designs to life using responsive, pixel-perfect code. Whether it's a custom design from Figma or a concept in your mind, I use modern CSS frameworks and accessibility best practices to deliver sleek, user-focused interfaces.",
+        "dialogDescription": "I convert complex UI designs into clean, responsive code using Tailwind CSS, ShadCN UI, and Framer Motion. My goal is to create fast, accessible, and aesthetic user interfaces that enhance engagement. I ensure every element aligns with the product vision and design system.",
         "keyHighlights": "Highlights",
-        "highlight1": "Tools: Figma to Code, Adobe XD",
-        "highlight2": "Frameworks: Tailwind CSS, DaisyUI, ShadCN",
-        "highlight3": "Responsive: Mobile-first Design",
-        "highlight4": "Animations: Framer Motion, GSAP"
+        "highlight1": "Frameworks: Tailwind CSS, ShadCN UI",
+        "highlight2": "Tools: Figma to Code, Adobe XD",
+        "highlight3": "Responsive: Mobile-first, Accessibility-focused",
+        "highlight4": "Animations: GSAP, Framer Motion, AOS"
     },
     {
         "title": "Authentication & Security",
-        "icon":"ShieldCheck",
-        "description": "Implementing secure login systems with JWT, OAuth, Google Sign-In, Next-auth, and role-based access control.",
+        "icon": "ShieldCheck",
+        "description": "Implementing advanced authentication and security layers for modern web apps.",
         "id": "6",
         "dialogTitle": "Details",
-        "dialogDescription": "I implement robust authentication flows using JWT, OAuth, and social login options like Google Sign-In. I ensure protected routes, token storage strategies, and role-based access control using modern libraries like NextAuth and Firebase Auth.",
+        "dialogDescription": "I build secure authentication systems using JWT, OAuth, and NextAuth for session and token-based logins. I implement role-based access control, password hashing, and protected routes to ensure privacy and integrity. My setups handle Google, GitHub, and custom credential logins seamlessly.",
         "keyHighlights": "Highlights",
-        "highlight1": "Auth Methods: JWT, OAuth, Session-based",
+        "highlight1": "Auth Methods: JWT, OAuth, NextAuth, Session-based",
         "highlight2": "Providers: Google, GitHub, Credentials",
-        "highlight3": "Libraries: NextAuth.js, Firebase Auth",
-        "highlight4": "Security: Route Protection, Role-based Access"
+        "highlight3": "Security: bcrypt, Helmet, CORS, Role-based Access",
+        "highlight4": "Best Practices: Secure Cookies, Refresh Tokens, HTTPS"
     }
 ]
