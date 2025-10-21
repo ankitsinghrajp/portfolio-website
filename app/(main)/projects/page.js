@@ -80,6 +80,7 @@ const ProjectsPage = () => {
                   <p className="dark:text-gray-200 text-gray-700 font-semibold">
                     Deployed App Link:{" "}
                     {project.deployedLink ? (
+
                       <Link
                         className="text-blue-600 hover:text-blue-700 dark:hover:text-blue-300 underline transition-colors duration-200"
                         target="_blank"
@@ -87,6 +88,7 @@ const ProjectsPage = () => {
                       >
                         Live Preview
                       </Link>
+                      
                     ) : (
                       <span className="text-sm text-red-500">No preview Available</span>
                     )}
