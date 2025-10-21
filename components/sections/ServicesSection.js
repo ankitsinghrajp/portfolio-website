@@ -38,7 +38,7 @@ const ServicesSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-purple-500/20 to-pink-500/20 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
                 
                 <Card
-                  className="relative hover:cursor-pointer bg-blue-100 border border-gray-400 dark:border-gray-700 dark:bg-gray-900/80 backdrop-blur-sm rounded-xl group-hover:border-blue-500/50 transition-all duration-300 group-hover:scale-105"
+                  className="relative hover:cursor-pointer bg-slate-300 border border-gray-400 dark:border-gray-700 dark:bg-gray-900/80 backdrop-blur-sm rounded-xl group-hover:border-blue-500/50 transition-all duration-300 group-hover:scale-105"
                   onClick={() => handleCardClick(service)}
                 >
                   <CardHeader className="text-center">

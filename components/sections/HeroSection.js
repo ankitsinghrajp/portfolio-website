@@ -15,7 +15,7 @@ const HeroSection = () => {
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 blur-xl opacity-40 group-hover:opacity-60 animate-pulse group-hover:blur-2xl transition-all duration-500"></div>
                 {/* Rotating border effect */}
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 p-[3px] group-hover:p-[4px] transition-all duration-300">
-                  <div className="h-full w-full rounded-full bg-[#eeeeff] dark:bg-[#09090b]"></div>
+                  <div className="h-full w-full rounded-full bg-[#ffffff] dark:bg-[#09090b]"></div>
                 </div>
                 <Image
                   className="relative rounded-full shadow-md shadow-purple-600/20 group-hover:shadow-purple-600/40 h-60 w-60 group-hover:scale-105 transition-all duration-300"
@@ -57,14 +57,14 @@ const HeroSection = () => {
               
               <div className="relative group">
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 via-pink-500/10 to-blue-500/10 rounded-lg blur-md opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                <p className="relative -mt-40 z-20 text-xl pb-28 dotted-background md:block hidden dark:text-gray-300 text-gray-800 bg-[#eeeeff] dark:bg-[#09090b] group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors duration-300">
+                <p className="relative -mt-40 z-20 p-4 rounded-md text-xl pb-28 dotted-background md:block hidden dark:text-gray-300 text-gray-800 bg-[#ffffff] dark:bg-[#09090b] group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors duration-300">
                   "I build production-ready web applications and scalable systems using Node.js, Next.js, React.js & Socket.io & modern infrastructure."
                 </p>
               </div>
 
               <div className="relative group">
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 via-pink-500/10 to-blue-500/10 rounded-lg blur-md opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                <p className="relative z-20 pb-28 dotted-background md:hidden -mt-32 dark:text-gray-300 text-gray-800 bg-[#eeeeff] dark:bg-[#09090b] group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors duration-300">
+                <p className="relative z-20 pb-28 dotted-background md:hidden -mt-32 dark:text-gray-300 text-gray-800 bg-[#ffffff] dark:bg-[#09090b] group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors duration-300">
                   I&apos;m a passionate Full-Stack Developer who builds responsive,
                   scalable web applications with modern tech and AI integration
                   to create smarter user experiences.
@@ -107,7 +107,7 @@ const HeroSection = () => {
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 blur-xl opacity-40 group-hover:opacity-60 animate-pulse group-hover:blur-2xl transition-all duration-500"></div>
                 {/* Rotating border effect */}
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 p-[3px] group-hover:p-[4px] transition-all duration-300">
-                  <div className="h-full w-full rounded-full bg-[#eeeeff] dark:bg-[#09090b]"></div>
+                  <div className="h-full w-full rounded-full bg-[#ffffff] dark:bg-[#09090b]"></div>
                 </div>
                 <Image
                   className="relative rounded-full shadow-md shadow-purple-600/20 group-hover:shadow-purple-600/40 h-60 w-60 group-hover:scale-105 transition-all duration-300"

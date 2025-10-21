@@ -34,15 +34,15 @@ const SkillsSection = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {/* First Row - 3 cards */}
-            <div className="bg-gray-900/50 rounded-lg p-6 border border-gray-700/50 backdrop-blur-sm transition-all duration-300 hover:bg-gray-900/70 hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/20 hover:-translate-y-1">
-              <h3 className="text-xl font-semibold text-blue-400 mb-4 transition-colors duration-300 hover:text-blue-300">
+            <div className=" dark:bg-gray-900/50 hover:border-blue-500 bg-purple-200/40 rounded-lg p-6 border border-gray-700/50 backdrop-blur-sm  transition-all duration-300 hover:dark:bg-gray-900/70 hover:dark:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/20 hover:-translate-y-1">
+              <h3 className="text-xl font-semibold dark:text-blue-400 text-blue-600 mb-4 transition-colors duration-300 hover:text-blue-700">
                 {skillCategories[0].title}
               </h3>
               <div className="flex flex-wrap gap-2.5">
                 {skillCategories[0].skills.map((skill, skillIdx) => (
                   <span
                     key={skillIdx}
-                    className="px-4 py-2 text-sm font-medium text-gray-300 bg-gray-800/80 rounded-md border border-gray-700 transition-all duration-200 hover:bg-blue-500/20 hover:border-blue-500 hover:text-blue-300 hover:scale-105 cursor-default"
+                    className="px-4 py-2 text-sm font-medium dark:text-gray-300 dark:bg-gray-800/80 hover:text-blue-700 rounded-md border border-gray-700 transition-all duration-200 hover:bg-blue-500/20 hover:border-blue-500 dark:hover:text-blue-300 hover:scale-105 cursor-default"
                   >
                     {skill}
                   </span>
@@ -50,15 +50,15 @@ const SkillsSection = () => {
               </div>
             </div>
 
-            <div className="bg-gray-900/50 rounded-lg p-6 border border-gray-700/50 backdrop-blur-sm transition-all duration-300 hover:bg-gray-900/70 hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/20 hover:-translate-y-1">
-              <h3 className="text-xl font-semibold text-blue-400 mb-4 transition-colors duration-300 hover:text-blue-300">
+            <div className=" dark:bg-gray-900/50 hover:border-blue-500 bg-purple-200/40 rounded-lg p-6 border border-gray-700/50 backdrop-blur-sm  transition-all duration-300 hover:dark:bg-gray-900/70 hover:dark:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/20 hover:-translate-y-1">
+              <h3 className="text-xl font-semibold dark:text-blue-400 text-blue-600 mb-4 transition-colors duration-300 hover:text-blue-700">
                 {skillCategories[1].title}
               </h3>
               <div className="flex flex-wrap gap-2.5">
                 {skillCategories[1].skills.map((skill, skillIdx) => (
                   <span
                     key={skillIdx}
-                    className="px-4 py-2 text-sm font-medium text-gray-300 bg-gray-800/80 rounded-md border border-gray-700 transition-all duration-200 hover:bg-blue-500/20 hover:border-blue-500 hover:text-blue-300 hover:scale-105 cursor-default"
+                    className="px-4 py-2 text-sm font-medium dark:text-gray-300 dark:bg-gray-800/80 hover:text-blue-700 rounded-md border border-gray-700 transition-all duration-200 hover:bg-blue-500/20 hover:border-blue-500 dark:hover:text-blue-300 hover:scale-105 cursor-default"
                   >
                     {skill}
                   </span>
@@ -66,15 +66,15 @@ const SkillsSection = () => {
               </div>
             </div>
 
-            <div className="bg-gray-900/50 rounded-lg p-6 border border-gray-700/50 backdrop-blur-sm transition-all duration-300 hover:bg-gray-900/70 hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/20 hover:-translate-y-1">
-              <h3 className="text-xl font-semibold text-blue-400 mb-4 transition-colors duration-300 hover:text-blue-300">
+            <div className=" dark:bg-gray-900/50 hover:border-blue-500 bg-purple-200/40 rounded-lg p-6 border border-gray-700/50 backdrop-blur-sm  transition-all duration-300 hover:dark:bg-gray-900/70 hover:dark:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/20 hover:-translate-y-1">
+              <h3 className="text-xl font-semibold dark:text-blue-400 text-blue-600 mb-4 transition-colors duration-300 hover:text-blue-700">
                 {skillCategories[2].title}
               </h3>
               <div className="flex flex-wrap gap-2.5">
                 {skillCategories[2].skills.map((skill, skillIdx) => (
                   <span
                     key={skillIdx}
-                    className="px-4 py-2 text-sm font-medium text-gray-300 bg-gray-800/80 rounded-md border border-gray-700 transition-all duration-200 hover:bg-blue-500/20 hover:border-blue-500 hover:text-blue-300 hover:scale-105 cursor-default"
+                    className="px-4 py-2 text-sm font-medium dark:text-gray-300 dark:bg-gray-800/80 hover:text-blue-700 rounded-md border border-gray-700 transition-all duration-200 hover:bg-blue-500/20 hover:border-blue-500 dark:hover:text-blue-300 hover:scale-105 cursor-default"
                   >
                     {skill}
                   </span>
@@ -83,15 +83,15 @@ const SkillsSection = () => {
             </div>
 
             {/* Second Row - 2 cards */}
-            <div className="lg:col-span-2 bg-gray-900/50 rounded-lg p-6 border border-gray-700/50 backdrop-blur-sm transition-all duration-300 hover:bg-gray-900/70 hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/20 hover:-translate-y-1">
-              <h3 className="text-xl font-semibold text-blue-400 mb-4 transition-colors duration-300 hover:text-blue-300">
+            <div className="lg:col-span-2 dark:bg-gray-900/50 hover:border-blue-500 bg-purple-200/40 rounded-lg p-6 border border-gray-700/50 backdrop-blur-sm  transition-all duration-300 hover:dark:bg-gray-900/70 hover:dark:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/20 hover:-translate-y-1">
+              <h3 className="text-xl font-semibold dark:text-blue-400 text-blue-600 mb-4 transition-colors duration-300 hover:text-blue-700">
                 {skillCategories[3].title}
               </h3>
               <div className="flex flex-wrap gap-2.5">
                 {skillCategories[3].skills.map((skill, skillIdx) => (
                   <span
                     key={skillIdx}
-                    className="px-4 py-2 text-sm font-medium text-gray-300 bg-gray-800/80 rounded-md border border-gray-700 transition-all duration-200 hover:bg-blue-500/20 hover:border-blue-500 hover:text-blue-300 hover:scale-105 cursor-default"
+                    className="px-4 py-2 text-sm font-medium dark:text-gray-300 dark:bg-gray-800/80 hover:text-blue-700 rounded-md border border-gray-700 transition-all duration-200 hover:bg-blue-500/20 hover:border-blue-500 dark:hover:text-blue-300 hover:scale-105 cursor-default"
                   >
                     {skill}
                   </span>
@@ -99,15 +99,15 @@ const SkillsSection = () => {
               </div>
             </div>
 
-            <div className="bg-gray-900/50 rounded-lg p-6 border border-gray-700/50 backdrop-blur-sm transition-all duration-300 hover:bg-gray-900/70 hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/20 hover:-translate-y-1">
-              <h3 className="text-xl font-semibold text-blue-400 mb-4 transition-colors duration-300 hover:text-blue-300">
+            <div className=" dark:bg-gray-900/50 hover:border-blue-500 bg-purple-200/40 rounded-lg p-6 border border-gray-700/50 backdrop-blur-sm  transition-all duration-300 hover:dark:bg-gray-900/70 hover:dark:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/20 hover:-translate-y-1">
+              <h3 className="text-xl font-semibold dark:text-blue-400 text-blue-600 mb-4 transition-colors duration-300 hover:text-blue-700">
                 {skillCategories[4].title}
               </h3>
               <div className="flex flex-wrap gap-2.5">
                 {skillCategories[4].skills.map((skill, skillIdx) => (
                   <span
                     key={skillIdx}
-                    className="px-4 py-2 text-sm font-medium text-gray-300 bg-gray-800/80 rounded-md border border-gray-700 transition-all duration-200 hover:bg-blue-500/20 hover:border-blue-500 hover:text-blue-300 hover:scale-105 cursor-default"
+                    className="px-4 py-2 text-sm font-medium dark:text-gray-300 dark:bg-gray-800/80 hover:text-blue-700 rounded-md border border-gray-700 transition-all duration-200 hover:bg-blue-500/20 hover:border-blue-500 dark:hover:text-blue-300 hover:scale-105 cursor-default"
                   >
                     {skill}
                   </span>

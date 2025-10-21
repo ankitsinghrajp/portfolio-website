@@ -29,7 +29,7 @@ const AboutSection = () => {
           </TabsList>
           
           <TabsContent
-            className="dark:bg-black bg-blue-200 mx-2 p-5 rounded-md dark:text-white"
+            className="dark:bg-black/60 bg-slate-300/40 mx-2 p-5 rounded-md dark:text-white"
             value="education"
           >
             <div className="grid grid-cols-1 my-10 md:grid-cols-2 gap-8">
@@ -86,7 +86,7 @@ const AboutSection = () => {
           </TabsContent>
 
           <TabsContent
-            className="dark:bg-black bg-blue-200 mx-2 p-5 rounded-md dark:text-white"
+            className="dark:bg-black/60 bg-slate-300/40 mx-2 p-5 rounded-md dark:text-white"
             value="programming"
           >
             <div className="grid grid-cols-1 my-10 md:grid-cols-2 gap-8">
