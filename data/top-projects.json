@@ -1,7 +1,7 @@
 [
    {
   "id": 20,
-  "imageUrl": "/projects/talksphere.jpg",
+  "imageUrl": "/projects/talksphere.png",
   "title": "TalkSphere - The Chat App",
   "tagline": "Real-time conversations. Smarter connections.",
   "description": "Real-time full-stack chat app with messaging, groups, media sharing, and friend requests — built for speed and scalability.",

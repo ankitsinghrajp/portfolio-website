@@ -400,7 +400,7 @@
     "imageUrl": "/projects/pacificdental.png",
     "title": "Pacific Dental",
     "tagline": "Client project: Dynamic website for dental equipment sales.",
-    "description": "A dynamic React & PHP website built during internship for Pacific Dental, featuring product catalog, admin-managed inventory, responsive design, and smooth UX for equipment sales.",
+    "description": "Dynamic React + PHP website built during internship for Pacific Dental with product catalog, admin control, and responsive UX.",
     "deployedLink": "https://thepacificdental.com",
     "GithubRepo": "https://github.com/ankitsinghrajp/Dental-Website",
     "frontend": ["React", "CSS3", "JavaScript"],
