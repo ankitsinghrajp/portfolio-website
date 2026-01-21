@@ -1,4 +1,97 @@
 [
+{
+  "id": 21,
+  "imageUrl": "/projects/lastminutepreparation.png",
+  "title": "LastMinutePreparation (LMP)",
+  "tagline": "Study what matters. Right before the exam.",
+  "description": "AI-powered CBSE last-minute exam preparation platform focused on high-probability questions and exam-oriented revision.",
+  "deployedLink": "https://www.lastminutepreparation.in",
+  "GithubRepo": "https://github.com/ankitsinghrajp/lastminutepreparation",
+  "frontend": [
+    "React",
+    "Tailwind CSS",
+    "ShadCN UI"
+  ],
+  "backend": [
+    "Node.js",
+    "Express.js",
+    "Inngest (Queue Processing)",
+    "Redis (Caching)"
+  ],
+  "database": [
+    "MongoDB"
+  ],
+  "orm": [
+    "Prisma"
+  ],
+  "tools": [
+    "Git",
+    "GitHub",
+    "Postman",
+    "Render",
+    "Vercel",
+    "GoDaddy",
+    "Inngest",
+    "Redis",
+    "Razorpay"
+  ],
+  "deployment": [
+    "Vercel (Frontend)",
+    "Render (Backend)"
+  ],
+  "what": [
+    { "title": "What the project is?" },
+    {
+      "description": "LastMinutePreparation is a production-grade, AI-powered exam preparation platform built for Class 10th and 12th CBSE students. It focuses on last-minute revision using extremely high-probability questions, last-night-before-exam tools, and structured chapter-wise guidance."
+    }
+  ],
+  "reflection": {
+    "title": "What I Learned / Challenges",
+    "description": "Gained hands-on experience building a real-world EdTech product with AI-heavy workloads. Learned to handle concurrent requests using Inngest queues, improve performance using Redis caching, integrate Razorpay payments, and design an exam-focused UX that converts free users into paying customers."
+  },
+  "why": [
+    { "title": "Why I built this?" },
+    {
+      "description": "I built LastMinutePreparation to solve last-minute exam panic by helping students focus only on what actually comes in CBSE board exams. The goal was to replace information overload with confidence-driven, exam-relevant preparation."
+    }
+  ],
+  "problem": [
+    { "title": "What problem it solves?" },
+    {
+      "description": "The platform helps students avoid wasting time on low-impact topics by highlighting extremely high-probability questions, structured revision sheets, and instant AI-powered explanations. It simplifies revision during the most critical exam period."
+    }
+  ],
+  "features": [
+    "Extreme high-probability questions (10+ times repeated in CBSE board exams)",
+    "Chapter-wise topper-style answers in proper board format",
+    "Last Night Before Exam revision mode",
+    "Previous Year Questions (2014–2025) with clear solutions",
+    "AI Topic Summarizer for fast concept understanding",
+    "Ask Any Question with instant AI responses",
+    "Chat with PDF (turn notes into an interactive teacher)",
+    "Chapter-wise study guides",
+    "Quiz, Fill Ups, and True/False practice generator",
+    "Diagram & Image Analysis with topper-style explanations",
+    "Usage-based freemium model with request limits",
+    "Queue-based AI request handling using Inngest",
+    "Redis caching for faster responses and cost optimization",
+    "Secure payment integration using Razorpay",
+    "SEO-optimized pages for organic growth",
+    "Fully deployed on Render (backend) and Vercel (frontend)"
+  ],
+  "screenshots": [
+    "/lastminutepreparation/1.png",
+    "/lastminutepreparation/2.png",
+    "/lastminutepreparation/3.png",
+    "/lastminutepreparation/4.png",
+    "/lastminutepreparation/5.png",
+    "/lastminutepreparation/6.png",
+    "/lastminutepreparation/7.png",
+    "/lastminutepreparation/8.png"
+  ]
+},
+
+
   {
     "id": 20,
     "imageUrl": "/projects/talksphere.png",

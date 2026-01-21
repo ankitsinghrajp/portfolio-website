@@ -1,4 +1,95 @@
 [
+  {
+  "id": 21,
+  "imageUrl": "/projects/lastminutepreparation.png",
+  "title": "LastMinutePreparation (LMP)",
+  "tagline": "Study what matters. Right before the exam.",
+  "description": "AI-powered CBSE last-minute exam preparation platform focused on high-probability questions and exam-oriented revision.",
+  "deployedLink": "https://www.lastminutepreparation.in",
+  "GithubRepo": "https://github.com/ankitsinghrajp/lastminutepreparation",
+  "frontend": [
+    "React",
+    "Tailwind CSS",
+    "ShadCN UI"
+  ],
+  "backend": [
+    "Node.js",
+    "Express.js",
+    "Inngest (Queue Processing)",
+    "Redis (Caching)"
+  ],
+  "database": [
+    "MongoDB"
+  ],
+  "orm": [
+    "Prisma"
+  ],
+  "tools": [
+    "Git",
+    "GitHub",
+    "Postman",
+    "Render",
+    "Vercel",
+    "GoDaddy",
+    "Inngest",
+    "Redis",
+    "Razorpay"
+  ],
+  "deployment": [
+    "Vercel (Frontend)",
+    "Render (Backend)"
+  ],
+  "what": [
+    { "title": "What the project is?" },
+    {
+      "description": "LastMinutePreparation is a production-grade, AI-powered exam preparation platform built for Class 10th and 12th CBSE students. It focuses on last-minute revision using extremely high-probability questions, last-night-before-exam tools, and structured chapter-wise guidance."
+    }
+  ],
+  "reflection": {
+    "title": "What I Learned / Challenges",
+    "description": "Gained hands-on experience building a real-world EdTech product with AI-heavy workloads. Learned to handle concurrent requests using Inngest queues, improve performance using Redis caching, integrate Razorpay payments, and design an exam-focused UX that converts free users into paying customers."
+  },
+  "why": [
+    { "title": "Why I built this?" },
+    {
+      "description": "I built LastMinutePreparation to solve last-minute exam panic by helping students focus only on what actually comes in CBSE board exams. The goal was to replace information overload with confidence-driven, exam-relevant preparation."
+    }
+  ],
+  "problem": [
+    { "title": "What problem it solves?" },
+    {
+      "description": "The platform helps students avoid wasting time on low-impact topics by highlighting extremely high-probability questions, structured revision sheets, and instant AI-powered explanations. It simplifies revision during the most critical exam period."
+    }
+  ],
+  "features": [
+    "Extreme high-probability questions (10+ times repeated in CBSE board exams)",
+    "Chapter-wise topper-style answers in proper board format",
+    "Last Night Before Exam revision mode",
+    "Previous Year Questions (2014–2025) with clear solutions",
+    "AI Topic Summarizer for fast concept understanding",
+    "Ask Any Question with instant AI responses",
+    "Chat with PDF (turn notes into an interactive teacher)",
+    "Chapter-wise study guides",
+    "Quiz, Fill Ups, and True/False practice generator",
+    "Diagram & Image Analysis with topper-style explanations",
+    "Usage-based freemium model with request limits",
+    "Queue-based AI request handling using Inngest",
+    "Redis caching for faster responses and cost optimization",
+    "Secure payment integration using Razorpay",
+    "SEO-optimized pages for organic growth",
+    "Fully deployed on Render (backend) and Vercel (frontend)"
+  ],
+  "screenshots": [
+    "/lastminutepreparation/1.png",
+    "/lastminutepreparation/2.png",
+    "/lastminutepreparation/3.png",
+    "/lastminutepreparation/4.png",
+    "/lastminutepreparation/5.png",
+    "/lastminutepreparation/6.png",
+    "/lastminutepreparation/7.png",
+    "/lastminutepreparation/8.png"
+  ]
+},
    {
   "id": 20,
   "imageUrl": "/projects/talksphere.png",
@@ -152,87 +243,5 @@
       }
     ]
   }
-},
-
-  {
-    "id": 3,
-    "imageUrl": "/projects/elevateai.jpg",
-    "title": "Elevate AI",
-    "tagline": "Your AI-powered career coach for job success.",
-    "description": "AI-driven career coach offering real-time industry insights, skill quizzes, and tailored resumes and cover letters to boost job readiness.",
-    "deployedLink": "https://elevate-ai-iota.vercel.app",
-    "GithubRepo": "https://github.com/ankitsinghrajp/elevate-ai",
-    "frontend": ["React", "Tailwind CSS", "Next.js"],
-    "backend": ["Node.js", "Next.js API Routes"],
-    "database": ["Neon (PostgreSQL)"],
-    "orm": ["Prisma"],
-    "tools": ["Git", "Github", "Postman"],
-    "deployment": ["Vercel"],
-    "what": [
-      { "title": "What the project is?" },
-      {
-        "description": "Elevate AI is a smart career assistant that analyzes user skills, interests, and goals to generate personalized guidance. It offers AI-generated resumes, industry trend analysis, and interactive skill assessments to improve job readiness."
-      }
-    ],
-    "why": [
-      { "title": "Why I built this?" },
-      {
-        "description": "I created Elevate AI to solve the problem of unclear career paths for students and job seekers. I wanted to build a tool that could act like a mentor, using AI to deliver real-time, personalized career growth advice."
-      }
-    ],
-    "problem": [
-      { "title": "What problem it solves?" },
-      {
-        "description": "Elevate AI helps users identify gaps in their skills and prepares them for the job market with customized resume building and industry analysis. It eliminates the need for expensive coaching or generic career advice platforms."
-      }
-    ],
-    "reflection": {
-  "title": "What I Learned / Challenges",
-  "description": "Learned how to integrate AI APIs for resume and cover letter generation. Deepened understanding of dynamic form generation and stateful components. Faced challenges in generating clean, professional PDF outputs and aligning AI-generated content with user input consistently."
-},
-    "features": [
-      "AI Resume Builder",
-      "AI-powered cover letter generator",
-      "Skill gap analysis",
-      "Tailored career suggestions",
-      "Industry trends dashboard",
-      "Interactive skill assessments",
-      "User authentication and secure profiles",
-      "Job role matching based on skills",
-      "Responsive and modern UI",
-      "Quiz-based learning modules"
-    ],
-    "screenshots": [
-      "/elevateai/1.png",
-      "/elevateai/2.png",
-      "/elevateai/3.png",
-      "/elevateai/4.png",
-      "/elevateai/5.png",
-      "/elevateai/6.png",
-      "/elevateai/7.png",
-      "/elevateai/8.png",
-      "/elevateai/9.png",
-      "/elevateai/10.png",
-      "/elevateai/11.png",
-      "/elevateai/12.png",
-      "/elevateai/13.png",
-      "/elevateai/14.png",
-      "/elevateai/15.png",
-      "/elevateai/16.png",
-      "/elevateai/17.png",
-      "/elevateai/18.png",
-      "/elevateai/19.png",
-      "/elevateai/20.png",
-      "/elevateai/21.png",
-      "/elevateai/22.png",
-      "/elevateai/23.png",
-      "/elevateai/24.png",
-      "/elevateai/25.png",
-      "/elevateai/26.png",
-      "/elevateai/27.png",
-      "/elevateai/28.png",
-      "/elevateai/29.png",
-      "/elevateai/30.png"
-    ]
-  }
+}
 ]
