@@ -2,10 +2,10 @@ import React from 'react'
 
 const StatsSection = () => {
   const stats = [
-    { number: "50+", label: "Projects", icon: "📦" },
+    { number: "100+", label: "Projects", icon: "📦" },
     { number: "500+", label: "Github Commits", icon: "⚡" },
-    { number: "200+", label: "DSA Problems", icon: "🧩" },
-    { number: "10+", label: "Technologies", icon: "⚙️" },
+    { number: "150+", label: "DSA Problems", icon: "🧩" },
+    { number: "20+", label: "Technologies", icon: "⚙️" },
   ]
 
   return (
