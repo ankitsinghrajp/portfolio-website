@@ -79,7 +79,7 @@ const HeroSection = () => {
                     className="relative w-full hover:text-white font-semibold text-white bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 border-none shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/40 hover:scale-105"
                     asChild
                   >
-                    <a href="/ankits-resume-updated-Oct-2025.pdf" download>
+                    <a href="/ankits-resume-updated-Jan-2026.pdf" download>
                       Download Resume
                     </a>
                   </Button>
