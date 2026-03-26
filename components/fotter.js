@@ -151,7 +151,7 @@ const Footer = () => {
         <div className="pt-6 border-t border-gray-300 dark:border-gray-700">
           <div className="text-center">
             <p className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-colors duration-300">
-              © 2025 Ankit Singh Chouhan. All Rights Reserved.
+              © 2026 Ankit Singh Chouhan. All Rights Reserved.
             </p>
           </div>
         </div>
