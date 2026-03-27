@@ -42,7 +42,13 @@ const Header = () => {
                <Image src={'/github.png'} alt='github' height={24} width={24} className='group-hover:scale-110 transition-transform duration-300'/>
              </Button>
            </Link>
-              <ThemeToggle/>
+           <Link href={'https://www.linkedin.com/in/ankit-singh-chouhan-6612bb252'} target='_blank' className='relative group'>
+             <div className='absolute inset-0 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 rounded-lg blur-md group-hover:blur-lg transition-all duration-300 opacity-0 group-hover:opacity-100'></div>
+             <Button size="icon" variant='outline' className='relative group-hover:scale-110 transition-transform duration-300 group-hover:border-gray-500'>
+               <Image src={'/linkedin.png'} alt='linked in' height={24} width={24} className='group-hover:scale-110 transition-transform duration-300'/>
+             </Button>
+           </Link>
+            
            </div>
            </div>
            </div>
