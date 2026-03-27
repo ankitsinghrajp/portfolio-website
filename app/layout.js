@@ -9,47 +9,53 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Ankit Singh Chouhan | Full Stack Developer | MERN & PHP Developer",
+  title:
+    "Ankit Singh Chouhan | Full Stack Developer | Backend Engineer | VIT Bhopal",
+
   description:
-    "Ankit Singh Chouhan — a passionate Full Stack Developer skilled in Next.js, React, Node.js, Express, MongoDB, MySQL, and PHP. Open to placements and freelance opportunities. Explore my projects, resume, and contact info.",
+    "Ankit Singh Chouhan is a Full Stack Developer and Backend Engineer from VIT Bhopal, India. Skilled in Next.js, React, Node.js, Express, MongoDB, MySQL, and PHP. Built apps with 1800+ users and real revenue.",
+
   keywords: [
     "Ankit Singh Chouhan",
-    "Full Stack Developer",
+    "Ankit Singh Chouhan VIT",
+    "Ankit Singh backend engineer",
+    "Ankit Singh product engineer",
+    "Ankit Singh Ujjain",
+    "Full Stack Developer India",
     "MERN Developer",
-    "React Developer",
     "Next.js Developer",
-    "Node.js Developer",
-    "PHP Developer",
-    "Web Developer Portfolio",
-    "Freelance Developer",
-    "Software Engineer",
+    "Node.js Developer"
   ],
-  author: "Ankit Singh Chouhan",
+
+  authors: [{ name: "Ankit Singh Chouhan" }],
+  creator: "Ankit Singh Chouhan",
+
   openGraph: {
     title: "Ankit Singh Chouhan | Full Stack Developer",
     description:
-      "Portfolio of Ankit Singh Chouhan — Full Stack Developer skilled in MERN stack, PHP, and modern web technologies.",
-    url: "https://ankits-portfolio-omega.vercel.app/", 
+      "Portfolio of Ankit Singh Chouhan — Full Stack Developer & Backend Engineer building scalable web apps.",
+    url: "https://ankits-portfolio-omega.vercel.app/",
     siteName: "Ankit Singh Portfolio",
     images: [
       {
-        url: "https://your-portfolio-link.com/og-image.jpg",
+        url: "https://ankits-portfolio-omega.vercel.app/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Ankit Singh Chouhan Portfolio Preview",
+        alt: "Ankit Singh Chouhan Portfolio",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Ankit Singh Chouhan | Full Stack Developer",
-    description:
-      "Explore Ankit Singh Chouhan’s portfolio — Full Stack Developer skilled in MERN, PHP, and scalable systems.",
-    creator: "@AnkitSingh84347", 
-    images: ["https://your-portfolio-link.com/og-image.jpg"],
+    title: "Ankit Singh Chouhan",
+    description: "Full Stack Developer | Backend Engineer",
+    creator: "@AnkitSingh84347",
+    images: ["https://ankits-portfolio-omega.vercel.app/og-image.png"],
   },
+
   robots: {
     index: true,
     follow: true,

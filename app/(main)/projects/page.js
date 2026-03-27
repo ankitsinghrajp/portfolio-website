@@ -7,28 +7,33 @@ import { ArrowUpRight, ExternalLink, FolderOpen } from "lucide-react";
 
 // ✅ SEO Metadata
 export const metadata = {
-  title: "Projects | Ankit Singh Chouhan | Full Stack Developer",
+  title:
+    "Projects | Ankit Singh Chouhan | Full Stack Developer | Backend Engineer",
+
   description:
-    "Explore all projects by Ankit Singh Chouhan — Full Stack Developer skilled in MERN, PHP, and modern web technologies. Real-world apps, client work, and internship projects with React, Next.js, Node.js, and MongoDB.",
+    "Explore all projects by Ankit Singh Chouhan — Full Stack Developer and Backend Engineer from VIT Bhopal. Built scalable web apps using Next.js, React, Node.js, MongoDB, and PHP. Includes real-world apps, freelance work, and SaaS products.",
+
   keywords: [
     "Ankit Singh Chouhan projects",
+    "Ankit Singh Chouhan VIT",
+    "Ankit Singh backend engineer",
     "MERN stack projects",
     "React projects",
     "Next.js projects",
     "Node.js apps",
     "Full Stack Developer portfolio",
-    "PHP projects",
     "Web development projects",
   ],
+
   openGraph: {
-    title: "All Projects | Ankit Singh Chouhan",
+    title: "Projects | Ankit Singh Chouhan",
     description:
-      "Showcase of Ankit Singh Chouhan's full stack and freelance projects — built using React, Next.js, Node.js, PHP, and MongoDB.",
-    url: "https://ankits-portfolio-omega.vercel.app",
+      "Showcase of full stack and SaaS projects by Ankit Singh Chouhan — built using React, Next.js, Node.js, PHP, and MongoDB.",
+    url: "https://ankits-portfolio-omega.vercel.app/projects",
     siteName: "Ankit Singh Portfolio",
     images: [
       {
-        url: "https://ankits-portfolio-omega.vercel.app/og-image.jpg",
+        url: "https://ankits-portfolio-omega.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Ankit Singh Chouhan Project Showcase",
@@ -37,19 +42,22 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Projects | Ankit Singh Chouhan",
     description:
-      "Explore all full-stack projects by Ankit Singh Chouhan — built using MERN stack and PHP.",
-    images: ["https://ankits-portfolio-omega.vercel.app/og-image.jpg"],
+      "Explore full-stack and backend projects by Ankit Singh Chouhan — MERN, Next.js, and PHP apps.",
+    images: [
+      "https://ankits-portfolio-omega.vercel.app/og-image.png",
+    ],
   },
+
   robots: {
     index: true,
     follow: true,
   },
 };
-
 const ProjectsPage = () => {
   return (
     <div className="min-h-screen bg-white dark:bg-[#09090b]">
