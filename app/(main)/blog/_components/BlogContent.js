@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from "react";
 import {
   ArrowRight, Zap, Database, CreditCard, Bot,
   TrendingUp, Lightbulb, Users, IndianRupee, Activity,
+  GitPullRequest, Shield, Search, BarChart2, Globe,
 } from "lucide-react";
 
 // ── Animated Counter Hook ──
@@ -118,6 +119,77 @@ const LMPStats = () => {
   );
 };
 
+// ── RefynAI Stats ──
+const RefynAIStats = () => {
+  const repos = useAnimatedCounter(120, 2000, true);
+  const prs = useAnimatedCounter(340, 2400, true);
+
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 my-6">
+      {/* Repos Scanned */}
+      <div className="relative overflow-hidden bg-gradient-to-br from-indigo-50 to-indigo-100 dark:from-indigo-950/60 dark:to-indigo-900/30 border border-indigo-200 dark:border-indigo-800/40 rounded-2xl p-5">
+        <div className="flex items-center gap-2 mb-3">
+          <div className="w-7 h-7 rounded-lg bg-indigo-500/10 dark:bg-indigo-400/10 flex items-center justify-center">
+            <Search className="h-3.5 w-3.5 text-indigo-500 dark:text-indigo-400" />
+          </div>
+          <span className="text-[10px] font-bold uppercase tracking-widest text-indigo-500 dark:text-indigo-400">
+            Repos Scanned
+          </span>
+        </div>
+        <div className="flex items-end gap-1">
+          <span className="text-4xl font-extrabold tabular-nums text-indigo-700 dark:text-indigo-300 leading-none">
+            {repos.toLocaleString()}
+          </span>
+          <span className="text-xl font-bold text-indigo-500 dark:text-indigo-400 mb-0.5">+</span>
+        </div>
+        <p className="mt-1.5 text-[12px] text-indigo-500/70 dark:text-indigo-400/60">GitHub repositories analyzed</p>
+        <div className="absolute -bottom-4 -right-4 w-20 h-20 rounded-full border-4 border-indigo-200 dark:border-indigo-700/30 opacity-40" />
+      </div>
+
+      {/* PRs Generated */}
+      <div className="relative overflow-hidden bg-gradient-to-br from-fuchsia-50 to-fuchsia-100 dark:from-fuchsia-950/60 dark:to-fuchsia-900/30 border border-fuchsia-200 dark:border-fuchsia-800/40 rounded-2xl p-5">
+        <div className="flex items-center gap-2 mb-3">
+          <div className="w-7 h-7 rounded-lg bg-fuchsia-500/10 dark:bg-fuchsia-400/10 flex items-center justify-center">
+            <GitPullRequest className="h-3.5 w-3.5 text-fuchsia-500 dark:text-fuchsia-400" />
+          </div>
+          <span className="text-[10px] font-bold uppercase tracking-widest text-fuchsia-500 dark:text-fuchsia-400">
+            Auto PRs Created
+          </span>
+        </div>
+        <div className="flex items-end gap-1">
+          <span className="text-4xl font-extrabold tabular-nums text-fuchsia-700 dark:text-fuchsia-300 leading-none">
+            {prs.toLocaleString()}
+          </span>
+          <span className="text-xl font-bold text-fuchsia-500 dark:text-fuchsia-400 mb-0.5">+</span>
+        </div>
+        <p className="mt-1.5 text-[12px] text-fuchsia-500/70 dark:text-fuchsia-400/60">Bug-fix PRs auto-generated</p>
+        <div className="absolute -bottom-4 -right-4 w-20 h-20 rounded-full border-4 border-fuchsia-200 dark:border-fuchsia-700/30 opacity-40" />
+      </div>
+
+      {/* Live Status */}
+      <div className="relative overflow-hidden bg-gradient-to-br from-teal-50 to-teal-100 dark:from-teal-950/60 dark:to-teal-900/30 border border-teal-200 dark:border-teal-800/40 rounded-2xl p-5">
+        <div className="flex items-center gap-2 mb-3">
+          <div className="w-7 h-7 rounded-lg bg-teal-500/10 dark:bg-teal-400/10 flex items-center justify-center">
+            <Globe className="h-3.5 w-3.5 text-teal-500 dark:text-teal-400" />
+          </div>
+          <span className="text-[10px] font-bold uppercase tracking-widest text-teal-500 dark:text-teal-400">
+            Deployed
+          </span>
+        </div>
+        <div className="flex items-center gap-2 mt-1">
+          <span className="relative flex h-2.5 w-2.5">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75" />
+            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-teal-500" />
+          </span>
+          <span className="text-2xl font-extrabold text-teal-700 dark:text-teal-300">refynai.org</span>
+        </div>
+        <p className="mt-1.5 text-[12px] text-teal-500/70 dark:text-teal-400/60">Live at refynai.org</p>
+        <div className="absolute -bottom-4 -right-4 w-20 h-20 rounded-full border-4 border-teal-200 dark:border-teal-700/30 opacity-40" />
+      </div>
+    </div>
+  );
+};
+
 // ── Reusable section card ──
 const SectionCard = ({
   color = "blue",
@@ -132,6 +204,9 @@ const SectionCard = ({
     amber:   "border-amber-200 dark:border-amber-800/40",
     rose:    "border-rose-200 dark:border-rose-800/40",
     cyan:    "border-cyan-200 dark:border-cyan-800/40",
+    indigo:  "border-indigo-200 dark:border-indigo-800/40",
+    fuchsia: "border-fuchsia-200 dark:border-fuchsia-800/40",
+    teal:    "border-teal-200 dark:border-teal-800/40",
   };
   const iconMap = {
     blue:    "text-blue-500 dark:text-blue-400",
@@ -140,6 +215,9 @@ const SectionCard = ({
     amber:   "text-amber-500 dark:text-amber-400",
     rose:    "text-rose-500 dark:text-rose-400",
     cyan:    "text-cyan-500 dark:text-cyan-400",
+    indigo:  "text-indigo-500 dark:text-indigo-400",
+    fuchsia: "text-fuchsia-500 dark:text-fuchsia-400",
+    teal:    "text-teal-500 dark:text-teal-400",
   };
   const labelMap = {
     blue:    "text-blue-600 dark:text-blue-400",
@@ -148,10 +226,14 @@ const SectionCard = ({
     amber:   "text-amber-600 dark:text-amber-400",
     rose:    "text-rose-600 dark:text-rose-400",
     cyan:    "text-cyan-600 dark:text-cyan-400",
+    indigo:  "text-indigo-600 dark:text-indigo-400",
+    fuchsia: "text-fuchsia-600 dark:text-fuchsia-400",
+    teal:    "text-teal-600 dark:text-teal-400",
   };
   const dotMap = {
     blue: "bg-blue-500", violet: "bg-violet-500", emerald: "bg-emerald-500",
     amber: "bg-amber-500", rose: "bg-rose-500", cyan: "bg-cyan-500",
+    indigo: "bg-indigo-500", fuchsia: "bg-fuchsia-500", teal: "bg-teal-500",
   };
 
   return (
@@ -171,6 +253,8 @@ const LearnList = ({ items, color = "blue" }) => {
   const dotMap = {
     blue: "bg-blue-500", emerald: "bg-emerald-500",
     violet: "bg-violet-500", amber: "bg-amber-500",
+    indigo: "bg-indigo-500", fuchsia: "bg-fuchsia-500",
+    teal: "bg-teal-500", rose: "bg-rose-500",
   };
   return (
     <ul className="space-y-2">
@@ -185,14 +269,20 @@ const LearnList = ({ items, color = "blue" }) => {
 };
 
 // ── Flow step ──
-const FlowStep = ({ num, text }) => (
-  <div className="flex items-start gap-3">
-    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 text-[11px] font-bold flex items-center justify-center">
-      {num}
-    </span>
-    <span className="text-[13.5px] text-gray-600 dark:text-gray-300 leading-snug pt-0.5">{text}</span>
-  </div>
-);
+const FlowStep = ({ num, text, color = "blue" }) => {
+  const bgMap = {
+    blue: "bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400",
+    indigo: "bg-indigo-100 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-400",
+  };
+  return (
+    <div className="flex items-start gap-3">
+      <span className={`flex-shrink-0 w-6 h-6 rounded-full text-[11px] font-bold flex items-center justify-center ${bgMap[color] || bgMap.blue}`}>
+        {num}
+      </span>
+      <span className="text-[13.5px] text-gray-600 dark:text-gray-300 leading-snug pt-0.5">{text}</span>
+    </div>
+  );
+};
 
 // ── Divider ──
 const Divider = () => (
@@ -226,7 +316,7 @@ const BlogContent = () => {
           <p className="text-[15px] text-gray-500 dark:text-gray-400 leading-relaxed max-w-2xl">
             Over the past few months, I've grown tremendously as a full-stack developer by building and deploying{" "}
             <span className="font-semibold text-gray-700 dark:text-gray-200">real-world products</span> and gaining valuable{" "}
-            <span className="font-semibold text-gray-700 dark:text-gray-200">industry experience</span>. Three milestones define this chapter — scaling an AI SaaS to 1800+ users, building a real-time MERN chat app, and surviving a live PHP internship.
+            <span className="font-semibold text-gray-700 dark:text-gray-200">industry experience</span>. Four milestones define this chapter — scaling an AI SaaS to 1800+ users, building an AI-powered GitHub code analyzer, crafting a real-time MERN chat app, and surviving a live PHP internship.
           </p>
           <div className="mt-6 h-px bg-gradient-to-r from-gray-200 via-gray-300 to-transparent dark:from-gray-700 dark:via-gray-600" />
         </div>
@@ -341,7 +431,127 @@ const BlogContent = () => {
         <Divider />
 
         {/* ══════════════════════════════════════════════════
-            SECTION 2 — MERN Chat App
+            SECTION 2 — REFYNAI
+        ══════════════════════════════════════════════════ */}
+        <div className="mb-4">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest rounded-full bg-indigo-100 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-700/50">
+              Collab Project
+            </span>
+          </div>
+          <SectionHeading
+            sub="An AI-driven GitHub code analysis platform — built with a friend, scaled from scratch, live at refynai.org."
+          >
+            RefynAI — Automating Code Review with AI
+          </SectionHeading>
+          <p className="text-[14px] text-gray-500 dark:text-gray-400 leading-relaxed mb-2">
+            RefynAI is a production-grade developer tool my friend and I built together — handling everything from architecture to scaling ourselves. The idea was simple but powerful:{" "}
+            <span className="font-semibold text-gray-700 dark:text-gray-200">connect to a GitHub repo, scan it for bugs and vulnerabilities, and automatically generate a pull request with the fixes</span>.
+            No manual debugging, no waiting for code review — just AI doing the heavy lifting end-to-end.
+          </p>
+        </div>
+
+        {/* RefynAI Stats */}
+        <RefynAIStats />
+
+        {/* How it works */}
+        <div className="mb-6">
+          <SectionCard color="indigo" icon={GitPullRequest} title="End-to-End Automation Pipeline">
+            <p className="text-[13.5px] text-gray-500 dark:text-gray-400 leading-relaxed mb-4">
+              The entire flow — from repo scan to merged fix — runs automatically. We built an async pipeline using queue processing so even large repositories don't block the system.
+            </p>
+            <div className="flex flex-col gap-2.5">
+              {[
+                "User connects their GitHub account and selects a repo",
+                "Backend triggers a deep scan via GitHub API",
+                "OpenAI analyzes code for bugs, vulnerabilities & performance issues",
+                "Issues are classified by severity (Critical → Low)",
+                "AI generates patch code and opens a pull request automatically",
+                "Dashboard updates in real-time with scan results and PR status",
+              ].map((step, i) => <FlowStep key={i} num={i + 1} text={step} color="indigo" />)}
+            </div>
+            <div className="mt-4 grid grid-cols-3 gap-2">
+              {["Scan → Detect → Fix → PR", "Severity classification", "Real-time dashboard"].map((tag, i) => (
+                <span key={i} className="px-2 py-1 text-[11px] font-medium text-center rounded-lg bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-700/50">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </SectionCard>
+        </div>
+
+        {/* 3-col: GitHub + Payments + Analytics */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+          <SectionCard color="indigo" icon={Shield} title="GitHub Integration">
+            <LearnList color="indigo" items={[
+              "GitHub OAuth for secure repo access",
+              "PR lifecycle management via GitHub API",
+              "Auto-fix toggle for hands-free improvements",
+            ]} />
+          </SectionCard>
+          <SectionCard color="fuchsia" icon={CreditCard} title="Global Payments">
+            <LearnList color="fuchsia" items={[
+              "Razorpay for Indian users (INR)",
+              "PayPal for international users (USD)",
+              "Pro tier with scan quota & advanced features",
+            ]} />
+          </SectionCard>
+          <SectionCard color="teal" icon={BarChart2} title="Analytics Dashboard">
+            <LearnList color="teal" items={[
+              "Total scans, issues found, PR stats",
+              "Per-repo scan history & issue breakdown",
+              "Severity heatmap: Critical / High / Medium / Low",
+            ]} />
+          </SectionCard>
+        </div>
+
+        {/* Tech Stack */}
+        <div className="mb-6">
+          <SectionCard color="indigo" title="Tech Stack">
+            <div className="flex flex-wrap gap-1.5">
+              {["React", "Tailwind CSS", "ShadCN UI", "Node.js", "MongoDB", "Prisma", "GitHub API", "OpenAI API", "Redis", "Queue Processing", "Razorpay", "PayPal", "Docker", "Vercel", "Render"].map((t, i) => (
+                <span key={i} className="px-2.5 py-1 text-[11.5px] font-medium rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700/60 text-gray-700 dark:text-gray-300">
+                  {t}
+                </span>
+              ))}
+            </div>
+          </SectionCard>
+        </div>
+
+        {/* Challenges & Learnings */}
+        <div className="mb-6">
+          <SectionCard color="rose" icon={Zap} title="The Hard Parts — What We Didn't Expect">
+            <p className="text-[13.5px] text-gray-500 dark:text-gray-400 leading-relaxed mb-4">
+              Scanning large repositories is slow — we had to build an async processing pipeline from the ground up. GitHub API rate limits, PR conflict handling, and keeping the dashboard in sync with live scan state were the trickiest engineering challenges.
+            </p>
+            <div className="bg-rose-50 dark:bg-rose-900/20 border border-rose-200 dark:border-rose-800/40 rounded-xl p-3 mb-1">
+              <p className="text-[12px] font-semibold text-rose-600 dark:text-rose-400 italic">
+                "Shipping a collab project to production teaches you how to build systems, not just features."
+              </p>
+            </div>
+          </SectionCard>
+        </div>
+
+        {/* RefynAI Learnings */}
+        <SectionCard color="amber" icon={TrendingUp} title="What RefynAI Taught Us">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6">
+            <LearnList color="amber" items={[
+              "Building complex GitHub API workflows & PR automation",
+              "Async processing pipelines for large codebases",
+              "Redis caching to handle high-frequency scan requests",
+            ]} />
+            <LearnList color="amber" items={[
+              "Dual payment integration (Razorpay + PayPal) for global reach",
+              "Real-time analytics dashboards with live state sync",
+              "End-to-end product ownership — from design to deployment",
+            ]} />
+          </div>
+        </SectionCard>
+
+        <Divider />
+
+        {/* ══════════════════════════════════════════════════
+            SECTION 3 — MERN Chat App
         ══════════════════════════════════════════════════ */}
         <SectionHeading
           sub="A production-ready real-time messaging platform built with MongoDB, Express, React, Node.js, and Socket.io."
@@ -380,7 +590,7 @@ const BlogContent = () => {
         <Divider />
 
         {/* ══════════════════════════════════════════════════
-            SECTION 3 — Internship
+            SECTION 4 — Internship
         ══════════════════════════════════════════════════ */}
         <SectionHeading
           sub="Joining a live production codebase, learning PHP in 3 days, and deploying a real eCommerce platform."
@@ -418,7 +628,7 @@ const BlogContent = () => {
             <p className="text-[14px] text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
               These experiences changed how I think as a developer. I'm no longer just building features — I'm building{" "}
               <span className="font-semibold text-gray-800 dark:text-gray-100">systems that scale, perform, and generate real impact</span>.
-              LMP wasn't just a project — it was a product used by real users, a system that handled real challenges, and a journey that taught me more than any course ever could.
+              LMP and RefynAI weren't just projects — they were products used by real users, systems that handled real challenges, and journeys that taught me more than any course ever could.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
               {["Advanced backend engineering", "System design at scale", "AI-powered applications"].map((goal, i) => (

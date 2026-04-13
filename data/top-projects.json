@@ -1,5 +1,89 @@
 [
   {
+  "id": 222,
+  "imageUrl": "/projects/refynai.png",
+  "title": "RefynAI - GitHub Code Analyzer",
+  "tagline": "AI-powered code review with automatic bug fixing PRs.",
+  "description": "RefynAI is an AI-driven GitHub code analysis platform that scans repositories, detects bugs and vulnerabilities, and automatically generates pull requests with fixes to improve code quality and developer productivity.",
+  "deployedLink": "https://www.refynai.org",
+  "GithubRepo": "https://github.com/ankitsinghrajp",
+  "frontend": [
+    "React",
+    "Tailwind CSS",
+    "ShadCN UI"
+  ],
+  "backend": [
+    "Node.js",
+    "Express.js",
+    "GitHub API Integration",
+    "OpenAI API",
+    "Queue Processing",
+    "Redis (Caching)"
+  ],
+  "database": [
+    "MongoDB"
+  ],
+  "orm": [
+    "Prisma"
+  ],
+  "tools": [
+    "Git",
+    "GitHub",
+    "Postman",
+    "Docker",
+    "Vercel",
+    "Render",
+    "Redis",
+    "Razorpay",
+    "PayPal"
+  ],
+  "deployment": [
+    "Vercel (Frontend)",
+    "Render (Backend)"
+  ],
+  "what": [
+    { "title": "What the project is?" },
+    {
+      "description": "RefynAI is a production-grade AI-powered developer tool that integrates with GitHub to scan repositories, detect security vulnerabilities, bugs, and performance issues, and automatically generate pull requests with fixes. It reduces manual debugging effort and accelerates code review workflows."
+    }
+  ],
+  "reflection": {
+    "title": "What I Learned / Challenges",
+    "description": "Built complex backend workflows involving GitHub APIs, PR lifecycle management, and automated code fixing pipelines. Learned to handle async processing for large repositories, optimize performance using Redis caching, and implement global payment systems using Razorpay (India) and PayPal (USD). Also worked on designing scalable dashboards for real-time analytics and issue tracking."
+  },
+  "why": [
+    { "title": "Why I built this?" },
+    {
+      "description": "I built RefynAI to simplify the developer workflow by automating repetitive tasks like bug detection and fixing. The goal was to reduce manual code review effort and help developers focus on building features instead of debugging."
+    }
+  ],
+  "problem": [
+    { "title": "What problem it solves?" },
+    {
+      "description": "Developers spend significant time identifying and fixing bugs manually. RefynAI automates this process by scanning repositories, detecting issues, and generating ready-to-merge pull requests, improving productivity and code quality."
+    }
+  ],
+  "features": [
+    "AI-powered repository scanning for bugs, vulnerabilities, and performance issues",
+    "Automatic pull request (PR) generation with bug fixes",
+    "End-to-end automation: scan → detect → fix → PR → merge",
+    "GitHub integration for repository access and PR workflows",
+    "Real-time dashboard with total scans, issues found, and PR stats",
+    "Auto-fix PR toggle for automated code improvements",
+    "Detailed issue breakdown by severity (Critical, High, Medium, Low)",
+    "Repository-wise analytics and scan history tracking",
+    "Interactive UI for managing repositories and scanning",
+    "AI-powered suggestions for improving code quality",
+    "Secure authentication and GitHub account integration",
+    "Global payment integration using Razorpay (India) and PayPal (USD)",
+    "Scalable backend with async processing and caching",
+    "Modern developer-focused UI with analytics dashboards"
+  ],
+  "screenshots": [
+    
+  ]
+},
+  {
   "id": 21,
   "imageUrl": "/projects/lastminutepreparation.png",
   "title": "LastMinutePreparation (LMP)",
@@ -162,86 +246,5 @@
     "/talksphere/20.png",
     "/talksphere/21.png"
   ]
-},
-{
-  "id": 2,
-  "imageUrl": "/projects/arogya.jpg",
-  "title": "Arogya - Doctor Appointment",
-  "tagline": "Consult doctors online, anytime.",
-  "description": "Arogya is a telemedicine app for booking appointments and consulting doctors via secure video calls, with role-based access.",
-  "deployedLink": "https://arogya-doctors-appointment.vercel.app/",
-  "GithubRepo": "https://github.com/ankitsinghrajp/arogya",
-  "frontend": ["Next.js", "Tailwind CSS", "React"],
-  "backend": ["Node.js", "Next.js API Routes"],
-  "database": ["PostgreSQL (Neon)"],
-  "orm": ["Prisma"],
-  "tools": ["Git", "GitHub", "Postman", "OpenTok (for video calls)"],
-  "deployment": ["Vercel"],
-  "what": [
-    { "title": "What the project is?" },
-    {
-      "description": "Arogya is a doctor consultation app with appointment booking, video calls, and role-based access for admins, doctors, and patients."
-    }
-  ],
-  "why": [
-    { "title": "Why I built this?" },
-    {
-      "description": "To create a remote healthcare platform that’s easy to use, scalable, and improves doctor-patient access across regions."
-    }
-  ],
-  "problem": [
-    { "title": "What problem it solves?" },
-    {
-      "description": "It makes healthcare accessible from anywhere, saving time and effort for both doctors and patients."
-    }
-  ],
-  "reflection": {
-    "title": "What I Learned / Challenges",
-    "description": "Learned video API integration, secure auth, credit systems, and building responsive, role-based platforms."
-  },
-  "features": [
-    "Role-based access (Admin, Doctor, Patient)",
-    "Video consultation via WebRTC (OpenTok)",
-    "Freemium model with credit usage",
-    "Doctor scheduling",
-    "Patient appointment booking",
-    "Admin dashboard",
-    "Email/in-app notifications",
-    "JWT authentication",
-    "Health history tracking",
-    "Responsive mobile-friendly UI"
-  ],
-  "screenshots": [
-    "/arogya/1.png",
-    "/arogya/2.png",
-    "/arogya/3.png",
-    "/arogya/4.png",
-    "/arogya/5.png",
-    "/arogya/6.png",
-    "/arogya/7.png",
-    "/arogya/8.png"
-  ],
-  "roles": {
-    "admin": ["Manage users", "View analytics", "Handle plans"],
-    "doctor": ["Set availability", "Consult via video", "View patient history"],
-    "patient": ["Book appointments", "Join calls", "View consultation records"]
-  },
-  "freemiumModel": {
-    "freeCredits": 2,
-    "plans": [
-      {
-        "name": "Basic Plan",
-        "price": "₹199/month",
-        "credits": 5,
-        "features": ["5 consultations", "Priority booking"]
-      },
-      {
-        "name": "Pro Plan",
-        "price": "₹499/month",
-        "credits": 15,
-        "features": ["15 consultations", "Extended access", "Support"]
-      }
-    ]
-  }
 }
 ]

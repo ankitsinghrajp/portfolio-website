@@ -90,8 +90,110 @@
     "/lastminutepreparation/8.png"
   ]
 },
+{
+  "id": 222,
+  "imageUrl": "/projects/refynai.png",
+  "title": "RefynAI - GitHub Code Analyzer",
+  "tagline": "AI-powered code review with automatic bug fixing PRs.",
+  "description": "RefynAI is an AI-driven GitHub code analysis platform that scans repositories, detects bugs and vulnerabilities, and automatically generates pull requests with fixes to improve code quality and developer productivity.",
+  "deployedLink": "https://www.refynai.org",
+  "GithubRepo": "https://github.com/ankitsinghrajp",
+  "frontend": [
+    "React",
+    "Tailwind CSS",
+    "ShadCN UI"
+  ],
+  "backend": [
+    "Node.js",
+    "GitHub API",
+    "OpenAI API",
+    "Queue Processing",
+    "Redis (Caching)"
+  ],
+  "database": [
+    "MongoDB"
+  ],
+  "orm": [
+    "Prisma"
+  ],
+  "tools": [
+    "Git",
+    "GitHub",
+    "Postman",
+    "Docker",
+    "Vercel",
+    "Render",
+    "Redis",
+    "Razorpay",
+    "PayPal"
+  ],
+  "deployment": [
+    "Vercel (Frontend)",
+    "Render (Backend)"
+  ],
+  "what": [
+    { "title": "What the project is?" },
+    {
+      "description": "RefynAI is a production-grade AI-powered developer tool that integrates with GitHub to scan repositories, detect security vulnerabilities, bugs, and performance issues, and automatically generate pull requests with fixes. It reduces manual debugging effort and accelerates code review workflows."
+    }
+  ],
+  "reflection": {
+    "title": "What I Learned / Challenges",
+    "description": "Built complex backend workflows involving GitHub APIs, PR lifecycle management, and automated code fixing pipelines. Learned to handle async processing for large repositories, optimize performance using Redis caching, and implement global payment systems using Razorpay (India) and PayPal (USD). Also worked on designing scalable dashboards for real-time analytics and issue tracking."
+  },
+  "why": [
+    { "title": "Why I built this?" },
+    {
+      "description": "I built RefynAI to simplify the developer workflow by automating repetitive tasks like bug detection and fixing. The goal was to reduce manual code review effort and help developers focus on building features instead of debugging."
+    }
+  ],
+  "problem": [
+    { "title": "What problem it solves?" },
+    {
+      "description": "Developers spend significant time identifying and fixing bugs manually. RefynAI automates this process by scanning repositories, detecting issues, and generating ready-to-merge pull requests, improving productivity and code quality."
+    }
+  ],
+  "features": [
+    "AI-powered repository scanning for bugs, vulnerabilities, and performance issues",
+    "Automatic pull request (PR) generation with bug fixes",
+    "End-to-end automation: scan → detect → fix → PR → merge",
+    "GitHub integration for repository access and PR workflows",
+    "Real-time dashboard with total scans, issues found, and PR stats",
+    "Auto-fix PR toggle for automated code improvements",
+    "Detailed issue breakdown by severity (Critical, High, Medium, Low)",
+    "Repository-wise analytics and scan history tracking",
+    "Interactive UI for managing repositories and scanning",
+    "AI-powered suggestions for improving code quality",
+    "Secure authentication and GitHub account integration",
+    "Global payment integration using Razorpay (India) and PayPal (USD)",
+    "Scalable backend with async processing and caching",
+    "Modern developer-focused UI with analytics dashboards"
+  ],
+  "screenshots": [
+    "/refynai/1.png",
+    "/refynai/2.png",
+    "/refynai/3.png",
+    "/refynai/4.png",
+    "/refynai/5.png",
+    "/refynai/6.png",
+    "/refynai/7.png",
+    "/refynai/8.png",
+    "/refynai/9.png",
+    "/refynai/10.png",
+    "/refynai/11.png",
+    "/refynai/12.png",
+    "/refynai/13.png",
+    "/refynai/14.png",
+    "/refynai/15.png",
+    "/refynai/16.png",
+    "/refynai/17.png",
+    "/refynai/18.png",
+    "/refynai/19.png",
+    "/refynai/20.png",
+    "/refynai/21.png"
 
-
+  ]
+},
   {
     "id": 20,
     "imageUrl": "/projects/talksphere.png",
