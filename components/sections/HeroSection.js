@@ -349,7 +349,7 @@ export default function HeroSection() {
 
             {/* CTAs */}
             <div className="e-btns flex flex-wrap justify-center lg:justify-start gap-3 mb-10 w-full sm:w-auto">
-              <a href="/ankits-resume-updated-april-2026.pdf" download
+              <a href="/ankits-resume.pdf" download
                  className="btn-primary inline-flex items-center gap-2.5
                             px-6 py-3 rounded-xl text-white text-[13.5px] font-bold tracking-wide">
                 <svg className="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24"
