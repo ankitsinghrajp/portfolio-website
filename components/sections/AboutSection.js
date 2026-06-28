@@ -1,9 +1,92 @@
-import React from 'react'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import React, { useState, useRef, useEffect } from 'react'
+import { Tabs, TabsContent } from '@/components/ui/tabs'
 import { Card } from '@/components/ui/card'
 import { BadgeCheck, CircleDot, GraduationCap, School, Code2 } from 'lucide-react'
 
+const TABS = [
+  { value: 'education', label: 'Education' },
+  { value: 'programming', label: 'Programming Languages' },
+]
+
+const AnimatedTabSwitcher = ({ active, onChange }) => {
+  const containerRef = useRef(null)
+  const tabRefs = useRef({})
+  const [indicator, setIndicator] = useState({ left: 0, width: 0 })
+
+  useEffect(() => {
+    const node = tabRefs.current[active]
+    const container = containerRef.current
+    if (node && container) {
+      const containerRect = container.getBoundingClientRect()
+      const nodeRect = node.getBoundingClientRect()
+      setIndicator({
+        left: nodeRect.left - containerRect.left,
+        width: nodeRect.width,
+      })
+    }
+  }, [active])
+
+  useEffect(() => {
+    const handleResize = () => {
+      const node = tabRefs.current[active]
+      const container = containerRef.current
+      if (node && container) {
+        const containerRect = container.getBoundingClientRect()
+        const nodeRect = node.getBoundingClientRect()
+        setIndicator({
+          left: nodeRect.left - containerRect.left,
+          width: nodeRect.width,
+        })
+      }
+    }
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [active])
+
+  return (
+    <div
+      ref={containerRef}
+      role="tablist"
+      className="relative w-full bg-gray-100 dark:bg-gray-800/80 border border-gray-200 dark:border-gray-700 p-1.5 rounded-xl flex gap-1"
+    >
+      {/* Sliding indicator */}
+      <div
+        className="absolute top-1.5 bottom-1.5 rounded-lg bg-gradient-to-r from-blue-500 via-violet-500 to-purple-500 shadow-md shadow-purple-500/20 dark:shadow-purple-500/30 transition-all duration-300"
+        style={{
+          left: `${indicator.left}px`,
+          width: `${indicator.width}px`,
+          transitionTimingFunction: 'cubic-bezier(0.34, 1.56, 0.64, 1)',
+        }}
+      />
+
+      {TABS.map((tab) => {
+        const isActive = active === tab.value
+        return (
+          <button
+            key={tab.value}
+            ref={(el) => (tabRefs.current[tab.value] = el)}
+            role="tab"
+            aria-selected={isActive}
+            onClick={() => onChange(tab.value)}
+            className={`
+              relative z-10 w-1/2 py-2.5 px-2 rounded-lg text-sm font-semibold
+              transition-colors duration-300
+              ${isActive
+                ? 'text-white'
+                : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'}
+            `}
+          >
+            {tab.label}
+          </button>
+        )
+      })}
+    </div>
+  )
+}
+
 const AboutSection = () => {
+  const [activeTab, setActiveTab] = useState('education')
+
   return (
     <div id="about" className="border-dotted py-10 border-b border-gray-200 dark:border-gray-700">
       <div className="container mx-auto px-4">
@@ -31,14 +114,21 @@ const AboutSection = () => {
         <li className="flex items-start gap-2">
           <span className="text-blue-500 dark:text-blue-400 mt-1 flex-shrink-0">•</span>
           <span>
-            With <strong>5+ months of internship and project-based experience</strong>, I've developed full-stack applications using <strong>React, Node.js, Next.js</strong>, implemented <strong>WebSockets</strong>, and built <strong>scalable backend systems with queue processing (Inngest)</strong>.
+            With <strong>internship and project-based experience</strong> spanning full-stack development, I've built applications using <strong>React, Node.js, Next.js</strong>, implemented <strong>WebSockets</strong>, and built <strong>scalable backend systems with queue processing (Inngest)</strong>.
           </span>
         </li>
 
         <li className="flex items-start gap-2">
           <span className="text-blue-500 dark:text-blue-400 mt-1 flex-shrink-0">•</span>
           <span>
-            Built and deployed a production SaaS platform serving <strong>1800+ users</strong>, integrating <strong>OpenAI APIs, Redis caching, rate limiting, and payment systems</strong> with a focus on performance and scalability.
+            Built and deployed a production SaaS platform serving <strong>1800+ users</strong> with <strong>₹7,500+ in revenue</strong>, integrating <strong>OpenAI APIs, Redis caching, rate limiting, and payment systems</strong> with a focus on performance and scalability.
+          </span>
+        </li>
+
+        <li className="flex items-start gap-2">
+          <span className="text-blue-500 dark:text-blue-400 mt-1 flex-shrink-0">•</span>
+          <span>
+            Currently collaborating on <strong>Refyn AI</strong>, an AI-powered code review platform, and was shortlisted among <strong>45 of 647+ applicants</strong> for Blostem's "Hack to the Future" AI Builder Hackathon.
           </span>
         </li>
 
@@ -52,7 +142,7 @@ const AboutSection = () => {
         <li className="flex items-start gap-2">
           <span className="text-blue-500 dark:text-blue-400 mt-1 flex-shrink-0">•</span>
           <span>
-            Currently pursuing <strong>B.Tech & M.Tech (CSE)</strong> at VIT Bhopal (2022–27), actively building large-scale systems and preparing for high-impact software engineering roles.
+            Currently pursuing <strong>Integrated M.Tech (CSE)</strong> at VIT Bhopal (2022–27), actively building large-scale systems and preparing for high-impact software engineering roles.
           </span>
         </li>
       </ul>
@@ -61,25 +151,12 @@ const AboutSection = () => {
 </div>
 
         {/* Tabs */}
-        <Tabs defaultValue="education" className="py-2">
-          <TabsList className="w-full bg-gray-100 dark:bg-gray-800/80 border border-gray-200 dark:border-gray-700 p-1 rounded-xl">
-            <TabsTrigger
-              className="w-1/2 data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-500 data-[state=active]:to-purple-500 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-300 rounded-lg text-gray-600 dark:text-gray-400 font-semibold text-sm"
-              value="education"
-            >
-              Education
-            </TabsTrigger>
-            <TabsTrigger
-              className="w-1/2 data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-500 data-[state=active]:to-pink-500 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-300 rounded-lg text-gray-600 dark:text-gray-400 font-semibold text-sm"
-              value="programming"
-            >
-              Programming Languages
-            </TabsTrigger>
-          </TabsList>
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="py-2">
+          <AnimatedTabSwitcher active={activeTab} onChange={setActiveTab} />
 
           {/* Education Tab */}
           <TabsContent
-            className="bg-gray-50/60 dark:bg-black/40 mt-2 p-4 sm:p-6 rounded-xl border border-gray-200 dark:border-gray-700/50"
+            className="bg-gray-50/60 dark:bg-black/40 mt-2 p-4 sm:p-6 rounded-xl border border-gray-200 dark:border-gray-700/50 data-[state=active]:animate-in data-[state=active]:fade-in data-[state=active]:slide-in-from-bottom-1 data-[state=active]:duration-300"
             value="education"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-4">
@@ -92,7 +169,7 @@ const AboutSection = () => {
                     University
                   </h2>
                   <h3 className="font-semibold text-base text-gray-800 dark:text-gray-200 mb-1">
-                    BTech & MTech in Computer Science Engineering
+                    Integrated MTech in Computer Science Engineering
                   </h3>
                   <p className="font-semibold text-gray-500 dark:text-gray-400 text-sm mb-2">2022 – 2027</p>
                   <p className="text-gray-600 dark:text-gray-400 font-semibold text-sm">
@@ -100,7 +177,7 @@ const AboutSection = () => {
                   </p>
                   <p className="text-gray-600 dark:text-gray-400 text-sm mb-3">Bhopal Campus, Madhya Pradesh</p>
                   <span className="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-700/50">
-                    CGPA — 7.87
+                    CGPA — 7.89
                   </span>
                 </Card>
               </div>
@@ -117,9 +194,9 @@ const AboutSection = () => {
                     Higher Secondary School
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400 font-semibold text-sm">
-                    Chaitanya Keerti School Roopakhedi
+                    Chaitanya Keerti Public School Roopakhedi
                   </p>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-3">Ujjain, Madhya Pradesh</p>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-3">Roopakhedi, Madhya Pradesh</p>
                   <div className="flex flex-wrap gap-2">
                     <span className="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-700/50">
                       Class 10th — 90.33%
@@ -135,7 +212,7 @@ const AboutSection = () => {
 
           {/* Programming Languages Tab */}
           <TabsContent
-            className="bg-gray-50/60 dark:bg-black/40 mt-2 p-4 sm:p-6 rounded-xl border border-gray-200 dark:border-gray-700/50"
+            className="bg-gray-50/60 dark:bg-black/40 mt-2 p-4 sm:p-6 rounded-xl border border-gray-200 dark:border-gray-700/50 data-[state=active]:animate-in data-[state=active]:fade-in data-[state=active]:slide-in-from-bottom-1 data-[state=active]:duration-300"
             value="programming"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-4">
@@ -148,7 +225,7 @@ const AboutSection = () => {
                     Proficient In
                   </h2>
                   <div className="flex flex-wrap gap-2">
-                  {["C++", "JavaScript", "TypeScript", "Python","SQL"].map((lang) => (
+                  {["C++", "JavaScript", "TypeScript"].map((lang) => (
                       <span
                         key={lang}
                         className="px-4 py-1.5 text-sm font-semibold rounded-lg bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-300 border border-green-200 dark:border-green-700/50 hover:bg-green-100 dark:hover:bg-green-800/40 hover:scale-105 transition-all duration-200 cursor-default"
@@ -169,7 +246,7 @@ const AboutSection = () => {
                     Familiar With
                   </h2>
                   <div className="flex flex-wrap gap-2">
-                    {["C", "Java", "PHP"].map((lang) => (
+                    {["C", "Java", "PHP", "SQL"].map((lang) => (
                       <span
                         key={lang}
                         className="px-4 py-1.5 text-sm font-semibold rounded-lg bg-yellow-50 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 border border-yellow-200 dark:border-yellow-700/50 hover:bg-yellow-100 dark:hover:bg-yellow-800/40 hover:scale-105 transition-all duration-200 cursor-default"

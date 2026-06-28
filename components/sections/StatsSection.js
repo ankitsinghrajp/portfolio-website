@@ -2,7 +2,7 @@ import React from 'react'
 
 const StatsSection = () => {
   const stats = [
-    { number: "100+", label: "Projects", icon: "📦" },
+    { number: "60+", label: "Projects", icon: "📦" },
     { number: "1000+", label: "Github Commits", icon: "⚡" },
     { number: "250+", label: "DSA Problems", icon: "🧩" },
     { number: "20+", label: "Technologies", icon: "⚙️" },

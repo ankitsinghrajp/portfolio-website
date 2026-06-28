@@ -308,7 +308,7 @@ export default function HeroSection() {
 
             {/* Name */}
             <h1 className="e-l2 leading-[0.96] tracking-[-0.03em] mb-4"
-                style={{ fontWeight:700, fontSize:'clamp(2.8rem,7.5vw,5.2rem)' }}>
+                style={{ fontWeight:700, fontSize:'clamp(2.8rem,7.5vw,4.8rem)' }}>
               <span className="name-glow">Ankit Singh</span>
               <br />
               <span style={{ color:'var(--text-hi)' }}>Chouhan.</span>

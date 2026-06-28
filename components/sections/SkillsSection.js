@@ -2,9 +2,14 @@ import React, { useState } from 'react'
 
 const skillCategories = [
   {
+    title: "Programming Languages",
+    icon: "⬡",
+    skills: ["C++", "JavaScript", "TypeScript"],
+  },
+  {
     title: "Frontend Development",
     icon: "⬡",
-    skills: ["React.js", "Next.js", "Tailwind CSS", "Shadcn UI", "Redux Toolkit", "RTK Query", "GSAP"],
+    skills: ["React.js", "Next.js", "Tailwind CSS", "Shadcn UI", "HTML5", "CSS3", "Redux Toolkit", "RTK Query", "GSAP"],
   },
   {
     title: "Backend Development",
@@ -34,7 +39,12 @@ const skillCategories = [
   {
     title: "AI & Integrations",
     icon: "⬡",
-    skills: ["OpenAI API", "Gemini API", "Generative AI (LLMs)", "Razorpay", "Cloudinary", "Vonage API"],
+    skills: ["OpenAI API", "Gemini API", "Generative AI (LLMs)", "Razorpay", "PayPal", "Cloudinary", "Vonage API"],
+  },
+  {
+    title: "Networking",
+    icon: "⬡",
+    skills: ["TCP/IP", "OSI Model", "HTTP/HTTPS", "TCP", "UDP"],
   },
   {
     title: "Tools & Technologies",
@@ -44,7 +54,7 @@ const skillCategories = [
   {
     title: "Core Concepts",
     icon: "⬡",
-    skills: ["Data Structures & Algorithms", "System Design", "Microservices Fundamentals", "REST & WebSocket Architecture"],
+    skills: ["Data Structures & Algorithms", "Object-Oriented Programming (OOP)", "DBMS", "Operating Systems", "Computer Networks", "System Design (HLD)", "Microservices Fundamentals", "REST & WebSocket Architecture"],
   },
 ];
 

@@ -2,6 +2,7 @@
 
 import Footer from "@/components/fotter";
 import AboutSection from "@/components/sections/AboutSection";
+import AchievementsSection from "@/components/sections/AchievementSection";
 import ContactSection from "@/components/sections/ContactSection";
 import HeroSection from "@/components/sections/HeroSection";
 import HireMeSection from "@/components/sections/HireMeSection";
@@ -26,6 +27,9 @@ export default function HOME() {
 
       {/* Projects */}
       <ProjectsSection />
+
+      {/* Achievements Section */}
+      <AchievementsSection/>
 
       {/* Stats Section */}
       <StatsSection/>

@@ -7,7 +7,7 @@ const HireMeSection = () => {
   }
 
   const offerings = [
-    "Full-Stack MERN Development",
+    "Payment Gateway & Subscription Systems",
     "Real-time Features & WebSockets",
     "Backend Architecture & API Design",
     "Performance Optimization"
